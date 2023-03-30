@@ -1,0 +1,1061 @@
+<!doctype html>
+<html lang="ru" data-vue-meta="%7B%22lang%22:%7B%22ssr%22:%22ru%22%7D%7D"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover,maximum-scale=1,user-scalable=0"> 
+  <meta name="referrer" content="unsafe-url"> 
+  <title>Пользователи - Топ 100 / Хабр</title> 
+  <style>
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/firasans/v11/va9B4kDNxMZdWfMOD5VnZKveSxf6TF0.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/firasans/v11/va9B4kDNxMZdWfMOD5VnZKveQhf6TF0.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/firasans/v11/va9B4kDNxMZdWfMOD5VnZKveSBf6TF0.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/firasans/v11/va9B4kDNxMZdWfMOD5VnZKveRhf6.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* non-breaking hyphen */
+    @font-face {
+      font-family: 'Fira Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/l/font?kit=KFOlCnqEu92Fr1MmEU9vBh0_IsHAlmrO6g&skey=ee881451c540fdec&v=v29) format('woff2');
+      unicode-range: U+02011;
+    }
+  </style> 
+  <link rel="preload" href="https://assets.habr.com/habr-web/css/chunk-vendors.b6238726.css" as="style">
+  <link rel="preload" href="https://assets.habr.com/habr-web/js/chunk-vendors.aa19bb97.js" as="script">
+  <link rel="preload" href="https://assets.habr.com/habr-web/css/app.218cd7c0.css" as="style">
+  <link rel="preload" href="https://assets.habr.com/habr-web/js/app.5b494952.js" as="script">
+  <link rel="preload" href="https://assets.habr.com/habr-web/css/page-flows.1a8fd88c.css" as="style">
+  <link rel="preload" href="https://assets.habr.com/habr-web/js/page-flows.540a846c.js" as="script"> 
+  <link rel="stylesheet" href="https://assets.habr.com/habr-web/css/chunk-vendors.b6238726.css">
+  <link rel="stylesheet" href="https://assets.habr.com/habr-web/css/app.218cd7c0.css">
+  <link rel="stylesheet" href="https://assets.habr.com/habr-web/css/page-flows.1a8fd88c.css"> 
+  <script>window.i18nFetch = new Promise((res, rej) => {
+          const xhr = new XMLHttpRequest();
+          xhr.open('GET', '/js/i18n/ru-compiled.2c4d68417fae4acf58bd47eb3e4e4f63.json');
+          xhr.responseType = 'json';
+          xhr.onload = function(e) {
+            if (this.status === 200) {
+              res({ru: xhr.response});
+            } else {
+              rej(e);
+            }
+          };
+          xhr.send();
+        });</script> 
+  <script src="//www.googletagservices.com/tag/js/gpt.js" async></script> 
+  <style>.grecaptcha-badge{visibility: hidden;}</style> 
+  <meta name="habr-version" content="2.118.0"> 
+  <meta data-vue-meta="ssr" itemprop="image" content="/img/habr_ru.png" data-vmid="image:itemprop">
+  <meta data-vue-meta="ssr" property="og:image" content="/img/habr_ru.png" data-vmid="og:image">
+  <meta data-vue-meta="ssr" property="og:image:width" content="1200" data-vmid="og:image:width">
+  <meta data-vue-meta="ssr" property="og:image:height" content="630" data-vmid="og:image:height">
+  <meta data-vue-meta="ssr" property="aiturec:image" content="/img/habr_ru.png" data-vmid="aiturec:image">
+  <meta data-vue-meta="ssr" name="twitter:image" content="/img/habr_ru.png" data-vmid="twitter:image">
+  <meta data-vue-meta="ssr" property="vk:image" content="/img/habr_ru.png?format=vk" data-vmid="vk:image">
+  <meta data-vue-meta="ssr" property="fb:app_id" content="444736788986613">
+  <meta data-vue-meta="ssr" property="fb:pages" content="472597926099084">
+  <meta data-vue-meta="ssr" name="twitter:card" content="summary_large_image">
+  <meta data-vue-meta="ssr" name="twitter:site" content="@habr_com">
+  <meta data-vue-meta="ssr" property="og:locale" content="ru_RU" data-vmid="og:locale">
+  <meta data-vue-meta="ssr" property="og:type" content="website" data-vmid="og:type">
+  <meta data-vue-meta="ssr" property="og:site_name" content="Хабр" data-vmid="og:site_name">
+  <meta data-vue-meta="ssr" name="robots" content="noindex" data-vmid="robots">
+  <meta data-vue-meta="ssr" property="og:title" content="Пользователи - Топ 100 / Хабр" data-vmid="og:title">
+  <meta data-vue-meta="ssr" property="og:url" content="https://habr.com/ru/users/" data-vmid="og:url"> 
+  <link data-vue-meta="ssr" rel="image_src" href="/img/habr_ru.png" data-vmid="image:href">
+  <link data-vue-meta="ssr" href="https://habr.com/ru/users/" rel="canonical" data-vmid="canonical"> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="#303b44"> 
+  <meta name="msapplication-TileColor" content="#629FBC"> 
+  <meta name="apple-mobile-web-app-capable" content="yes"> 
+  <meta name="mobile-web-app-capable" content="yes"> 
+  <link rel="shortcut icon" type="image/png" sizes="16x16" href="https://assets.habr.com/habr-web/img/favicons/favicon-16.png"> 
+  <link rel="shortcut icon" type="image/png" sizes="32x32" href="https://assets.habr.com/habr-web/img/favicons/favicon-32.png"> 
+  <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="https://assets.habr.com/habr-web/img/favicons/apple-touch-icon-76.png"> 
+  <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="https://assets.habr.com/habr-web/img/favicons/apple-touch-icon-120.png"> 
+  <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="https://assets.habr.com/habr-web/img/favicons/apple-touch-icon-152.png"> 
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="https://assets.habr.com/habr-web/img/favicons/apple-touch-icon-180.png"> 
+  <link rel="apple-touch-icon" type="image/png" sizes="256x256" href="https://assets.habr.com/habr-web/img/favicons/apple-touch-icon-256.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://assets.habr.com/habr-web/img/splashes/splash_1136x640.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="https://assets.habr.com/habr-web/img/splashes/splash_2436x1125.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://assets.habr.com/habr-web/img/splashes/splash_1792x828.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://assets.habr.com/habr-web/img/splashes/splash_828x1792.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://assets.habr.com/habr-web/img/splashes/splash_1334x750.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="https://assets.habr.com/habr-web/img/splashes/splash_1242x2668.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="https://assets.habr.com/habr-web/img/splashes/splash_2208x1242.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="https://assets.habr.com/habr-web/img/splashes/splash_1125x2436.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="https://assets.habr.com/habr-web/img/splashes/splash_1242x2208.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://assets.habr.com/habr-web/img/splashes/splash_2732x2048.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="https://assets.habr.com/habr-web/img/splashes/splash_2688x1242.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://assets.habr.com/habr-web/img/splashes/splash_2224x1668.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://assets.habr.com/habr-web/img/splashes/splash_750x1334.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://assets.habr.com/habr-web/img/splashes/splash_2048x2732.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://assets.habr.com/habr-web/img/splashes/splash_2388x1668.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://assets.habr.com/habr-web/img/splashes/splash_1668x2224.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://assets.habr.com/habr-web/img/splashes/splash_640x1136.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://assets.habr.com/habr-web/img/splashes/splash_1668x2388.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://assets.habr.com/habr-web/img/splashes/splash_2048x1536.png"> 
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://assets.habr.com/habr-web/img/splashes/splash_1536x2048.png"> 
+  <link rel="mask-icon" color="#77a2b6" href="https://assets.habr.com/habr-web/img/favicons/apple-touch-icon-120.svg"> 
+  <link crossorigin="use-credentials" href="/manifest.webmanifest" rel="manifest"> 
+  <script async src="https://unpkg.com/pwacompat" crossorigin="anonymous"></script> 
+  <script>window.yaContextCb = window.yaContextCb || []</script> 
+  <script src="https://yandex.ru/ads/system/context.js" async></script> 
+ </head> 
+ <body> 
+  <div id="app" data-server-rendered="true" data-async-called="true">
+   <div class="tm-layout__wrapper">
+    <!----> 
+    <div></div> <!----> 
+    <header class="tm-header">
+     <div class="tm-page-width">
+      <div class="tm-header__container">
+       <!----> <span class="tm-header__logo-wrap"><a href="/ru/" class="tm-header__logo tm-header__logo_ru">
+         <svg height="16" width="16" class="tm-svg-img tm-header__icon">
+          <title>Хабр</title> <use xlink:href="/img/habr-logo-ru.svg#logo"></use>
+         </svg></a> <span class="tm-header__beta-sign" style="display:none;">β</span></span> 
+       <div class="tm-dropdown tm-header__projects">
+        <div class="tm-dropdown__head">
+         <button class="tm-header__dropdown-toggle">
+          <svg height="16" width="16" class="tm-svg-img tm-header__icon tm-header__icon_dropdown">
+           <title>Открыть список</title> <use xlink:href="/img/megazord-v28.c350aa68..svg#arrow-down"></use>
+          </svg></button>
+        </div> <!---->
+       </div> <a href="/ru/sandbox/start/" class="tm-header__become-author-btn"> Как стать автором </a> 
+       <div class="tm-feature tm-header__feature tm-feature tm-feature_variant-inline">
+        <!---->
+       </div> <!----> <!---->
+      </div>
+     </div>
+    </header> 
+    <div class="tm-layout">
+     <div class="tm-page-progress-bar"></div> 
+     <div data-menu-sticky="true" class="tm-base-layout__header tm-base-layout__header_is-sticky">
+      <div class="tm-page-width">
+       <div class="tm-base-layout__header-wrapper">
+        <div class="tm-main-menu">
+         <div class="tm-main-menu__section">
+          <nav class="tm-main-menu__section-content">
+           <!----> <a href="/ru/all/" class="tm-main-menu__item tm-main-menu__item_active"> Все потоки </a> <a href="/ru/flows/develop/" class="tm-main-menu__item"> Разработка </a><a href="/ru/flows/admin/" class="tm-main-menu__item"> Администрирование </a><a href="/ru/flows/design/" class="tm-main-menu__item"> Дизайн </a><a href="/ru/flows/management/" class="tm-main-menu__item"> Менеджмент </a><a href="/ru/flows/marketing/" class="tm-main-menu__item"> Маркетинг </a><a href="/ru/flows/popsci/" class="tm-main-menu__item"> Научпоп </a>
+          </nav>
+         </div>
+        </div> 
+        <div class="tm-header-user-menu tm-base-layout__user-menu">
+         <a href="/ru/search/" class="tm-header-user-menu__item tm-header-user-menu__search">
+          <svg height="24" width="24" class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_search tm-header-user-menu__icon_dark">
+           <title>Поиск</title> <use xlink:href="/img/megazord-v28.c350aa68..svg#search"></use>
+          </svg></a> <!----> <!----> <!----> 
+         <div class="tm-header-user-menu__item tm-header-user-menu__user_desktop">
+          <div class="tm-dropdown">
+           <div class="tm-dropdown__head">
+            <svg height="24" width="24" data-test-id="menu-toggle-guest" class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_dark">
+             <title>Профиль</title> <use xlink:href="/img/megazord-v28.c350aa68..svg#header-user"></use>
+            </svg> <!---->
+           </div> <!---->
+          </div> <!---->
+         </div> <!---->
+        </div>
+       </div>
+      </div>
+     </div> <!----> 
+     <div class="tm-page-width"></div> 
+     <main class="tm-layout__container">
+      <div class="tm-page">
+       <div class="tm-page-width">
+        <!----> 
+        <div class="tm-page__wrapper">
+         <div class="tm-page__main tm-page__main_has-sidebar">
+          <div class="pull-down">
+           <!----> 
+           <div class="pull-down__header" style="height:0px;">
+            <div class="pull-down__content" style="bottom:10px;">
+             <svg height="24" width="24" class="tm-svg-img pull-down__arrow">
+              <title>Обновить</title> <use xlink:href="/img/megazord-v28.c350aa68..svg#pull-arrow"></use>
+             </svg>
+            </div>
+           </div> 
+           <div class="tm-page__top">
+            <div class="tm-section-name">
+             <h1 class="tm-section-name__text"> Все потоки </h1> 
+            </div> 
+            <div class="tm-tabs tm-tabs_page-header tm-tabs">
+             <div class="tm-tabs__scroll-area">
+              <span class="tm-tabs__tab-item"><a href="/ru/flows/all/" class="tm-tabs__tab-link tm-tabs__tab-link"> Статьи <!----> <span class="tm-tabs__tab-counter-new"> +83 </span></a></span><span class="tm-tabs__tab-item"><a href="/ru/news/" class="tm-tabs__tab-link tm-tabs__tab-link"> Новости <!----> <span class="tm-tabs__tab-counter-new"> +42 </span></a></span><span class="tm-tabs__tab-item"><a href="/ru/hubs/" class="tm-tabs__tab-link tm-tabs__tab-link"> Хабы <!----> <!----></a></span><span class="tm-tabs__tab-item"><a href="/ru/users/" aria-current="page" data-test-id="tab-link-active" class="tm-tabs__tab-link router-link-exact-active  tm-tabs__tab-link tm-tabs__tab-link_active"> Авторы <!----> <!----></a></span><span class="tm-tabs__tab-item"><a href="/ru/companies/" class="tm-tabs__tab-link tm-tabs__tab-link"> Компании <!----> <!----></a></span>
+             </div> <!---->
+            </div> <!----> 
+            <div class="tm-navigation-search__input">
+             <div autocomplete="off" maxlength="50" name="searchQuery" placeholder="Поиск" class="tm-input-text-decorated tm-input-text-decorated_has-label-after">
+              <!----> 
+              <input autocomplete="off" maxlength="50" name="searchQuery" placeholder="Поиск" class="tm-input-text-decorated__input"> 
+              <div class="tm-input-text-decorated__label tm-input-text-decorated__label_after">
+               <span class="tm-svg-icon__wrapper tm-search__icon">
+                <svg height="16" width="16" class="tm-svg-img tm-svg-icon">
+                 <title>Поиск</title> <use xlink:href="/img/megazord-v28.c350aa68..svg#input-search"></use>
+                </svg></span>
+              </div>
+             </div>
+            </div>
+           </div> 
+           <div data-async-called="true">
+            <div class="tm-users-list__sorting-panel">
+             <div class="tm-navigation-sorting">
+              <div class="tm-navigation-sorting__row-option">
+                Имя <!---->
+              </div>
+              <div class="tm-navigation-sorting__row-option tm-navigation-sorting__row-option_active">
+                Рейтинг <!---->
+              </div>
+              <div class="tm-navigation-sorting__row-option">
+                Карма <!---->
+              </div> <!---->
+             </div>
+            </div> <!----> 
+            <div class="tm-users-list">
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/stalkermustang/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <img alt="" src="//habrastorage.org/getpro/habr/avatars/ad4/51e/f3f/ad451ef3fee18da09b12dee019fa072e.jpg" class="tm-entity-image__pic">
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/stalkermustang/" class="tm-user-snippet__title">Котенков Игорь</a> <a href="/ru/users/stalkermustang/" class="tm-user-snippet__nickname"> @stalkermustang </a> 
+                 <div class="tm-user-snippet__description">
+                   Пользователь 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/company/ods/blog/722644/" class="tm-user-snippet__last-post-link">GPT-4: Чему научилась новая нейросеть, и почему это немного жутковато</a> <time datetime="2023-03-18T07:43:02.000Z" title="2023-03-18, 10:43" class="tm-user-snippet__last-post-datetime">18 марта в 10:43</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 497.1 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 129 </span> <!---->
+              </div>
+             </div>
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/Greiv656/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <img alt="" src="//habrastorage.org/getpro/habr/avatars/acc/e2a/876/acce2a87690312d07dd67fadcfb2b339.jpg" class="tm-entity-image__pic">
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/Greiv656/" class="tm-user-snippet__title">Антон</a> <a href="/ru/users/Greiv656/" class="tm-user-snippet__nickname"> @Greiv656 </a> 
+                 <div class="tm-user-snippet__description">
+                   Юзер 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/company/selectel/blog/725320/" class="tm-user-snippet__last-post-link">Тройные зарплаты для инженеров и национальный инструментарий: как Китай решает проблему производства чипов</a> <time datetime="2023-03-31T01:19:52.000Z" title="2023-03-31, 04:19" class="tm-user-snippet__last-post-datetime">31 марта в 04:19</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 378.5 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 112 </span> <!---->
+              </div>
+             </div>
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/Red_Lemur/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <svg class="tm-svg-img tm-image-placeholder tm-image-placeholder_green">
+                   <!----> <use xlink:href="/img/megazord-v28.c350aa68..svg#placeholder-user"></use>
+                  </svg>
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/Red_Lemur/" class="tm-user-snippet__title">Red_Lemur</a> <a href="/ru/users/Red_Lemur/" class="tm-user-snippet__nickname"> @Red_Lemur </a> 
+                 <div class="tm-user-snippet__description">
+                   Пользователь 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/post/725240/" class="tm-user-snippet__last-post-link">Разумно ли обманывать в цифровой век?</a> <time datetime="2023-03-28T08:18:25.000Z" title="2023-03-28, 11:18" class="tm-user-snippet__last-post-datetime">28 марта в 11:18</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 361 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 65 </span> <!---->
+              </div>
+             </div>
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/vvvphoenix/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <img alt="" src="//habrastorage.org/getpro/habr/avatars/f75/4c6/f8f/f754c6f8f21d710c31721a93443113fe.jpg" class="tm-entity-image__pic">
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/vvvphoenix/" class="tm-user-snippet__title">Валерий Черепенников</a> <a href="/ru/users/vvvphoenix/" class="tm-user-snippet__nickname"> @vvvphoenix </a> 
+                 <div class="tm-user-snippet__description">
+                   Vice President NNRC, Советник Губернатора НО 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/post/724856/" class="tm-user-snippet__last-post-link">Made at Intel. Молитвы, энтузиасты и разбитые лбы</a> <time datetime="2023-03-26T18:04:32.000Z" title="2023-03-26, 21:04" class="tm-user-snippet__last-post-datetime">26 марта в 21:04</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 290.6 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 173 </span> <!---->
+              </div>
+             </div>
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/dust70/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <img alt="" src="//habrastorage.org/getpro/habr/avatars/6d1/777/e13/6d1777e132cdf566cabac609ada4e167.png" class="tm-entity-image__pic">
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/dust70/" class="tm-user-snippet__title">Дмитрий Усталов</a> <a href="/ru/users/dust70/" class="tm-user-snippet__nickname"> @dust70 </a> 
+                 <div class="tm-user-snippet__description">
+                   Инженер АСУ ТП 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/company/wirenboard/blog/722718/" class="tm-user-snippet__last-post-link">Сколько стоит умный дом? Рассказываю, как строил свой и что получилось за 1000 руб./м²</a> <time datetime="2023-03-21T07:04:25.000Z" title="2023-03-21, 10:04" class="tm-user-snippet__last-post-datetime">21 марта в 10:04</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 263.7 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 73 </span> <!---->
+              </div>
+             </div>
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/RationalAnswer/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <img alt="" src="//habrastorage.org/getpro/habr/avatars/e54/688/8ae/e546888aed94c31b9d15b7fa3d86f381.jpg" class="tm-entity-image__pic">
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/RationalAnswer/" class="tm-user-snippet__title">Павел Комаровский</a> <a href="/ru/users/RationalAnswer/" class="tm-user-snippet__nickname"> @RationalAnswer </a> 
+                 <div class="tm-user-snippet__description">
+                   Рационалист 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/post/725498/" class="tm-user-snippet__last-post-link">США объявили войну крупнейшей криптобирже Binance: регулирование крипты по-американски</a> <time datetime="2023-03-29T04:58:51.000Z" title="2023-03-29, 07:58" class="tm-user-snippet__last-post-datetime">29 марта в 07:58</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 249.5 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 366 </span> <!---->
+              </div>
+             </div>
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/aGGre55or/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <img alt="" src="//habrastorage.org/getpro/habr/avatars/a21/1b5/1a7/a211b51a792823b523a93fa9126b8f6e.png" class="tm-entity-image__pic">
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/aGGre55or/" class="tm-user-snippet__title"></a> <a href="/ru/users/aGGre55or/" class="tm-user-snippet__nickname"> @aGGre55or </a> 
+                 <div class="tm-user-snippet__description">
+                   Пользователь 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/post/724460/" class="tm-user-snippet__last-post-link">ChatGPT провалил тест на ручник</a> <time datetime="2023-03-24T05:01:31.000Z" title="2023-03-24, 08:01" class="tm-user-snippet__last-post-datetime">24 марта в 08:01</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 244.2 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 42 </span> <!---->
+              </div>
+             </div>
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/alizar/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <img alt="" src="//habrastorage.org/getpro/habr/avatars/cc3/97d/54c/cc397d54c2161005908a3034c5fabbea.png" class="tm-entity-image__pic">
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/alizar/" class="tm-user-snippet__title">Анатолий Ализар</a> <a href="/ru/users/alizar/" class="tm-user-snippet__nickname"> @alizar </a> 
+                 <div class="tm-user-snippet__description">
+                   автор, фрилансер 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/company/ruvds/blog/724340/" class="tm-user-snippet__last-post-link">Аппаратные закладки под микроскопом. Обнаружение</a> <time datetime="2023-03-27T09:00:01.000Z" title="2023-03-27, 12:00" class="tm-user-snippet__last-post-datetime">27 марта в 12:00</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 237 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 983 </span> <!---->
+              </div>
+             </div>
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/Tzimie/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <img alt="" src="//habrastorage.org/getpro/habr/avatars/677/710/2de/6777102dec8cce4617662727d54b9a84.png" class="tm-entity-image__pic">
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/Tzimie/" class="tm-user-snippet__title">Дмитрий EvilDBA</a> <a href="/ru/users/Tzimie/" class="tm-user-snippet__nickname"> @Tzimie </a> 
+                 <div class="tm-user-snippet__description">
+                   DBA 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/post/724702/" class="tm-user-snippet__last-post-link">Дефрагментация таблиц в высоко нагруженных базах данных (MSSQL)</a> <time datetime="2023-03-26T16:45:45.000Z" title="2023-03-26, 19:45" class="tm-user-snippet__last-post-datetime">26 марта в 19:45</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 234.3 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 333 </span> <!---->
+              </div>
+             </div>
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/Doctor_IT/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <img alt="" src="//habrastorage.org/getpro/habr/avatars/dc0/53c/6ea/dc053c6eae54a82bdee1862430f51afc.jpg" class="tm-entity-image__pic">
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/Doctor_IT/" class="tm-user-snippet__title">Влад Ефименко</a> <a href="/ru/users/Doctor_IT/" class="tm-user-snippet__nickname"> @Doctor_IT </a> 
+                 <div class="tm-user-snippet__description">
+                   Технический писатель 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/company/selectel/blog/725234/" class="tm-user-snippet__last-post-link">Способы организации инфраструктуры с базами данных: от простого к сложному и эффективному</a> <time datetime="2023-03-28T09:12:50.000Z" title="2023-03-28, 12:12" class="tm-user-snippet__last-post-datetime">28 марта в 12:12</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 217.7 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 79 </span> <!---->
+              </div>
+             </div>
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/maxim_babenko/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <img alt="" src="//habrastorage.org/getpro/habr/avatars/17c/b3f/4e2/17cb3f4e2d2e9f9320d523b148642f9a.jpg" class="tm-entity-image__pic">
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/maxim_babenko/" class="tm-user-snippet__title">Максим Бабенко</a> <a href="/ru/users/maxim_babenko/" class="tm-user-snippet__nickname"> @maxim_babenko </a> 
+                 <div class="tm-user-snippet__description">
+                   Программист 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/company/yandex/blog/721526/" class="tm-user-snippet__last-post-link">YTsaurus: основная система для хранения и обработки данных Яндекса теперь open source</a> <time datetime="2023-03-20T10:57:17.000Z" title="2023-03-20, 13:57" class="tm-user-snippet__last-post-datetime">20 марта в 13:57</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 201 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 75 </span> <!---->
+              </div>
+             </div>
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/Arnak/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <img alt="" src="//habrastorage.org/getpro/habr/avatars/58a/0eb/ccf/58a0ebccf811f297b0abb0e857a71078.jpg" class="tm-entity-image__pic">
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/Arnak/" class="tm-user-snippet__title"></a> <a href="/ru/users/Arnak/" class="tm-user-snippet__nickname"> @Arnak </a> 
+                 <div class="tm-user-snippet__description">
+                   Пользователь 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/company/getmatch/blog/724320/" class="tm-user-snippet__last-post-link">У животных есть личности. И это ставит науку в тупик</a> <time datetime="2023-03-23T12:15:10.000Z" title="2023-03-23, 15:15" class="tm-user-snippet__last-post-datetime">23 марта в 15:15</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 200.4 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 161 </span> <!---->
+              </div>
+             </div>
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/TLHE/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <img alt="" src="//habrastorage.org/getpro/habr/avatars/896/919/2d0/8969192d0b3a153f7abdb22cfb1effb9.jpg" class="tm-entity-image__pic">
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/TLHE/" class="tm-user-snippet__title"></a> <a href="/ru/users/TLHE/" class="tm-user-snippet__nickname"> @TLHE </a> 
+                 <div class="tm-user-snippet__description">
+                   Эргономист-оптимизатор; Python developer 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/company/timeweb/blog/723414/" class="tm-user-snippet__last-post-link">Пятничные клеточные автоматы: циклические конфигурации; камень-ножницы-бумага</a> <time datetime="2023-03-24T07:01:18.000Z" title="2023-03-24, 10:01" class="tm-user-snippet__last-post-datetime">24 марта в 10:01</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 199.2 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 88 </span> <!---->
+              </div>
+             </div>
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/samsergey/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <img alt="" src="//habrastorage.org/getpro/habr/avatars/234/002/2cc/2340022cc75806fdd43791b9e18adaff.gif" class="tm-entity-image__pic">
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/samsergey/" class="tm-user-snippet__title">Сергей Самойленко</a> <a href="/ru/users/samsergey/" class="tm-user-snippet__nickname"> @samsergey </a> 
+                 <div class="tm-user-snippet__description">
+                   Руководитель, научный сотрудник, преподаватель 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/post/725996/" class="tm-user-snippet__last-post-link">Соблюдаем дистанцию, как топологи</a> <time datetime="2023-03-31T02:31:11.000Z" title="2023-03-31, 05:31" class="tm-user-snippet__last-post-datetime">31 марта в 05:31</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 197.1 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 214 </span> <!---->
+              </div>
+             </div>
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/bodyawm/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <img alt="" src="//habrastorage.org/getpro/habr/avatars/47b/885/a9d/47b885a9d839456736ae10b04a0c0011.jpg" class="tm-entity-image__pic">
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/bodyawm/" class="tm-user-snippet__title">Богдан</a> <a href="/ru/users/bodyawm/" class="tm-user-snippet__nickname"> @bodyawm </a> 
+                 <div class="tm-user-snippet__description">
+                   Программист, люблю копать железо 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/company/timeweb/blog/724632/" class="tm-user-snippet__last-post-link">«Прокачиваем» кнопочный Android смартфон за 13$. Как довести до ума телефон без официальной поддержки?</a> <time datetime="2023-03-30T08:01:05.000Z" title="2023-03-30, 11:01" class="tm-user-snippet__last-post-datetime">30 марта в 11:01</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 186.5 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 151 </span> <!---->
+              </div>
+             </div>
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/DAN_SEA/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <svg class="tm-svg-img tm-image-placeholder tm-image-placeholder_green">
+                   <!----> <use xlink:href="/img/megazord-v28.c350aa68..svg#placeholder-user"></use>
+                  </svg>
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/DAN_SEA/" class="tm-user-snippet__title"></a> <a href="/ru/users/DAN_SEA/" class="tm-user-snippet__nickname"> @DAN_SEA </a> 
+                 <div class="tm-user-snippet__description">
+                   Технологии разработки программного обеспечения 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/company/ruvds/blog/724822/" class="tm-user-snippet__last-post-link">Исследование состава веществ с помощью радиоизлучения: ядерный магнитный резонанс</a> <time datetime="2023-03-31T09:00:02.000Z" title="2023-03-31, 12:00" class="tm-user-snippet__last-post-datetime">31 марта в 12:00</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 182.1 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 212 </span> <!---->
+              </div>
+             </div>
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/MaxRokatansky/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <img alt="" src="//habrastorage.org/getpro/habr/avatars/b9f/baf/5f9/b9fbaf5f96ae52973706a0716bd9216e.jpg" class="tm-entity-image__pic">
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/MaxRokatansky/" class="tm-user-snippet__title">OTUS</a> <a href="/ru/users/MaxRokatansky/" class="tm-user-snippet__nickname"> @MaxRokatansky </a> 
+                 <div class="tm-user-snippet__description">
+                   Редактор 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/company/otus/blog/726128/" class="tm-user-snippet__last-post-link">Как не превратить микросервисы в киберпанк-дистопию</a> <time datetime="2023-03-31T11:45:11.000Z" title="2023-03-31, 14:45" class="tm-user-snippet__last-post-datetime">31 марта в 14:45</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 176.5 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 55 </span> <!---->
+              </div>
+             </div>
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/Erwinmal/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <img alt="" src="//habrastorage.org/getpro/habr/avatars/ed9/659/70f/ed965970f791e09dfe69376568394582.jpg" class="tm-entity-image__pic">
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/Erwinmal/" class="tm-user-snippet__title">Алексей Костенков</a> <a href="/ru/users/Erwinmal/" class="tm-user-snippet__nickname"> @Erwinmal </a> 
+                 <div class="tm-user-snippet__description">
+                   Рептилоид 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/company/ruvds/blog/724688/" class="tm-user-snippet__last-post-link">Самые криповые случаи с ИИ: что пугает в нейросетях? Часть 1</a> <time datetime="2023-03-25T10:00:01.000Z" title="2023-03-25, 13:00" class="tm-user-snippet__last-post-datetime">25 марта в 13:00</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 174 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 203 </span> <!---->
+              </div>
+             </div>
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/CyberPaul/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <img alt="" src="//habrastorage.org/getpro/habr/avatars/a29/f41/b69/a29f41b69469aedad4276b6e3dea23d4.png" class="tm-entity-image__pic">
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/CyberPaul/" class="tm-user-snippet__title">CyberPunk</a> <a href="/ru/users/CyberPaul/" class="tm-user-snippet__nickname"> @CyberPaul </a> 
+                 <div class="tm-user-snippet__description">
+                   Пользователь 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/company/timeweb/blog/724046/" class="tm-user-snippet__last-post-link">50 лет основателю Google Ларри Пейджу</a> <time datetime="2023-03-26T08:01:02.000Z" title="2023-03-26, 11:01" class="tm-user-snippet__last-post-datetime">26 марта в 11:01</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 172.7 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 114 </span> <!---->
+              </div>
+             </div>
+             <div class="tm-users-list__item">
+              <div class="tm-users-list__user-wrapper">
+               <div class="tm-user-snippet">
+                <a href="/ru/users/saluev/" class="tm-user-snippet__userpic-link">
+                 <div class="tm-entity-image">
+                  <img alt="" src="//habrastorage.org/getpro/habr/avatars/74d/d06/967/74dd06967a1076a76e308363cde1fc4e.jpg" class="tm-entity-image__pic">
+                 </div></a> 
+                <div class="tm-user-snippet__info">
+                 <a href="/ru/users/saluev/" class="tm-user-snippet__title">Тигран Салуев</a> <a href="/ru/users/saluev/" class="tm-user-snippet__nickname"> @saluev </a> 
+                 <div class="tm-user-snippet__description">
+                   Математик-вычислитель 
+                 </div> 
+                 <div class="tm-user-snippet__last-post">
+                  <a href="/ru/post/719648/" class="tm-user-snippet__last-post-link">Алгоритмы быстрого умножения чисел: от столбика до Шенхаге-Штрассена</a> <time datetime="2023-03-03T10:43:27.000Z" title="2023-03-03, 13:43" class="tm-user-snippet__last-post-datetime">3 марта в 13:43</time>
+                 </div>
+                </div>
+               </div>
+              </div> 
+              <div class="tm-users-list__score-counters">
+               <span class="tm-users-list__score-counter tm-users-list__score-counter_rating"><!----> 170.1 </span> <span class="tm-users-list__score-counter tm-users-list__score-counter_karma tm-users-list__score-counter_karma-positive"><!----> 141 </span> <!---->
+              </div>
+             </div>
+            </div> 
+            <div class="tm-pagination">
+             <div id="pagination-prev-page" data-pagination-prev="" event="" rel="prev" class="tm-pagination__navigation-link">
+              <svg height="16" width="16" class="tm-svg-img tm-pagination__arrow tm-pagination__arrow_prev">
+               <title>Назад</title> <use xlink:href="/img/megazord-v28.c350aa68..svg#arrow-back"></use>
+              </svg> <span class="tm-pagination__navigation-link-title"> Сюда </span>
+             </div> 
+             <div class="tm-pagination__pages"> <span class="tm-pagination__page tm-pagination__page_current"> 1 </span> 
+              <div class="tm-pagination__page-group">
+               <a href="/ru/users/page2/" class="tm-pagination__page"> 2 </a><a href="/ru/users/page3/" class="tm-pagination__page"> 3 </a><a href="/ru/users/page4/" class="tm-pagination__page"> 4 </a><a href="/ru/users/page5/" class="tm-pagination__page"> 5 </a> <!---->
+              </div>
+             </div> <a href="/ru/users/page2/" id="pagination-next-page" data-pagination-next="" rel="next" class="tm-pagination__navigation-link tm-pagination__navigation-link_active"><span class="tm-pagination__navigation-link-title"> Туда </span> 
+              <svg height="16" width="16" class="tm-svg-img tm-pagination__arrow tm-pagination__arrow_next">
+               <title>Назад</title> <use xlink:href="/img/megazord-v28.c350aa68..svg#arrow-back"></use>
+              </svg></a>
+            </div>
+           </div>
+          </div>
+         </div> 
+         <div class="tm-page__sidebar">
+          <div data-async-called="true" class="tm-layout-sidebar">
+           <div class="tm-layout-sidebar__placeholder_initial"></div> 
+           <div class="tm-sexy-sidebar tm-sexy-sidebar_initial" style="margin-top:0px;">
+            <section class="tm-block tm-block tm-block_spacing-bottom">
+             <header class="tm-block__header tm-block__header">
+              <div class="tm-block__header-container">
+               <h2 class="tm-block__title tm-block__title">Статистика</h2> 
+              </div> <!---->
+             </header> 
+             <div class="tm-block__body tm-block__body">
+              <dl class="tm-description-list tm-description-list tm-description-list_variant-columns-numbers">
+               <dt class="tm-description-list__title tm-description-list__title tm-description-list__title_variant-columns-numbers">
+                Всего
+               </dt> 
+               <dd class="tm-description-list__body tm-description-list__body tm-description-list__body_variant-columns-numbers">
+                <span>1&nbsp;495&nbsp;023</span>
+               </dd>
+              </dl>
+              <dl class="tm-description-list tm-description-list tm-description-list_variant-columns-numbers">
+               <dt class="tm-description-list__title tm-description-list__title tm-description-list__title_variant-columns-numbers">
+                Мужчины
+               </dt> 
+               <dd class="tm-description-list__body tm-description-list__body tm-description-list__body_variant-columns-numbers">
+                <span>207&nbsp;945</span>
+               </dd>
+              </dl>
+              <dl class="tm-description-list tm-description-list tm-description-list_variant-columns-numbers">
+               <dt class="tm-description-list__title tm-description-list__title tm-description-list__title_variant-columns-numbers">
+                Женщины
+               </dt> 
+               <dd class="tm-description-list__body tm-description-list__body tm-description-list__body_variant-columns-numbers">
+                <span>23&nbsp;363</span>
+               </dd>
+              </dl>
+              <dl class="tm-description-list tm-description-list tm-description-list_variant-columns-numbers">
+               <dt class="tm-description-list__title tm-description-list__title tm-description-list__title_variant-columns-numbers">
+                Не указан
+               </dt> 
+               <dd class="tm-description-list__body tm-description-list__body tm-description-list__body_variant-columns-numbers">
+                <span>1&nbsp;263&nbsp;715</span>
+               </dd>
+              </dl>
+             </div> <!---->
+            </section> 
+            <section class="tm-block tm-block tm-block_spacing-bottom">
+             <header class="tm-block__header tm-block__header">
+              <div class="tm-block__header-container">
+               <h2 class="tm-block__title tm-block__title">Кармаграф</h2> 
+              </div> <!---->
+             </header> 
+             <div class="tm-block__body tm-block__body">
+              <svg xmlns="http://www.w3.org/2000/svg" class="karmagraph">
+               <g id="xGrid" class="karmagraph__grid karmagraph__grid_x">
+                <line x1="23" x2="260" y1="5" y2="5"></line>
+                <line x1="23" x2="260" y1="32" y2="32"></line>
+                <line x1="23" x2="260" y1="59" y2="59"></line>
+                <line x1="23" x2="260" y1="86" y2="86"></line>
+                <line x1="23" x2="260" y1="113" y2="113"></line>
+                <line x1="23" x2="260" y1="140" y2="140"></line>
+                <line x1="23" x2="260" y1="167" y2="167"></line>
+                <line x1="23" x2="260" y1="194" y2="194"></line>
+                <line x1="23" x2="260" y1="221" y2="221"></line>
+                <line x1="23" x2="260" y1="248" y2="248"></line>
+               </g> <g class="karmagraph__labels karmagraph__labels_y">
+                <text x="10" y="10">
+                  50 
+                </text>
+                <text x="10" y="37">
+                  40 
+                </text>
+                <text x="10" y="64">
+                  30 
+                </text>
+                <text x="10" y="91">
+                  20 
+                </text>
+                <text x="10" y="118">
+                  10 
+                </text>
+                <text x="10" y="145">
+                  0 
+                </text>
+                <text x="10" y="172">
+                  -10 
+                </text>
+                <text x="10" y="199">
+                  -20 
+                </text>
+                <text x="10" y="226">
+                  -30 
+                </text>
+                <text x="10" y="253">
+                  -40 
+                </text>
+               </g> <g id="yGrid" class="karmagraph__grid karmagraph__grid_y">
+                <line x1="30" x2="30" y1="5" y2="253"></line>
+                <line x1="142.5" x2="142.5" y1="5" y2="253"></line>
+                <line x1="255.00000000000003" x2="255.00000000000003" y1="5" y2="253"></line>
+               </g> <g class="karmagraph__labels karmagraph__labels_x">
+                <text x="30" y="268">
+                  29/03 
+                </text>
+                <text x="142.5" y="268">
+                  30/03 
+                </text>
+                <text x="255.00000000000003" y="268">
+                  31/03 
+                </text>
+               </g> <g class="karmagraph__bars">
+                <rect height="41.333333333333336" width="2.295918367346939" x="30" y="98.66666666666666" class="karmagraph__bars_plus"></rect>
+                <rect height="24.8" width="2.295918367346939" x="32.29591836734694" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="55.111111111111114" width="2.295918367346939" x="34.59183673469388" y="84.88888888888889" class="karmagraph__bars_plus"></rect>
+                <rect height="33.06666666666667" width="2.295918367346939" x="36.88775510204081" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="38.577777777777776" width="2.295918367346939" x="39.183673469387756" y="101.42222222222222" class="karmagraph__bars_plus"></rect>
+                <rect height="63.37777777777778" width="2.295918367346939" x="41.4795918367347" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="74.4" width="2.295918367346939" x="43.775510204081634" y="65.6" class="karmagraph__bars_plus"></rect>
+                <rect height="33.06666666666667" width="2.295918367346939" x="46.07142857142857" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="74.4" width="2.295918367346939" x="48.36734693877551" y="65.6" class="karmagraph__bars_plus"></rect>
+                <rect height="38.577777777777776" width="2.295918367346939" x="50.663265306122454" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="85.42222222222222" width="2.295918367346939" x="52.95918367346939" y="54.57777777777778" class="karmagraph__bars_plus"></rect>
+                <rect height="90.93333333333334" width="2.295918367346939" x="55.255102040816325" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="71.64444444444445" width="2.295918367346939" x="57.55102040816327" y="68.35555555555555" class="karmagraph__bars_plus"></rect>
+                <rect height="38.577777777777776" width="2.295918367346939" x="59.84693877551021" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="60.62222222222222" width="2.295918367346939" x="62.142857142857146" y="79.37777777777778" class="karmagraph__bars_plus"></rect>
+                <rect height="52.355555555555554" width="2.295918367346939" x="64.43877551020408" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="49.6" width="2.295918367346939" x="66.73469387755102" y="90.4" class="karmagraph__bars_plus"></rect>
+                <rect height="49.6" width="2.295918367346939" x="69.03061224489797" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="74.4" width="2.295918367346939" x="71.32653061224491" y="65.6" class="karmagraph__bars_plus"></rect>
+                <rect height="30.31111111111111" width="2.295918367346939" x="73.62244897959184" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="82.66666666666667" width="2.295918367346939" x="75.91836734693878" y="57.33333333333333" class="karmagraph__bars_plus"></rect>
+                <rect height="24.8" width="2.295918367346939" x="78.21428571428572" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="66.13333333333334" width="2.295918367346939" x="80.51020408163265" y="73.86666666666666" class="karmagraph__bars_plus"></rect>
+                <rect height="41.333333333333336" width="2.295918367346939" x="82.8061224489796" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="38.577777777777776" width="2.295918367346939" x="85.10204081632654" y="101.42222222222222" class="karmagraph__bars_plus"></rect>
+                <rect height="27.555555555555557" width="2.295918367346939" x="87.39795918367348" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="55.111111111111114" width="2.295918367346939" x="89.69387755102042" y="84.88888888888889" class="karmagraph__bars_plus"></rect>
+                <rect height="22.044444444444444" width="2.295918367346939" x="91.98979591836735" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="74.4" width="2.295918367346939" x="94.28571428571429" y="65.6" class="karmagraph__bars_plus"></rect>
+                <rect height="49.6" width="2.295918367346939" x="96.58163265306123" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="44.08888888888889" width="2.295918367346939" x="98.87755102040816" y="95.91111111111111" class="karmagraph__bars_plus"></rect>
+                <rect height="27.555555555555557" width="2.295918367346939" x="101.1734693877551" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="33.06666666666667" width="2.295918367346939" x="103.46938775510205" y="106.93333333333334" class="karmagraph__bars_plus"></rect>
+                <rect height="8.266666666666667" width="2.295918367346939" x="105.76530612244899" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="38.577777777777776" width="2.295918367346939" x="108.06122448979593" y="101.42222222222222" class="karmagraph__bars_plus"></rect>
+                <rect height="19.288888888888888" width="2.295918367346939" x="110.35714285714286" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="33.06666666666667" width="2.295918367346939" x="112.6530612244898" y="106.93333333333334" class="karmagraph__bars_plus"></rect>
+                <rect height="11.022222222222222" width="2.295918367346939" x="114.94897959183675" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="13.777777777777779" width="2.295918367346939" x="117.24489795918367" y="126.22222222222223" class="karmagraph__bars_plus"></rect>
+                <rect height="2.7555555555555555" width="2.295918367346939" x="119.54081632653062" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="5.511111111111111" width="2.295918367346939" x="121.83673469387756" y="134.48888888888888" class="karmagraph__bars_plus"></rect>
+                <rect height="0" width="2.295918367346939" x="124.1326530612245" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="8.266666666666667" width="2.295918367346939" x="126.42857142857144" y="131.73333333333332" class="karmagraph__bars_plus"></rect>
+                <rect height="2.7555555555555555" width="2.295918367346939" x="128.72448979591837" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="13.777777777777779" width="2.295918367346939" x="131.0204081632653" y="126.22222222222223" class="karmagraph__bars_plus"></rect>
+                <rect height="5.511111111111111" width="2.295918367346939" x="133.31632653061226" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="5.511111111111111" width="2.295918367346939" x="135.6122448979592" y="134.48888888888888" class="karmagraph__bars_plus"></rect>
+                <rect height="2.7555555555555555" width="2.295918367346939" x="137.90816326530614" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="24.8" width="2.295918367346939" x="140.20408163265307" y="115.2" class="karmagraph__bars_plus"></rect>
+                <rect height="19.288888888888888" width="2.295918367346939" x="142.5" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="44.08888888888889" width="2.295918367346939" x="144.79591836734696" y="95.91111111111111" class="karmagraph__bars_plus"></rect>
+                <rect height="30.31111111111111" width="2.295918367346939" x="147.09183673469389" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="57.86666666666667" width="2.295918367346939" x="149.38775510204084" y="82.13333333333333" class="karmagraph__bars_plus"></rect>
+                <rect height="33.06666666666667" width="2.295918367346939" x="151.68367346938777" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="68.88888888888889" width="2.295918367346939" x="153.9795918367347" y="71.11111111111111" class="karmagraph__bars_plus"></rect>
+                <rect height="49.6" width="2.295918367346939" x="156.27551020408163" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="88.17777777777778" width="2.295918367346939" x="158.57142857142858" y="51.82222222222222" class="karmagraph__bars_plus"></rect>
+                <rect height="44.08888888888889" width="2.295918367346939" x="160.8673469387755" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="93.68888888888888" width="2.295918367346939" x="163.16326530612247" y="46.31111111111112" class="karmagraph__bars_plus"></rect>
+                <rect height="24.8" width="2.295918367346939" x="165.4591836734694" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="57.86666666666667" width="2.295918367346939" x="167.75510204081633" y="82.13333333333333" class="karmagraph__bars_plus"></rect>
+                <rect height="46.84444444444444" width="2.295918367346939" x="170.05102040816328" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="74.4" width="2.295918367346939" x="172.3469387755102" y="65.6" class="karmagraph__bars_plus"></rect>
+                <rect height="46.84444444444444" width="2.295918367346939" x="174.64285714285717" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="57.86666666666667" width="2.295918367346939" x="176.9387755102041" y="82.13333333333333" class="karmagraph__bars_plus"></rect>
+                <rect height="57.86666666666667" width="2.295918367346939" x="179.23469387755102" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="49.6" width="2.295918367346939" x="181.53061224489798" y="90.4" class="karmagraph__bars_plus"></rect>
+                <rect height="33.06666666666667" width="2.295918367346939" x="183.8265306122449" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="115.73333333333333" width="2.295918367346939" x="186.12244897959187" y="24.266666666666666" class="karmagraph__bars_plus"></rect>
+                <rect height="11.022222222222222" width="2.295918367346939" x="188.4183673469388" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="46.84444444444444" width="2.295918367346939" x="190.71428571428572" y="93.15555555555557" class="karmagraph__bars_plus"></rect>
+                <rect height="33.06666666666667" width="2.295918367346939" x="193.01020408163268" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="27.555555555555557" width="2.295918367346939" x="195.3061224489796" y="112.44444444444444" class="karmagraph__bars_plus"></rect>
+                <rect height="16.533333333333335" width="2.295918367346939" x="197.60204081632654" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="24.8" width="2.295918367346939" x="199.8979591836735" y="115.2" class="karmagraph__bars_plus"></rect>
+                <rect height="13.777777777777779" width="2.295918367346939" x="202.19387755102042" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="22.044444444444444" width="2.295918367346939" x="204.48979591836735" y="117.95555555555555" class="karmagraph__bars_plus"></rect>
+                <rect height="16.533333333333335" width="2.295918367346939" x="206.7857142857143" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="35.82222222222222" width="2.295918367346939" x="209.08163265306123" y="104.17777777777778" class="karmagraph__bars_plus"></rect>
+                <rect height="27.555555555555557" width="2.295918367346939" x="211.3775510204082" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="30.31111111111111" width="2.295918367346939" x="213.67346938775512" y="109.6888888888889" class="karmagraph__bars_plus"></rect>
+                <rect height="5.511111111111111" width="2.295918367346939" x="215.96938775510205" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="13.777777777777779" width="2.295918367346939" x="218.265306122449" y="126.22222222222223" class="karmagraph__bars_plus"></rect>
+                <rect height="2.7555555555555555" width="2.295918367346939" x="220.56122448979593" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="2.7555555555555555" width="2.295918367346939" x="222.8571428571429" y="137.24444444444444" class="karmagraph__bars_plus"></rect>
+                <rect height="2.7555555555555555" width="2.295918367346939" x="225.15306122448982" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="2.7555555555555555" width="2.295918367346939" x="227.44897959183675" y="137.24444444444444" class="karmagraph__bars_plus"></rect>
+                <rect height="2.7555555555555555" width="2.295918367346939" x="229.7448979591837" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="2.7555555555555555" width="2.295918367346939" x="232.04081632653063" y="137.24444444444444" class="karmagraph__bars_plus"></rect>
+                <rect height="0" width="2.295918367346939" x="234.33673469387756" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="13.777777777777779" width="2.295918367346939" x="236.63265306122452" y="126.22222222222223" class="karmagraph__bars_plus"></rect>
+                <rect height="2.7555555555555555" width="2.295918367346939" x="238.92857142857144" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="22.044444444444444" width="2.295918367346939" x="241.22448979591837" y="117.95555555555555" class="karmagraph__bars_plus"></rect>
+                <rect height="2.7555555555555555" width="2.295918367346939" x="243.52040816326533" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="11.022222222222222" width="2.295918367346939" x="245.81632653061226" y="128.9777777777778" class="karmagraph__bars_plus"></rect>
+                <rect height="13.777777777777779" width="2.295918367346939" x="248.11224489795921" y="140" class="karmagraph__bars_minus"></rect>
+                <rect height="0" width="2.295918367346939" x="250.40816326530614" y="140" class="karmagraph__bars_plus"></rect>
+                <rect height="5.511111111111111" width="2.295918367346939" x="252.70408163265307" y="140" class="karmagraph__bars_minus"></rect>
+               </g>
+              </svg> 
+              <div class="karmagraph__description">
+               Транслируются изменения кармы на&nbsp;сайте (повышение и&nbsp;понижение). Данные обновляются каждые четыре часа. В&nbsp;полнолуние на&nbsp;кармаграфе можно наблюдать катаклизмы и&nbsp;волнения.
+              </div>
+             </div> <!---->
+            </section> <!---->
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </main> <!---->
+    </div> 
+    <div class="tm-footer-menu">
+     <div class="tm-page-width">
+      <div class="tm-footer-menu__container">
+       <div class="tm-footer-menu__block">
+        <p class="tm-footer-menu__block-title"> Ваш аккаунт </p> 
+        <div class="tm-footer-menu__block-content">
+         <ul class="tm-footer-menu__list">
+          <li class="tm-footer-menu__list-item"><a href="/kek/v1/auth/habrahabr/?back=/ru/users/&amp;hl=ru" rel="nofollow" target="_self"> Войти </a></li>
+          <li class="tm-footer-menu__list-item"><a href="/kek/v1/auth/habrahabr-register/?back=/ru/users/&amp;hl=ru" rel="nofollow" target="_self"> Регистрация </a></li>
+         </ul>
+        </div>
+       </div>
+       <div class="tm-footer-menu__block">
+        <p class="tm-footer-menu__block-title"> Разделы </p> 
+        <div class="tm-footer-menu__block-content">
+         <ul class="tm-footer-menu__list">
+          <li class="tm-footer-menu__list-item"><a href="/ru/" class="footer-menu__item-link router-link-active"> Публикации </a></li>
+          <li class="tm-footer-menu__list-item"><a href="/ru/news/" class="footer-menu__item-link"> Новости </a></li>
+          <li class="tm-footer-menu__list-item"><a href="/ru/hubs/" class="footer-menu__item-link"> Хабы </a></li>
+          <li class="tm-footer-menu__list-item"><a href="/ru/companies/" class="footer-menu__item-link"> Компании </a></li>
+          <li class="tm-footer-menu__list-item"><a href="/ru/users/" aria-current="page" class="footer-menu__item-link router-link-exact-active router-link-active"> Авторы </a></li>
+          <li class="tm-footer-menu__list-item"><a href="/ru/sandbox/" class="footer-menu__item-link"> Песочница </a></li>
+         </ul>
+        </div>
+       </div>
+       <div class="tm-footer-menu__block">
+        <p class="tm-footer-menu__block-title"> Информация </p> 
+        <div class="tm-footer-menu__block-content">
+         <ul class="tm-footer-menu__list">
+          <li class="tm-footer-menu__list-item"><a href="/ru/docs/help/" class="footer-menu__item-link"> Устройство сайта </a></li>
+          <li class="tm-footer-menu__list-item"><a href="/ru/docs/authors/codex/" class="footer-menu__item-link"> Для авторов </a></li>
+          <li class="tm-footer-menu__list-item"><a href="/ru/docs/companies/corpblogs/" class="footer-menu__item-link"> Для компаний </a></li>
+          <li class="tm-footer-menu__list-item"><a href="/ru/docs/docs/transparency/" class="footer-menu__item-link"> Документы </a></li>
+          <li class="tm-footer-menu__list-item"><a href="https://account.habr.com/info/agreement" target="_blank"> Соглашение </a></li>
+          <li class="tm-footer-menu__list-item"><a href="https://account.habr.com/info/confidential/" target="_blank"> Конфиденциальность </a></li>
+         </ul>
+        </div>
+       </div>
+       <div class="tm-footer-menu__block">
+        <p class="tm-footer-menu__block-title"> Услуги </p> 
+        <div class="tm-footer-menu__block-content">
+         <ul class="tm-footer-menu__list">
+          <li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/corporate-blogs/" target="_blank"> Корпоративный блог </a></li>
+          <li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/advertising/" target="_blank"> Медийная реклама </a></li>
+          <li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/native-special/" target="_blank"> Нативные проекты </a></li>
+          <li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/education-programs/" target="_blank"> Образовательные программы </a></li>
+          <li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/hello-startup/" target="_blank"> Стартапам </a></li>
+          <li class="tm-footer-menu__list-item"><a href="/ru/megaprojects/" class="footer-menu__item-link"> Мегапроекты </a></li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div> 
+    <div class="tm-footer">
+     <div class="tm-page-width">
+      <div class="tm-footer__container">
+       <!----> 
+       <div class="tm-footer__social">
+        <a href="https://www.facebook.com/habrahabr.ru" rel="nofollow noopener noreferrer" target="_blank" class="tm-svg-icon__wrapper tm-social-icons__icon">
+         <svg height="16" width="16" class="tm-svg-img tm-svg-icon">
+          <title>Facebook</title> <use xlink:href="/img/social-icons-sprite.svg#social-logo-facebook"></use>
+         </svg></a><a href="https://twitter.com/habr_com" rel="nofollow noopener noreferrer" target="_blank" class="tm-svg-icon__wrapper tm-social-icons__icon">
+         <svg height="16" width="16" class="tm-svg-img tm-svg-icon">
+          <title>Twitter</title> <use xlink:href="/img/social-icons-sprite.svg#social-logo-twitter"></use>
+         </svg></a><a href="https://vk.com/habr" rel="nofollow noopener noreferrer" target="_blank" class="tm-svg-icon__wrapper tm-social-icons__icon">
+         <svg height="16" width="16" class="tm-svg-img tm-svg-icon">
+          <title>VK</title> <use xlink:href="/img/social-icons-sprite.svg#social-logo-vkontakte"></use>
+         </svg></a><a href="https://telegram.me/habr_com" rel="nofollow noopener noreferrer" target="_blank" class="tm-svg-icon__wrapper tm-social-icons__icon">
+         <svg height="16" width="16" class="tm-svg-img tm-svg-icon">
+          <title>Telegram</title> <use xlink:href="/img/social-icons-sprite.svg#social-logo-telegram"></use>
+         </svg></a><a href="https://www.youtube.com/channel/UCd_sTwKqVrweTt4oAKY5y4w" rel="nofollow noopener noreferrer" target="_blank" class="tm-svg-icon__wrapper tm-social-icons__icon">
+         <svg height="16" width="16" class="tm-svg-img tm-svg-icon">
+          <title>Youtube</title> <use xlink:href="/img/social-icons-sprite.svg#social-logo-youtube"></use>
+         </svg></a><a href="https://zen.yandex.ru/habr" rel="nofollow noopener noreferrer" target="_blank" class="tm-svg-icon__wrapper tm-social-icons__icon">
+         <svg height="16" width="16" class="tm-svg-img tm-svg-icon">
+          <title>Яндекс Дзен</title> <use xlink:href="/img/social-icons-sprite.svg#social-logo-zen"></use>
+         </svg></a>
+       </div> 
+       <div class="v-portal" style="display:none;"></div> <button class="tm-footer__link"><!----> Настройка языка </button> <a href="/ru/feedback/" class="tm-footer__link"> Техническая поддержка </a> <a href="/berserk-mode-nope" class="tm-footer__link"> Вернуться на старую версию </a> 
+       <div class="tm-footer-copyright">
+        <span class="tm-copyright"><span class="tm-copyright__years">© 2006–2023, </span> <span class="tm-copyright__name"><a href="https://company.habr.com/" rel="noopener" target="_blank" class="tm-copyright__link">Habr</a></span></span>
+       </div>
+      </div>
+     </div>
+    </div> <!----> <!---->
+   </div> 
+   <div class="vue-portal-target"></div>
+  </div> 
+  <script>window.__INITIAL_STATE__={"adblock":{"hasAcceptableAdsFilter":false,"hasAdblock":false},"articlesList":{"articlesList":{},"articlesIds":{},"isLoading":false,"pagesCount":{},"route":{},"reasonsList":null,"view":"cards","lastVisitedRoute":{},"ssrCommentsArticleIds":[],"karma":{"userReasonsList":null}},"authorContribution":{"authors":{}},"betaTest":{"currentAnnouncement":null,"announcements":{},"announcementCards":null,"announcementComments":{},"announcementCommentThreads":{},"announcementCommentingStatuses":{},"archivedList":[]},"authorStatistics":{"articleRefs":{},"articleIds":{},"pagesCount":{},"route":{},"viewsCount":[],"maxStatsCount":{}},"career":{"seoLandings":[],"hubs":""},"comments":{"articleComments":{},"articlePinnedComments":{},"searchCommentsResults":null,"pagesCount":null,"commentAccess":{},"scrollParents":{},"pageArticleComments":{"lastViewedComment":0,"postId":null,"lastCommentTimestamp":"","moderated":[],"moderatedIds":[],"commentRoute":""}},"companies":{"companyRefs":{},"companyIds":{},"companyTopIds":{},"pagesCount":{},"companyProfiles":{},"companiesCategories":[],"companiesCategoriesTotalCount":0,"companiesWidgets":{},"companiesWorkers":{},"companiesFans":{},"multiwidgets":{},"route":{},"isLoading":false,"companyWorkersLoading":false,"companyFansLoading":false,"multiwidgetLoading":false,"vacancies":{},"companiesGalleries":{},"companiesBanners":{},"companiesLandingVacancies":{},"companiesTechnologies":{},"workplaceInfo":null},"companyAdmin":{"companyInfo":null,"companyInfoLoading":false,"faqArticles":null,"brandingPreviewImageUrl":null,"jivoStatus":0,"adminNotifications":null},"companiesContribution":{"hubs":{},"flows":{},"companyRefs":{}},"companyHubsContribution":{"contributionRefs":{"hubRefs":{},"hubIds":{}}},"conversation":{"messages":[],"respondent":null,"isLoadMore":false},"conversations":{"conversations":[],"unreadCount":0,"pagesCount":0},"desktopState":{"desktopFl":null,"desktopHl":null,"isChecked":false,"isLoginDemanded":false},"docs":{"menu":{},"articles":{},"mainMenu":[],"loading":{"main":false,"dropdown":false,"article":false}},"feature":{"isProbablyVisible":true},"flows":{"updates":{"countNewPostsBySubscription":null,"countNewPostsAll":83,"countNewNewsAll":42},"flows":[{"alias":"develop","id":"1","route":{"name":"FLOW_PAGE","params":{"flowName":"develop"}}},{"alias":"admin","id":"6","route":{"name":"FLOW_PAGE","params":{"flowName":"admin"}}},{"alias":"design","id":"2","route":{"name":"FLOW_PAGE","params":{"flowName":"design"}}},{"alias":"management","id":"3","route":{"name":"FLOW_PAGE","params":{"flowName":"management"}}},{"alias":"marketing","id":"4","route":{"name":"FLOW_PAGE","params":{"flowName":"marketing"}}},{"alias":"popsci","id":"7","route":{"name":"FLOW_PAGE","params":{"flowName":"popsci"}}}]},"global":{"isPwa":false,"device":"desktop","isHabrCom":true},"hubs":{"hubRefs":{},"hubIds":{},"pagesCount":{},"isLoading":false,"route":{}},"hubsBlock":{"hubRefs":{},"hubIds":{}},"i18n":{"fl":"ru","hl":"ru"},"info":{"infoPage":{},"isLoading":true},"location":{"urlStruct":{"protocol":null,"slashes":null,"auth":null,"host":null,"port":null,"hostname":null,"hash":null,"search":null,"query":{},"pathname":null,"path":null,"href":""}},"me":{"user":null,"uuid":null,"ppgDemanded":false,"karmaResetInfo":{"canReincarnate":null,"wasReincarnated":null,"currentScore":null},"notes":null},"modal":{"modals":[]},"mostReadingList":{"mostReadingListIds":[],"mostReadingListRefs":null,"promoPost":null},"ppa":{"articles":{},"card":null,"transactions":null,"totalTransactions":null,"isAccessible":null},"projectsBlocks":{"activeBlocks":{}},"promoData":{"isLoading":false,"hasLoaded":false,"featurer":null,"megaposts":null,"promoLinks":null,"promoPosts":null},"pullRefresh":{"shouldRefresh":false},"sandbox":{"articleIds":[],"articleRefs":{},"pagesCount":null,"route":{},"lastVisitedRoute":{},"isLoading":false},"search":{"searchQueryError":null},"settingsOther":{"inputs":{"uiLang":{"errors":[],"ref":null,"value":""},"articlesLangEnglish":{"errors":[],"ref":null,"value":false},"articlesLangRussian":{"errors":[],"ref":null,"value":false},"agreement":{"errors":[],"ref":null,"value":false},"email":{"errors":[],"ref":null,"value":true},"digest":{"errors":[],"ref":null,"value":true}}},"similarList":{"similarListIds":[],"similarListRefs":null},"ssr":{"error":null,"isDataLoaded":false,"isDataLoading":false,"isHydrationFailed":false,"isServer":false},"stories":{"stories":[{"id":"story-342","author":{"logo":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fe4d\u002F768\u002F339\u002Fe4d7683394609f7e721d8e3378a1d8c8.png","title":"Хабр","link":null},"title":"Хабраслизень читает комментарии","lang":"ru","startTime":"2023-03-31T14:11:00+03:00","finishTime":"2023-04-07T13:33:47+03:00","slides":[{"id":"story-342_1","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fc73\u002F0e8\u002F41c\u002Fc730e841cd67685c580b306db075c54a.png","button":null},{"id":"story-342_2","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fe5d\u002Fb73\u002F117\u002Fe5db73117fb6cd73a688823fc32cc360.png","button":{"title":"Читать","link":"https:\u002F\u002Fu.habr.com\u002Fcom-1","colorType":"dark"}},{"id":"story-342_3","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F9d4\u002Faec\u002F758\u002F9d4aec758729a2b9ccbe42be200233ff.png","button":{"title":"К посту","link":"https:\u002F\u002Fu.habr.com\u002Fcom-2","colorType":"dark"}},{"id":"story-342_4","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fc24\u002F2d9\u002F8af\u002Fc242d98afc8e68e44969cdb864bd2f3f.png","button":{"title":"Смотреть","link":"https:\u002F\u002Fu.habr.com\u002Fcom-3","colorType":"dark"}},{"id":"story-342_5","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fbd3\u002F1ba\u002F153\u002Fbd31ba153918d47ba0fbe67feeca1d98.png","button":{"title":"Читать комменты","link":"https:\u002F\u002Fu.habr.com\u002Fcom-4","colorType":"dark"}},{"id":"story-342_6","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F204\u002Fc96\u002F461\u002F204c964613bf65d3217cc56c753c890a.png","button":{"title":"К посту","link":"https:\u002F\u002Fu.habr.com\u002Fcom-5","colorType":"dark"}}]},{"id":"story-340","author":{"logo":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F69f\u002F045\u002F6b8\u002F69f0456b816950deed68b2f252103517.png","title":"Хабр","link":null},"title":"У вас спина белая","lang":"ru","startTime":"2023-03-31T12:00:00+03:00","finishTime":"2023-04-09T11:35:00+03:00","slides":[{"id":"story-340_1","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F698\u002F4dc\u002F390\u002F6984dc390750b5dc79c7455585f4c023.jpg","button":null},{"id":"story-340_2","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F766\u002F491\u002Ff9c\u002F766491f9cf4feb63a279c869797a1c1d.jpg","button":{"title":"Мяу!","link":"https:\u002F\u002Fu.habr.com\u002F1ap_01","colorType":"light"}},{"id":"story-340_3","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F42e\u002Fba8\u002Fded\u002F42eba8dedff6fe67558e1e275ea45a87.jpg","button":{"title":"Как это?","link":"https:\u002F\u002Fu.habr.com\u002F1ap_02","colorType":"light"}},{"id":"story-340_4","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F07e\u002F82c\u002Fb9a\u002F07e82cb9aac8be25d4170acde8df1be4.jpg","button":{"title":"История с картинками","link":"https:\u002F\u002Fu.habr.com\u002F1ap_03","colorType":"light"}},{"id":"story-340_5","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fdd2\u002Fcd9\u002Ffc5\u002Fdd2cd9fc55be5940f58cd8ffb6f93512.jpg","button":{"title":"Все истории","link":"https:\u002F\u002Fu.habr.com\u002F1ap_04","colorType":"light"}},{"id":"story-340_6","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F417\u002Ffcb\u002F031\u002F417fcb03120b16332bab2285a523007e.jpg","button":{"title":"Найти объявление","link":"https:\u002F\u002Fu.habr.com\u002F1ap_05","colorType":"light"}},{"id":"story-340_7","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F23c\u002Fad8\u002F173\u002F23cad8173e77806710824eb7d6a46540.jpg","button":{"title":"Ревью","link":"https:\u002F\u002Fu.habr.com\u002F1ap_06","colorType":"light"}},{"id":"story-340_8","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F2b7\u002Ff29\u002Fc3b\u002F2b7f29c3b55f335413ee5d7554cbfbda.jpg","button":{"title":"Таков путь","link":"https:\u002F\u002Fu.habr.com\u002F1ap_07","colorType":"light"}},{"id":"story-340_9","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fa86\u002F818\u002F613\u002Fa868186133404a5546241f6b19cebc68.jpg","button":{"title":"Старое доброе","link":"https:\u002F\u002Fu.habr.com\u002F1ap_08","colorType":"light"}}]},{"id":"story-338","author":{"logo":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Ff0b\u002F237\u002Ff40\u002Ff0b237f402283077e1a7e0f9fbc70743.png","title":"Хабр Карьера","link":"https:\u002F\u002Fu.habr.com\u002FYNULJ"},"title":"Хабр Эксперты: IT-менторство на Хабр Карьере","lang":"ru","startTime":"2023-03-30T10:46:00+03:00","finishTime":"2023-04-06T23:59:35+03:00","slides":[{"id":"story-338_1","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F367\u002F1c9\u002F91d\u002F3671c991d736413973edf075eab83548.png","button":null},{"id":"story-338_2","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F5bf\u002F30a\u002F84b\u002F5bf30a84bc2cb5812bb3531fe3fc5770.png","button":{"title":"Подробности","link":"https:\u002F\u002Fu.habr.com\u002FYNULJ","colorType":"dark"}},{"id":"story-338_3","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F20d\u002F617\u002F266\u002F20d617266509c07453b09c6f489ff62e.png","button":{"title":"Читать пост","link":"https:\u002F\u002Fu.habr.com\u002FYNULJ","colorType":"dark"}},{"id":"story-338_4","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F557\u002Fc5b\u002Fa76\u002F557c5ba765345c8a64efd8b92e5f776c.png","button":{"title":"Подробнее","link":"https:\u002F\u002Fu.habr.com\u002FYNULJ","colorType":"dark"}}]},{"id":"story-336","author":{"logo":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fe96\u002F77e\u002F3c3\u002Fe9677e3c335e084600568f5d07519a08.png","title":"Хабр Новости","link":"https:\u002F\u002Fu.habr.com\u002FEsD3z"},"title":"3D-печать батарей в космосе","lang":"ru","startTime":"2023-03-29T12:51:00+03:00","finishTime":"2023-04-05T12:51:37+03:00","slides":[{"id":"story-336_1","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fc4a\u002Fcb3\u002Fac3\u002Fc4acb3ac314eeb5301477ffb0237d458.jpg","button":{"title":"Читать","link":"https:\u002F\u002Fu.habr.com\u002FEsD3z","colorType":"dark"}},{"id":"story-336_2","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F347\u002F262\u002F09a\u002F34726209a5b386ba70c611f648eebc82.jpg","button":{"title":"Подробнее","link":"https:\u002F\u002Fu.habr.com\u002FEsD3z","colorType":"light"}},{"id":"story-336_3","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Ffb4\u002F88c\u002F953\u002Ffb488c953829d180cf424ebd04b8639a.jpg","button":{"title":"Вот это новость!","link":"https:\u002F\u002Fu.habr.com\u002FEsD3z","colorType":"light"}}]},{"id":"story-334","author":{"logo":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fab7\u002Fbbc\u002F4d9\u002Fab7bbc4d96309cf2dbeb6882320c8570.png","title":"Хабр Новости","link":"https:\u002F\u002Fu.habr.com\u002FtLAaY"},"title":"ChatGPT под MS-DOS","lang":"ru","startTime":"2023-03-29T12:00:00+03:00","finishTime":"2023-04-07T11:56:00+03:00","slides":[{"id":"story-334_1","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fa72\u002Fa97\u002F1cb\u002Fa72a971cbff134b2d36f2d46c4c23752.jpg","button":{"title":"Читать","link":"https:\u002F\u002Fu.habr.com\u002FtLAaY","colorType":"light"}},{"id":"story-334_2","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F359\u002F4a9\u002F2de\u002F3594a92de5a4bc996fd69f6569873e5b.jpg","button":{"title":"Подробнее","link":"https:\u002F\u002Fu.habr.com\u002FtLAaY","colorType":"light"}},{"id":"story-334_3","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F7f2\u002F202\u002F088\u002F7f220208812d8fe2f53c4e2cd51d5595.jpg","button":{"title":"Подробнее","link":"https:\u002F\u002Fu.habr.com\u002FtLAaY","colorType":"light"}}]},{"id":"story-332","author":{"logo":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fc3e\u002Fea3\u002F743\u002Fc3eea3743a462dce463d8941f1e7055d.png","title":"Сезоны Хабра","link":"https:\u002F\u002Fu.habr.com\u002Fmls_main"},"title":"Сезон ML: Я здесь в первый раз","lang":"ru","startTime":"2023-03-28T17:50:00+03:00","finishTime":"2023-04-03T17:50:00+03:00","slides":[{"id":"story-332_1","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F05f\u002F3dc\u002F08f\u002F05f3dc08f283ad66672fd7acc5f1238c.jpg","button":null},{"id":"story-332_2","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fbb3\u002F600\u002F617\u002Fbb3600617904fe45b472a1e6d2897747.jpg","button":{"title":"Узнать","link":"https:\u002F\u002Fu.habr.com\u002Fmls_01","colorType":"light"}},{"id":"story-332_3","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F16d\u002F87d\u002F1d8\u002F16d87d1d8326d2aaf2cce58973d05733.jpg","button":{"title":"Изучить","link":"https:\u002F\u002Fu.habr.com\u002Fmls02","colorType":"light"}},{"id":"story-332_4","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fe27\u002Fca3\u002F0a0\u002Fe27ca30a0ba5980229c76e3b463157ac.jpg","button":{"title":"Ух ты!","link":"https:\u002F\u002Fu.habr.com\u002Fmls04","colorType":"light"}},{"id":"story-332_5","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fdc3\u002Fa70\u002Ff36\u002Fdc3a70f3639e01e5a9813a4888ffff05.jpg","button":{"title":"К обучению","link":"https:\u002F\u002Fu.habr.com\u002Fmls05","colorType":"light"}},{"id":"story-332_6","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F61e\u002F2e7\u002F38c\u002F61e2e738cb78d101859556054cade640.jpg","button":{"title":"Играем с компьютером","link":"https:\u002F\u002Fu.habr.com\u002Fmls06","colorType":"light"}},{"id":"story-332_7","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fd40\u002F9fb\u002Fd9f\u002Fd409fbd9fb28c9e0be4515b29b845dcd.jpg","button":{"title":"Быстрее!","link":"https:\u002F\u002Fu.habr.com\u002Fmls07","colorType":"light"}},{"id":"story-332_8","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F4cf\u002F6dc\u002F4b8\u002F4cf6dc4b8e6616c524a30f09a8f20414.jpg","button":{"title":"Вдохновляемся","link":"https:\u002F\u002Fu.habr.com\u002Fmls09","colorType":"light"}},{"id":"story-332_9","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F9b0\u002Fba2\u002Fafb\u002F9b0ba2afb0391b268ab03ab852974b13.jpg","button":{"title":"Прочитать","link":"https:\u002F\u002Fu.habr.com\u002Fmls10","colorType":"light"}}]},{"id":"story-330","author":{"logo":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F4b6\u002F148\u002F42d\u002F4b614842d840f55e645468b998dd8eaa.png","title":"Хабр Карьера","link":"https:\u002F\u002Fu.habr.com\u002FdgKnF"},"title":"Кем работать в IT: системный аналитик","lang":"ru","startTime":"2023-03-27T14:14:00+03:00","finishTime":"2023-04-03T14:14:15+03:00","slides":[{"id":"story-330_1","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fdc7\u002Fe08\u002Ff7e\u002Fdc7e08f7e99dbf0aea8b369cf57641d8.png","button":{"title":"Читать","link":"https:\u002F\u002Fu.habr.com\u002FdgKnF","colorType":"dark"}},{"id":"story-330_2","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F4f1\u002F17d\u002Fe5f\u002F4f117de5fb951ac202f8418ea2263b66.png","button":{"title":"Подробнее","link":"https:\u002F\u002Fu.habr.com\u002FdgKnF","colorType":"dark"}},{"id":"story-330_3","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F35e\u002Fe05\u002F1c5\u002F35ee051c5ec10ac1483565e1701bf0b8.png","button":{"title":"К посту","link":"https:\u002F\u002Fu.habr.com\u002FdgKnF","colorType":"dark"}},{"id":"story-330_4","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F3d5\u002Fd23\u002F09f\u002F3d5d2309f542fa2bb2d543293c650bde.png","button":{"title":"Читать","link":"https:\u002F\u002Fu.habr.com\u002FdgKnF","colorType":"dark"}},{"id":"story-330_5","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F9f4\u002Fa7c\u002Fa77\u002F9f4a7ca77d81f83d7fa7366deb88910c.png","button":{"title":"Подробности","link":"https:\u002F\u002Fu.habr.com\u002FdgKnF","colorType":"dark"}},{"id":"story-330_6","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F1eb\u002Fbb0\u002F036\u002F1ebbb00368ffd619fc3d6b93a5d48b23.png","button":{"title":"Читать пост","link":"https:\u002F\u002Fu.habr.com\u002FdgKnF","colorType":"dark"}}]},{"id":"story-316","author":{"logo":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F5da\u002Fc64\u002Fd69\u002F5dac64d694253863f7e5990c1fec36a0.png","title":"Сезоны Хабра","link":"https:\u002F\u002Fu.habr.com\u002FMLseas_main"},"title":"Кейсы ML в бизнесе","lang":"ru","startTime":"2023-03-22T13:00:00+03:00","finishTime":"2023-04-09T10:50:00+03:00","slides":[{"id":"story-316_1","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F7d9\u002F36d\u002F3a1\u002F7d936d3a1ea1c6cf17c01ce07eefc775.png","button":null},{"id":"story-316_2","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F697\u002F2d6\u002F1b4\u002F6972d61b45a6f860460931012f81d7ef.png","button":{"title":"Научиться","link":"https:\u002F\u002Fu.habr.com\u002FMLseas_01","colorType":"dark"}},{"id":"story-316_3","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fd7a\u002Fbc2\u002F191\u002Fd7abc2191c87aa1952f177ac3d72aa5f.png","button":{"title":"Узнать ответ","link":"https:\u002F\u002Fu.habr.com\u002FMLseas_02","colorType":"light"}},{"id":"story-316_4","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F029\u002F831\u002Ffc2\u002F029831fc28c569b99285992d5fb6afb4.jpg","button":{"title":"Как это?","link":"https:\u002F\u002Fu.habr.com\u002FMLseas_03","colorType":"light"}},{"id":"story-316_5","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F8a2\u002Fb21\u002Ffe2\u002F8a2b21fe2bb6adb9be30d15e3abd1b03.png","button":{"title":"А что ещё?","link":"https:\u002F\u002Fu.habr.com\u002FMLseas_04","colorType":"light"}},{"id":"story-316_6","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fede\u002F676\u002F079\u002Fede676079c8dbcb467792d71f6f8e2ae.jpg","button":{"title":"И как же?","link":"https:\u002F\u002Fu.habr.com\u002FMLseas_05","colorType":"light"}},{"id":"story-316_7","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F184\u002F277\u002Fbcb\u002F184277bcb11be803fe1033fd5e182833.png","button":{"title":"Буквы и числа","link":"https:\u002F\u002Fu.habr.com\u002FMLseas_06","colorType":"light"}},{"id":"story-316_8","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F531\u002F2a0\u002F5b6\u002F5312a05b6bc043afdf86236836bfb028.png","button":{"title":"Разбираемся","link":"https:\u002F\u002Fu.habr.com\u002FMLseas_07","colorType":"light"}},{"id":"story-316_9","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F32f\u002F8e6\u002Fb63\u002F32f8e6b63ca4642228c671c8328884e3.png","button":{"title":"Читаем","link":"https:\u002F\u002Fu.habr.com\u002FMLseas_08","colorType":"light"}}]},{"id":"story-314","author":{"logo":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fd4c\u002F911\u002F44c\u002Fd4c91144cb05d33315e57be2bfd5af08.png","title":"Хабр","link":null},"title":"Полезная подборка о зрении","lang":"ru","startTime":"2023-03-21T16:00:00+03:00","finishTime":"2023-04-09T23:59:00+03:00","slides":[{"id":"story-314_1","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F4a1\u002Ff41\u002F14d\u002F4a1f4114d49edde48bec833df98ba458.jpg","button":null},{"id":"story-314_2","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F68c\u002Fead\u002F0c9\u002F68cead0c9add87d677e3cdd9a9914bec.jpg","button":{"title":"Присмотреться","link":"https:\u002F\u002Fu.habr.com\u002Fzr_01","colorType":"light"}},{"id":"story-314_3","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F7e0\u002F8a0\u002F304\u002F7e08a0304c22f5cdc700436cdecff97d.jpg","button":{"title":"Читать правила","link":"https:\u002F\u002Fu.habr.com\u002Fzr_02","colorType":"light"}},{"id":"story-314_4","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F189\u002F246\u002Fd5d\u002F189246d5d41e0bad685479a177a5f060.jpg","button":{"title":"Провериться","link":"https:\u002F\u002Fu.habr.com\u002Fzr_03","colorType":"light"}},{"id":"story-314_5","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F464\u002F80e\u002F77d\u002F46480e77d696dafcd61161e4782bae6a.jpg","button":{"title":"Читать пост","link":"https:\u002F\u002Fu.habr.com\u002Fzr_04","colorType":"dark"}},{"id":"story-314_6","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F06a\u002F503\u002Fbf5\u002F06a503bf5ec67255007e1687a2573730.jpg","button":{"title":"Узнать больше","link":"https:\u002F\u002Fu.habr.com\u002Fzr_05","colorType":"light"}},{"id":"story-314_7","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fe5e\u002Fa53\u002Fa0b\u002Fe5ea53a0b6f45d43f893fcf8d6d647da.jpg","button":{"title":"Смотреть туториал","link":"https:\u002F\u002Fu.habr.com\u002Fzr_06","colorType":"light"}},{"id":"story-314_8","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fd42\u002Fa6a\u002F5ed\u002Fd42a6a5edb8845acfc321ba577e51c9e.jpg","button":{"title":"Пример настройки","link":"https:\u002F\u002Fu.habr.com\u002Fzr_07","colorType":"light"}}]},{"id":"story-310","author":{"logo":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F755\u002F06c\u002Fe7f\u002F75506ce7f8701ea8761ea0ac9d2b72d9.png","title":"Хабр","link":null},"title":"Тренируйся: физкульт-подборка","lang":"ru","startTime":"2023-03-17T11:00:44+03:00","finishTime":"2023-04-09T23:59:00+03:00","slides":[{"id":"story-310_1","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F649\u002F416\u002F979\u002F64941697969ed302b95b0a11602221d8.jpg","button":null},{"id":"story-310_2","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F90b\u002F662\u002F984\u002F90b662984b76a7975dc7be8d250cd6b3.jpg","button":{"title":"Вставай на лыжи","link":"https:\u002F\u002Fu.habr.com\u002F8NOwN","colorType":"light"}},{"id":"story-310_3","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F58a\u002F32e\u002Ff76\u002F58a32ef76f19b55c9169dc5d7c1aa42e.jpg","button":{"title":"Воодушевиться","link":"https:\u002F\u002Fu.habr.com\u002Fv7Zfv","colorType":"light"}},{"id":"story-310_4","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F134\u002F46d\u002F40c\u002F13446d40c83ee0e5647aca89c8f22b55.jpg","button":{"title":"Смотреть обзор","link":"https:\u002F\u002Fu.habr.com\u002Fn52KP","colorType":"light"}},{"id":"story-310_5","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F373\u002F0c3\u002Fd52\u002F3730c3d521fc2b7f2b3835ef935f96d3.jpg","button":{"title":"Прогуляться","link":"https:\u002F\u002Fu.habr.com\u002F1Hpbs","colorType":"light"}},{"id":"story-310_6","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fd3c\u002Fb9c\u002Fb42\u002Fd3cb9cb42046eb5b44450aeecd4ef650.jpg","button":{"title":"Подробнее","link":"https:\u002F\u002Fu.habr.com\u002FRZxhy","colorType":"light"}},{"id":"story-310_7","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fbef\u002F940\u002F5ed\u002Fbef9405ed753baca270fef3de37c5735.jpg","button":{"title":"Читать исследование","link":"https:\u002F\u002Fu.habr.com\u002FEMnZT","colorType":"light"}},{"id":"story-310_8","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fb3d\u002Faf4\u002F957\u002Fb3daf495751f36899dc6c7598ef0b42c.jpg","button":{"title":"Поразмыслить","link":"https:\u002F\u002Fu.habr.com\u002FWJzt6","colorType":"light"}}]},{"id":"story-278","author":{"logo":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F3b2\u002F2b9\u002F874\u002F3b22b9874c30d2e95f06e8ba591d7226.png","title":"Хабр","link":"https:\u002F\u002Fhabr.com\u002Fru\u002Fcompany\u002Fhabr\u002Fblog\u002F"},"title":"Схватил за мозг","lang":"ru","startTime":"2023-03-06T11:00:00+03:00","finishTime":"2023-04-09T23:59:00+03:00","slides":[{"id":"story-278_1","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F6d2\u002F515\u002F649\u002F6d2515649a98ebff0fff2c95f13aa9e6.jpg","button":null},{"id":"story-278_2","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F6ba\u002F37c\u002F756\u002F6ba37c75671941bb212e0bf815f99550.jpg","button":{"title":"Что оказалось?","link":"https:\u002F\u002Fu.habr.com\u002Fbrain01","colorType":"light"}},{"id":"story-278_3","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F702\u002Fbe8\u002Fa8f\u002F702be8a8fe21d483936df54dc074b96a.jpg","button":{"title":"Осознать","link":"https:\u002F\u002Fu.habr.com\u002Fbrain02","colorType":"light"}},{"id":"story-278_4","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F9e2\u002F2c2\u002F499\u002F9e22c2499018c37dbb4064053ef7e0a0.jpg","button":{"title":"Отложить таблетку","link":"https:\u002F\u002Fu.habr.com\u002Fbrain03","colorType":"dark"}},{"id":"story-278_5","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F756\u002F85f\u002F99b\u002F75685f99b00f7a2323028948818a1b66.jpg","button":{"title":"Смотреть советы","link":"https:\u002F\u002Fu.habr.com\u002Fbrain04","colorType":"dark"}},{"id":"story-278_6","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F442\u002F9a8\u002F159\u002F4429a8159a4280575a30cf1bbbdb3b08.jpg","button":{"title":"Уделить внимание","link":"https:\u002F\u002Fu.habr.com\u002Fbrain05","colorType":"light"}},{"id":"story-278_7","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F892\u002Fe3e\u002Fa8b\u002F892e3ea8b4ad8934c6858348943804fd.jpg","button":{"title":"Записать нужное","link":"https:\u002F\u002Fu.habr.com\u002Fbrain06","colorType":"light"}},{"id":"story-278_8","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Ffa5\u002Ffe9\u002F7bb\u002Ffa5fe97bb1ec4af1e7b1e164171b795c.jpg","button":{"title":"Какое именно?","link":"https:\u002F\u002Fu.habr.com\u002Fbrain07","colorType":"light"}}]},{"id":"story-152","author":{"logo":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fa49\u002F0d3\u002F609\u002Fa490d3609f29b6dfc53a7b88ab47ca64.png","title":"Хабр","link":"https:\u002F\u002Fu.habr.com\u002Fstory_HiM-anketa"},"title":"Сеньоры — очень странные люди","lang":"ru","startTime":"2023-01-23T11:00:00+03:00","finishTime":"2023-04-30T23:59:00+03:00","slides":[{"id":"story-152_1","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fbbb\u002F901\u002F063\u002Fbbb9010630ae483ed1f41ec4e2572c13.png","button":null},{"id":"story-152_2","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F4f8\u002F66c\u002F14f\u002F4f866c14f0ca8999334438d7f17c0e3a.png","button":null},{"id":"story-152_3","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F6b9\u002Fa07\u002Fa61\u002F6b9a07a612df213ac3a1c179301828df.png","button":null},{"id":"story-152_4","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Ff6b\u002Fadb\u002Fb99\u002Ff6badbb9969d7e34ef4f7492767c6a77.png","button":null},{"id":"story-152_5","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fd9c\u002F9ac\u002F878\u002Fd9c9ac878bec5b494699e0080dd2e813.png","button":null},{"id":"story-152_6","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fdb1\u002Faf9\u002Fc3b\u002Fdb1af9c3bb557f6cee698cf67610f977.png","button":null},{"id":"story-152_7","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002F5cf\u002Fbed\u002F65b\u002F5cfbed65bd20b7051b1aac2b9d6e807e.png","button":null},{"id":"story-152_8","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Ffa8\u002F251\u002F4a9\u002Ffa82514a9471cd455339e97178d8c021.png","button":null},{"id":"story-152_9","image":"https:\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Fupload_files\u002Fbd5\u002F901\u002Fe95\u002Fbd5901e952d9cf638355a3cc8b0c0911.png","button":{"title":"Хочу помочь джуну","link":"https:\u002F\u002Fu.habr.com\u002Fstory_HiM-anketa","colorType":"light"}}]}]},"technotext":{"years":[],"technotextDocForNominees":null,"technotextDocForWinners":null,"technotextInfo":{},"technotextInfoLoading":false,"technotextWinners":{},"technotextWinnersLoading":false},"userHubsContribution":{"contributionRefs":{"hubRefs":{},"hubIds":{}}},"userInvites":{"availableInvites":0,"usedInvitesIds":[],"usedInvitesRefs":{},"usedInvitesPagesCount":0,"unusedInvitesIds":[],"unusedInvitesRefs":{},"unusedInvitesPagesCount":0},"userVotes":{"karmaVotesList":[],"karmaVotesPagesCount":null,"karmaVotesListLoading":false,"commentsVotesList":[],"commentsVotesPagesCount":null,"commentsVotesListLoading":false,"postsVotesList":[],"postsVotesPagesCount":null,"postsVotesListLoading":false,"userVotesList":[],"userVotesPagesCount":null,"userVotesListLoading":false},"users":{"authorRefs":{"stalkermustang":{"id":"393098","alias":"stalkermustang","fullname":"Котенков Игорь","avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002Fad4\u002F51e\u002Ff3f\u002Fad451ef3fee18da09b12dee019fa072e.jpg","speciality":null,"scoreStats":{"score":129,"votesCount":137},"rating":497.1,"invest":null,"relatedData":null,"lastPost":{"id":"722644","timePublished":"2023-03-18T07:43:02+00:00","isCorporative":true,"lang":"ru","titleHtml":"GPT-4: Чему научилась новая нейросеть, и почему это немного жутковато","postType":"article","hubs":[{"id":"20962","alias":"ods","type":"corporative","title":"Блог компании Open Data Science","titleHtml":"Блог компании Open Data Science","isProfiled":false},{"id":"19439","alias":"machine_learning","type":"collective","title":"Машинное обучение","titleHtml":"Машинное обучение","isProfiled":true},{"id":"21922","alias":"artificial_intelligence","type":"collective","title":"Искусственный интеллект","titleHtml":"Искусственный интеллект","isProfiled":false},{"id":"22014","alias":"futurenow","type":"collective","title":"Будущее здесь","titleHtml":"Будущее здесь","isProfiled":false},{"id":"22125","alias":"natural_language_processing","type":"collective","title":"Natural Language Processing","titleHtml":"Natural Language Processing","isProfiled":true}]}},"Greiv656":{"id":"2621023","alias":"Greiv656","fullname":"Антон","avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002Facc\u002Fe2a\u002F876\u002Facce2a87690312d07dd67fadcfb2b339.jpg","speciality":"Юзер","scoreStats":{"score":112,"votesCount":160},"rating":378.5,"invest":null,"relatedData":null,"lastPost":{"id":"725320","timePublished":"2023-03-31T01:19:52+00:00","isCorporative":true,"lang":"ru","titleHtml":"Тройные зарплаты для инженеров и национальный инструментарий: как Китай решает проблему производства чипов","postType":"article","hubs":[{"id":"14740","alias":"selectel","type":"corporative","title":"Блог компании Selectel","titleHtml":"Блог компании Selectel","isProfiled":false},{"id":"20688","alias":"research","type":"collective","title":"Исследования и прогнозы в IT","titleHtml":"Исследования и прогнозы в IT","isProfiled":true},{"id":"21484","alias":"electronics","type":"collective","title":"Производство и разработка электроники","titleHtml":"Производство и разработка электроники","isProfiled":true}]}},"Red_Lemur":{"id":"5831","alias":"Red_Lemur","fullname":"Red_Lemur","avatarUrl":null,"speciality":"Пользователь","scoreStats":{"score":65,"votesCount":89},"rating":361,"invest":null,"relatedData":null,"lastPost":{"id":"725240","timePublished":"2023-03-28T08:18:25+00:00","isCorporative":false,"lang":"ru","titleHtml":"Разумно ли обманывать в цифровой век?","postType":"article","hubs":[{"id":"20710","alias":"internetmarketing","type":"collective","title":"Интернет-маркетинг","titleHtml":"Интернет-маркетинг","isProfiled":true},{"id":"20720","alias":"contentmarketing","type":"collective","title":"Контент-маркетинг","titleHtml":"Контент-маркетинг","isProfiled":true},{"id":"20752","alias":"business_models","type":"collective","title":"Бизнес-модели","titleHtml":"Бизнес-модели","isProfiled":true}]}},"vvvphoenix":{"id":"2356311","alias":"vvvphoenix","fullname":"Валерий Черепенников","avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002Ff75\u002F4c6\u002Ff8f\u002Ff754c6f8f21d710c31721a93443113fe.jpg","speciality":"Vice President NNRC, Советник Губернатора НО","scoreStats":{"score":173,"votesCount":507},"rating":290.6,"invest":null,"relatedData":null,"lastPost":{"id":"724856","timePublished":"2023-03-26T18:04:32+00:00","isCorporative":false,"lang":"ru","titleHtml":"Made at Intel. Молитвы, энтузиасты и разбитые лбы","postType":"article","hubs":[{"id":"20736","alias":"hr_management","type":"collective","title":"Управление персоналом","titleHtml":"Управление персоналом","isProfiled":true},{"id":"20742","alias":"read","type":"collective","title":"Читальный зал","titleHtml":"Читальный зал","isProfiled":false},{"id":"21906","alias":"history","type":"collective","title":"История IT","titleHtml":"История IT","isProfiled":false},{"id":"22026","alias":"itcompanies","type":"collective","title":"IT-компании","titleHtml":"IT-компании","isProfiled":false}]}},"dust70":{"id":"3340977","alias":"dust70","fullname":"Дмитрий Усталов","avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002F6d1\u002F777\u002Fe13\u002F6d1777e132cdf566cabac609ada4e167.png","speciality":"Инженер АСУ ТП","scoreStats":{"score":73,"votesCount":75},"rating":263.7,"invest":null,"relatedData":null,"lastPost":{"id":"722718","timePublished":"2023-03-21T07:04:25+00:00","isCorporative":true,"lang":"ru","titleHtml":"Сколько стоит умный дом? Рассказываю, как строил свой и что получилось за 1000 руб.\u002Fм²","postType":"article","hubs":[{"id":"21732","alias":"wirenboard","type":"corporative","title":"Блог компании Wiren Board","titleHtml":"Блог компании Wiren Board","isProfiled":false},{"id":"21966","alias":"home_automation","type":"collective","title":"Умный дом","titleHtml":"Умный дом","isProfiled":false},{"id":"21970","alias":"internet_of_things","type":"collective","title":"Интернет вещей","titleHtml":"Интернет вещей","isProfiled":false},{"id":"21976","alias":"DIY","type":"collective","title":"DIY или Сделай сам","titleHtml":"DIY или Сделай сам","isProfiled":false},{"id":"22113","alias":"engineering_systems","type":"collective","title":"Инженерные системы","titleHtml":"Инженерные системы","isProfiled":true}]}},"RationalAnswer":{"id":"2321289","alias":"RationalAnswer","fullname":"Павел Комаровский","avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002Fe54\u002F688\u002F8ae\u002Fe546888aed94c31b9d15b7fa3d86f381.jpg","speciality":"Рационалист","scoreStats":{"score":366,"votesCount":800},"rating":249.5,"invest":null,"relatedData":null,"lastPost":{"id":"725498","timePublished":"2023-03-29T04:58:51+00:00","isCorporative":false,"lang":"ru","titleHtml":"США объявили войну крупнейшей криптобирже Binance: регулирование крипты по-американски","postType":"article","hubs":[{"id":"21928","alias":"finance","type":"collective","title":"Финансы в IT","titleHtml":"Финансы в IT","isProfiled":false},{"id":"21986","alias":"cryptocurrency","type":"collective","title":"Криптовалюты","titleHtml":"Криптовалюты","isProfiled":false}]}},"aGGre55or":{"id":"1117918","alias":"aGGre55or","fullname":null,"avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002Fa21\u002F1b5\u002F1a7\u002Fa211b51a792823b523a93fa9126b8f6e.png","speciality":null,"scoreStats":{"score":42,"votesCount":68},"rating":244.2,"invest":null,"relatedData":null,"lastPost":{"id":"724460","timePublished":"2023-03-24T05:01:31+00:00","isCorporative":false,"lang":"ru","titleHtml":"ChatGPT провалил тест на ручник","postType":"article","hubs":[{"id":"19439","alias":"machine_learning","type":"collective","title":"Машинное обучение","titleHtml":"Машинное обучение","isProfiled":true},{"id":"21922","alias":"artificial_intelligence","type":"collective","title":"Искусственный интеллект","titleHtml":"Искусственный интеллект","isProfiled":false},{"id":"21990","alias":"brain","type":"collective","title":"Мозг","titleHtml":"Мозг","isProfiled":false}]}},"alizar":{"id":"5","alias":"alizar","fullname":"Анатолий Ализар","avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002Fcc3\u002F97d\u002F54c\u002Fcc397d54c2161005908a3034c5fabbea.png","speciality":"автор, фрилансер","scoreStats":{"score":983,"votesCount":4165},"rating":237,"invest":null,"relatedData":null,"lastPost":{"id":"724340","timePublished":"2023-03-27T09:00:01+00:00","isCorporative":true,"lang":"ru","titleHtml":"Аппаратные закладки под микроскопом. Обнаружение","postType":"article","hubs":[{"id":"19791","alias":"ruvds","type":"corporative","title":"Блог компании RUVDS.com","titleHtml":"Блог компании RUVDS.com","isProfiled":false},{"id":"50","alias":"infosecurity","type":"collective","title":"Информационная безопасность","titleHtml":"Информационная безопасность","isProfiled":true},{"id":"21484","alias":"electronics","type":"collective","title":"Производство и разработка электроники","titleHtml":"Производство и разработка электроники","isProfiled":true},{"id":"21898","alias":"hardware","type":"collective","title":"Компьютерное железо","titleHtml":"Компьютерное железо","isProfiled":false},{"id":"22016","alias":"easyelectronics","type":"collective","title":"Электроника для начинающих","titleHtml":"Электроника для начинающих","isProfiled":false}]}},"Tzimie":{"id":"1887331","alias":"Tzimie","fullname":"Дмитрий EvilDBA","avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002F677\u002F710\u002F2de\u002F6777102dec8cce4617662727d54b9a84.png","speciality":"DBA","scoreStats":{"score":333,"votesCount":561},"rating":234.3,"invest":null,"relatedData":null,"lastPost":{"id":"724702","timePublished":"2023-03-26T16:45:45+00:00","isCorporative":false,"lang":"ru","titleHtml":"Дефрагментация таблиц в высоко нагруженных базах данных (MSSQL)","postType":"article","hubs":[{"id":"4","alias":"hi","type":"collective","title":"Высокая производительность","titleHtml":"Высокая производительность","isProfiled":true},{"id":"594","alias":"sql","type":"collective","title":"SQL","titleHtml":"SQL","isProfiled":true},{"id":"8880","alias":"server_side_optimization","type":"collective","title":"Серверная оптимизация","titleHtml":"Серверная оптимизация","isProfiled":true},{"id":"17378","alias":"mssql","type":"collective","title":"Microsoft SQL Server","titleHtml":"Microsoft SQL Server","isProfiled":true}]}},"Doctor_IT":{"id":"1972629","alias":"Doctor_IT","fullname":"Влад Ефименко","avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002Fdc0\u002F53c\u002F6ea\u002Fdc053c6eae54a82bdee1862430f51afc.jpg","speciality":"Технический писатель","scoreStats":{"score":79,"votesCount":113},"rating":217.7,"invest":null,"relatedData":null,"lastPost":{"id":"725234","timePublished":"2023-03-28T09:12:50+00:00","isCorporative":true,"lang":"ru","titleHtml":"Способы организации инфраструктуры с базами данных: от простого к сложному и эффективному","postType":"article","hubs":[{"id":"14740","alias":"selectel","type":"corporative","title":"Блог компании Selectel","titleHtml":"Блог компании Selectel","isProfiled":false},{"id":"6398","alias":"it-infrastructure","type":"collective","title":"IT-инфраструктура","titleHtml":"IT-инфраструктура","isProfiled":true},{"id":"17123","alias":"network_technologies","type":"collective","title":"Сетевые технологии","titleHtml":"Сетевые технологии","isProfiled":true},{"id":"17681","alias":"db_admins","type":"collective","title":"Администрирование баз данных","titleHtml":"Администрирование баз данных","isProfiled":true}]}},"maxim_babenko":{"id":"1313868","alias":"maxim_babenko","fullname":"Максим Бабенко","avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002F17c\u002Fb3f\u002F4e2\u002F17cb3f4e2d2e9f9320d523b148642f9a.jpg","speciality":"Программист","scoreStats":{"score":75,"votesCount":93},"rating":201,"invest":null,"relatedData":null,"lastPost":{"id":"721526","timePublished":"2023-03-20T10:57:17+00:00","isCorporative":true,"lang":"ru","titleHtml":"YTsaurus: основная система для хранения и обработки данных Яндекса теперь open source","postType":"article","hubs":[{"id":"4991","alias":"yandex","type":"corporative","title":"Блог компании Яндекс","titleHtml":"Блог компании Яндекс","isProfiled":false},{"id":"144","alias":"open_source","type":"collective","title":"Open source","titleHtml":"Open source","isProfiled":true},{"id":"559","alias":"cpp","type":"collective","title":"C++","titleHtml":"C++","isProfiled":true},{"id":"17795","alias":"bigdata","type":"collective","title":"Big Data","titleHtml":"Big Data","isProfiled":true}]}},"Arnak":{"id":"730435","alias":"Arnak","fullname":null,"avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002F58a\u002F0eb\u002Fccf\u002F58a0ebccf811f297b0abb0e857a71078.jpg","speciality":"Пользователь","scoreStats":{"score":161,"votesCount":461},"rating":200.4,"invest":null,"relatedData":null,"lastPost":{"id":"724320","timePublished":"2023-03-23T12:15:10+00:00","isCorporative":true,"lang":"ru","titleHtml":"У животных есть личности. И это ставит науку в тупик","postType":"article","hubs":[{"id":"22506","alias":"getmatch","type":"corporative","title":"Блог компании getmatch","titleHtml":"Блог компании getmatch","isProfiled":false},{"id":"21910","alias":"popular_science","type":"collective","title":"Научно-популярное","titleHtml":"Научно-популярное","isProfiled":false},{"id":"22750","alias":"biology","type":"collective","title":"Биология","titleHtml":"Биология","isProfiled":false}]}},"TLHE":{"id":"1660759","alias":"TLHE","fullname":null,"avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002F896\u002F919\u002F2d0\u002F8969192d0b3a153f7abdb22cfb1effb9.jpg","speciality":"Эргономист-оптимизатор; Python developer","scoreStats":{"score":88,"votesCount":90},"rating":199.2,"invest":null,"relatedData":null,"lastPost":{"id":"723414","timePublished":"2023-03-24T07:01:18+00:00","isCorporative":true,"lang":"ru","titleHtml":"Пятничные клеточные автоматы: циклические конфигурации; камень-ножницы-бумага","postType":"article","hubs":[{"id":"17357","alias":"timeweb","type":"corporative","title":"Блог компании Timeweb Cloud","titleHtml":"Блог компании Timeweb Cloud","isProfiled":false},{"id":"359","alias":"programming","type":"collective","title":"Программирование","titleHtml":"Программирование","isProfiled":true},{"id":"8000","alias":"algorithms","type":"collective","title":"Алгоритмы","titleHtml":"Алгоритмы","isProfiled":true},{"id":"20742","alias":"read","type":"collective","title":"Читальный зал","titleHtml":"Читальный зал","isProfiled":false},{"id":"21910","alias":"popular_science","type":"collective","title":"Научно-популярное","titleHtml":"Научно-популярное","isProfiled":false}]}},"samsergey":{"id":"1382076","alias":"samsergey","fullname":"Сергей Самойленко","avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002F234\u002F002\u002F2cc\u002F2340022cc75806fdd43791b9e18adaff.gif","speciality":"Руководитель, научный сотрудник, преподаватель","scoreStats":{"score":214,"votesCount":218},"rating":197.1,"invest":null,"relatedData":null,"lastPost":{"id":"725996","timePublished":"2023-03-31T02:31:11+00:00","isCorporative":false,"lang":"ru","titleHtml":"Соблюдаем дистанцию, как топологи","postType":"article","hubs":[{"id":"287","alias":"zadachki","type":"collective","title":"Занимательные задачки","titleHtml":"Занимательные задачки","isProfiled":false},{"id":"17812","alias":"maths","type":"collective","title":"Математика","titleHtml":"Математика","isProfiled":true}]}},"bodyawm":{"id":"904279","alias":"bodyawm","fullname":"Богдан","avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002F47b\u002F885\u002Fa9d\u002F47b885a9d839456736ae10b04a0c0011.jpg","speciality":"Программист, люблю копать железо","scoreStats":{"score":151,"votesCount":243},"rating":186.5,"invest":null,"relatedData":null,"lastPost":{"id":"724632","timePublished":"2023-03-30T08:01:05+00:00","isCorporative":true,"lang":"ru","titleHtml":"«Прокачиваем» кнопочный Android смартфон за 13$. Как довести до ума телефон без официальной поддержки?","postType":"article","hubs":[{"id":"17357","alias":"timeweb","type":"corporative","title":"Блог компании Timeweb Cloud","titleHtml":"Блог компании Timeweb Cloud","isProfiled":false},{"id":"36","alias":"linux","type":"collective","title":"Настройка Linux","titleHtml":"Настройка Linux","isProfiled":true},{"id":"7289","alias":"nix","type":"collective","title":"*nix","titleHtml":"*nix","isProfiled":true},{"id":"17107","alias":"android_dev","type":"collective","title":"Разработка под Android","titleHtml":"Разработка под Android","isProfiled":true},{"id":"21908","alias":"smartphones","type":"collective","title":"Смартфоны","titleHtml":"Смартфоны","isProfiled":false}]}},"DAN_SEA":{"id":"883389","alias":"DAN_SEA","fullname":null,"avatarUrl":null,"speciality":"Технологии разработки программного обеспечения","scoreStats":{"score":212,"votesCount":262},"rating":182.1,"invest":null,"relatedData":null,"lastPost":{"id":"724822","timePublished":"2023-03-31T09:00:02+00:00","isCorporative":true,"lang":"ru","titleHtml":"Исследование состава веществ с помощью радиоизлучения: ядерный магнитный резонанс","postType":"article","hubs":[{"id":"19791","alias":"ruvds","type":"corporative","title":"Блог компании RUVDS.com","titleHtml":"Блог компании RUVDS.com","isProfiled":false},{"id":"21910","alias":"popular_science","type":"collective","title":"Научно-популярное","titleHtml":"Научно-популярное","isProfiled":false},{"id":"22010","alias":"Chemistry","type":"collective","title":"Химия","titleHtml":"Химия","isProfiled":false}]}},"MaxRokatansky":{"id":"1547287","alias":"MaxRokatansky","fullname":"OTUS","avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002Fb9f\u002Fbaf\u002F5f9\u002Fb9fbaf5f96ae52973706a0716bd9216e.jpg","speciality":"Редактор","scoreStats":{"score":55,"votesCount":871},"rating":176.5,"invest":null,"relatedData":null,"lastPost":{"id":"726128","timePublished":"2023-03-31T11:45:11+00:00","isCorporative":true,"lang":"ru","titleHtml":"Как не превратить микросервисы в киберпанк-дистопию","postType":"article","hubs":[{"id":"21052","alias":"otus","type":"corporative","title":"Блог компании OTUS","titleHtml":"Блог компании OTUS","isProfiled":false},{"id":"22115","alias":"microservices","type":"collective","title":"Микросервисы","titleHtml":"Микросервисы","isProfiled":true}]}},"Erwinmal":{"id":"2744859","alias":"Erwinmal","fullname":"Алексей Костенков","avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002Fed9\u002F659\u002F70f\u002Fed965970f791e09dfe69376568394582.jpg","speciality":"Рептилоид","scoreStats":{"score":203,"votesCount":343},"rating":174,"invest":null,"relatedData":null,"lastPost":{"id":"724688","timePublished":"2023-03-25T10:00:01+00:00","isCorporative":true,"lang":"ru","titleHtml":"Самые криповые случаи с ИИ: что пугает в нейросетях? Часть 1","postType":"article","hubs":[{"id":"19791","alias":"ruvds","type":"corporative","title":"Блог компании RUVDS.com","titleHtml":"Блог компании RUVDS.com","isProfiled":false},{"id":"20742","alias":"read","type":"collective","title":"Читальный зал","titleHtml":"Читальный зал","isProfiled":false},{"id":"21910","alias":"popular_science","type":"collective","title":"Научно-популярное","titleHtml":"Научно-популярное","isProfiled":false},{"id":"21922","alias":"artificial_intelligence","type":"collective","title":"Искусственный интеллект","titleHtml":"Искусственный интеллект","isProfiled":false},{"id":"22014","alias":"futurenow","type":"collective","title":"Будущее здесь","titleHtml":"Будущее здесь","isProfiled":false}]}},"CyberPaul":{"id":"2678937","alias":"CyberPaul","fullname":"CyberPunk","avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002Fa29\u002Ff41\u002Fb69\u002Fa29f41b69469aedad4276b6e3dea23d4.png","speciality":"Пользователь","scoreStats":{"score":114,"votesCount":202},"rating":172.7,"invest":null,"relatedData":null,"lastPost":{"id":"724046","timePublished":"2023-03-26T08:01:02+00:00","isCorporative":true,"lang":"ru","titleHtml":"50 лет основателю Google Ларри Пейджу","postType":"article","hubs":[{"id":"17357","alias":"timeweb","type":"corporative","title":"Блог компании Timeweb Cloud","titleHtml":"Блог компании Timeweb Cloud","isProfiled":false},{"id":"20742","alias":"read","type":"collective","title":"Читальный зал","titleHtml":"Читальный зал","isProfiled":false},{"id":"21906","alias":"history","type":"collective","title":"История IT","titleHtml":"История IT","isProfiled":false}]}},"saluev":{"id":"570747","alias":"saluev","fullname":"Тигран Салуев","avatarUrl":"\u002F\u002Fhabrastorage.org\u002Fgetpro\u002Fhabr\u002Favatars\u002F74d\u002Fd06\u002F967\u002F74dd06967a1076a76e308363cde1fc4e.jpg","speciality":"Математик-вычислитель","scoreStats":{"score":141,"votesCount":181},"rating":170.1,"invest":null,"relatedData":null,"lastPost":{"id":"719648","timePublished":"2023-03-03T10:43:27+00:00","isCorporative":false,"lang":"ru","titleHtml":"Алгоритмы быстрого умножения чисел: от столбика до Шенхаге-Штрассена","postType":"article","hubs":[{"id":"340","alias":"python","type":"collective","title":"Python","titleHtml":"Python","isProfiled":true},{"id":"8000","alias":"algorithms","type":"collective","title":"Алгоритмы","titleHtml":"Алгоритмы","isProfiled":true},{"id":"17812","alias":"maths","type":"collective","title":"Математика","titleHtml":"Математика","isProfiled":true}]}}},"authorIds":{"USERS":["stalkermustang","Greiv656","Red_Lemur","vvvphoenix","dust70","RationalAnswer","aGGre55or","alizar","Tzimie","Doctor_IT","maxim_babenko","Arnak","TLHE","samsergey","bodyawm","DAN_SEA","MaxRokatansky","Erwinmal","CyberPaul","saluev"]},"pagesCount":{"USERS":5},"authorProfiles":{},"userHubs":{},"userInvitations":{},"authorFollowers":{},"authorFollowed":{},"userSpecialization":{},"karmaStats":[{"type":"plus","count":15,"d":"29\u002F03 08:00","date":"29\u002F03","color":"#66CC66"},{"type":"minus","count":-9,"d":"29\u002F03 08:00","date":"29\u002F03","color":"#FF9966"},{"type":"plus","count":20,"d":"29\u002F03 09:00","date":"29\u002F03","color":"#66CC66"},{"type":"minus","count":-12,"d":"29\u002F03 09:00","date":"29\u002F03","color":"#FF9966"},{"type":"plus","count":14,"d":"29\u002F03 10:00","date":"29\u002F03","color":"#66CC66"},{"type":"minus","count":-23,"d":"29\u002F03 10:00","date":"29\u002F03","color":"#FF9966"},{"type":"plus","count":27,"d":"29\u002F03 11:00","date":"29\u002F03","color":"#66CC66"},{"type":"minus","count":-12,"d":"29\u002F03 11:00","date":"29\u002F03","color":"#FF9966"},{"type":"plus","count":27,"d":"29\u002F03 12:00","date":"29\u002F03","color":"#66CC66"},{"type":"minus","count":-14,"d":"29\u002F03 12:00","date":"29\u002F03","color":"#FF9966"},{"type":"plus","count":31,"d":"29\u002F03 13:00","date":"29\u002F03","color":"#66CC66"},{"type":"minus","count":-33,"d":"29\u002F03 13:00","date":"29\u002F03","color":"#FF9966"},{"type":"plus","count":26,"d":"29\u002F03 14:00","date":"29\u002F03","color":"#66CC66"},{"type":"minus","count":-14,"d":"29\u002F03 14:00","date":"29\u002F03","color":"#FF9966"},{"type":"plus","count":22,"d":"29\u002F03 15:00","date":"29\u002F03","color":"#66CC66"},{"type":"minus","count":-19,"d":"29\u002F03 15:00","date":"29\u002F03","color":"#FF9966"},{"type":"plus","count":18,"d":"29\u002F03 16:00","date":"29\u002F03","color":"#66CC66"},{"type":"minus","count":-18,"d":"29\u002F03 16:00","date":"29\u002F03","color":"#FF9966"},{"type":"plus","count":27,"d":"29\u002F03 17:00","date":"29\u002F03","color":"#66CC66"},{"type":"minus","count":-11,"d":"29\u002F03 17:00","date":"29\u002F03","color":"#FF9966"},{"type":"plus","count":30,"d":"29\u002F03 18:00","date":"29\u002F03","color":"#66CC66"},{"type":"minus","count":-9,"d":"29\u002F03 18:00","date":"29\u002F03","color":"#FF9966"},{"type":"plus","count":24,"d":"29\u002F03 19:00","date":"29\u002F03","color":"#66CC66"},{"type":"minus","count":-15,"d":"29\u002F03 19:00","date":"29\u002F03","color":"#FF9966"},{"type":"plus","count":14,"d":"29\u002F03 20:00","date":"29\u002F03","color":"#66CC66"},{"type":"minus","count":-10,"d":"29\u002F03 20:00","date":"29\u002F03","color":"#FF9966"},{"type":"plus","count":20,"d":"29\u002F03 21:00","date":"29\u002F03","color":"#66CC66"},{"type":"minus","count":-8,"d":"29\u002F03 21:00","date":"29\u002F03","color":"#FF9966"},{"type":"plus","count":27,"d":"29\u002F03 22:00","date":"29\u002F03","color":"#66CC66"},{"type":"minus","count":-18,"d":"29\u002F03 22:00","date":"29\u002F03","color":"#FF9966"},{"type":"plus","count":16,"d":"29\u002F03 23:00","date":"29\u002F03","color":"#66CC66"},{"type":"minus","count":-10,"d":"29\u002F03 23:00","date":"29\u002F03","color":"#FF9966"},{"type":"plus","count":12,"d":"30\u002F03 00:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-3,"d":"30\u002F03 00:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":14,"d":"30\u002F03 01:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-7,"d":"30\u002F03 01:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":12,"d":"30\u002F03 02:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-4,"d":"30\u002F03 02:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":5,"d":"30\u002F03 03:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-1,"d":"30\u002F03 03:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":2,"d":"30\u002F03 04:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":0,"d":"30\u002F03 04:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":3,"d":"30\u002F03 05:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-1,"d":"30\u002F03 05:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":5,"d":"30\u002F03 06:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-2,"d":"30\u002F03 06:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":2,"d":"30\u002F03 07:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-1,"d":"30\u002F03 07:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":9,"d":"30\u002F03 08:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-7,"d":"30\u002F03 08:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":16,"d":"30\u002F03 09:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-11,"d":"30\u002F03 09:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":21,"d":"30\u002F03 10:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-12,"d":"30\u002F03 10:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":25,"d":"30\u002F03 11:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-18,"d":"30\u002F03 11:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":32,"d":"30\u002F03 12:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-16,"d":"30\u002F03 12:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":34,"d":"30\u002F03 13:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-9,"d":"30\u002F03 13:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":21,"d":"30\u002F03 14:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-17,"d":"30\u002F03 14:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":27,"d":"30\u002F03 15:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-17,"d":"30\u002F03 15:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":21,"d":"30\u002F03 16:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-21,"d":"30\u002F03 16:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":18,"d":"30\u002F03 17:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-12,"d":"30\u002F03 17:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":42,"d":"30\u002F03 18:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-4,"d":"30\u002F03 18:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":17,"d":"30\u002F03 19:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-12,"d":"30\u002F03 19:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":10,"d":"30\u002F03 20:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-6,"d":"30\u002F03 20:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":9,"d":"30\u002F03 21:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-5,"d":"30\u002F03 21:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":8,"d":"30\u002F03 22:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-6,"d":"30\u002F03 22:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":13,"d":"30\u002F03 23:00","date":"30\u002F03","color":"#66CC66"},{"type":"minus","count":-10,"d":"30\u002F03 23:00","date":"30\u002F03","color":"#FF9966"},{"type":"plus","count":11,"d":"31\u002F03 00:00","date":"31\u002F03","color":"#66CC66"},{"type":"minus","count":-2,"d":"31\u002F03 00:00","date":"31\u002F03","color":"#FF9966"},{"type":"plus","count":5,"d":"31\u002F03 01:00","date":"31\u002F03","color":"#66CC66"},{"type":"minus","count":-1,"d":"31\u002F03 01:00","date":"31\u002F03","color":"#FF9966"},{"type":"plus","count":1,"d":"31\u002F03 02:00","date":"31\u002F03","color":"#66CC66"},{"type":"minus","count":-1,"d":"31\u002F03 02:00","date":"31\u002F03","color":"#FF9966"},{"type":"plus","count":1,"d":"31\u002F03 03:00","date":"31\u002F03","color":"#66CC66"},{"type":"minus","count":-1,"d":"31\u002F03 03:00","date":"31\u002F03","color":"#FF9966"},{"type":"plus","count":1,"d":"31\u002F03 04:00","date":"31\u002F03","color":"#66CC66"},{"type":"minus","count":0,"d":"31\u002F03 04:00","date":"31\u002F03","color":"#FF9966"},{"type":"plus","count":5,"d":"31\u002F03 05:00","date":"31\u002F03","color":"#66CC66"},{"type":"minus","count":-1,"d":"31\u002F03 05:00","date":"31\u002F03","color":"#FF9966"},{"type":"plus","count":8,"d":"31\u002F03 06:00","date":"31\u002F03","color":"#66CC66"},{"type":"minus","count":-1,"d":"31\u002F03 06:00","date":"31\u002F03","color":"#FF9966"},{"type":"plus","count":4,"d":"31\u002F03 07:00","date":"31\u002F03","color":"#66CC66"},{"type":"minus","count":-5,"d":"31\u002F03 07:00","date":"31\u002F03","color":"#FF9966"},{"type":"plus","count":0,"d":"31\u002F03 08:00","date":"31\u002F03","color":"#66CC66"},{"type":"minus","count":-2,"d":"31\u002F03 08:00","date":"31\u002F03","color":"#FF9966"}],"statistics":{"total":1495023,"male":207945,"female":23363,"other":1263715},"isLoading":false,"authorFollowersLoading":false,"authorFollowedLoading":false,"userHubsLoading":false,"userInvitationsLoading":false,"route":{"name":"USERS","params":{"hl":"ru"},"query":{}}},"viewport":{"prevScrollY":{},"scrollY":0,"width":0},"tracker":{"items":{},"pagesCache":{},"markedViewedSilently":{},"markedRead":{},"unreadCounters":{"applications":null,"system":null,"mentions":null,"subscribers":null,"posts_and_comments":null},"unviewedCounters":{"applications":null,"system":null,"mentions":null,"subscribers":null,"posts_and_comments":null}}};(function(){var s;(s=document.currentScript||document.scripts[document.scripts.length-1]).parentNode.removeChild(s);}());</script> 
+  <script src="https://assets.habr.com/habr-web/js/chunk-vendors.aa19bb97.js" defer></script>
+  <script src="https://assets.habr.com/habr-web/js/page-flows.540a846c.js" defer></script>
+  <script src="https://assets.habr.com/habr-web/js/app.5b494952.js" defer></script> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-726094-1"></script> 
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    </script> 
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(24049213, "init", {
+      defer:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:false,
+    });
+  </script> 
+  <noscript> 
+   <div> 
+    <img src="https://mc.yandex.ru/watch/24049213" style="position:absolute; left:-9999px;" alt=""> 
+   </div> 
+  </noscript> 
+  <script type="text/javascript">
+      window.addEventListener('load', function () {
+        setTimeout(() => {
+          const img = new Image();
+          img.src = 'https://vk.com/rtrg?p=VK-RTRG-421343-57vKE';
+        }, 0);
+      });
+    </script> 
+  <script src="/js/ads.js" onload="window['zhY4i4nJ9K'] = true"></script>  
+ </body>
+</html>

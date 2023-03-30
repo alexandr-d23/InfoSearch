@@ -1,0 +1,1999 @@
+<!doctype html>
+<html lang="ru-RU" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile# fb: http://ogp.me/ns/fb#"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"> 
+  <link rel="profile" href="http://gmpg.org/xfn/11"> 
+  <link rel="pingback" href="https://xakep.ru/xmlrpc.php"> 
+  <meta name="mailru-verification" content="19264888db6819ce"> 
+  <title>Хакер — Безопасность, разработка, DevOps</title> 
+  <meta name="robots" content="max-image-preview:large"> 
+  <link rel="dns-prefetch" href="//fonts.googleapis.com"> 
+  <link rel="alternate" type="application/rss+xml" title="Хакер » Лента" href="https://xakep.ru/feed/"> 
+  <link rel="alternate" type="application/rss+xml" title="Хакер » Лента комментариев" href="https://xakep.ru/comments/feed/"> <!-- Yandex.Metrika counter --> 
+  <script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(88149838, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script> 
+  <noscript>
+   &lt;div&gt;&lt;img src="https://mc.yandex.ru/watch/88149838" style="position:absolute; left:-9999px;" alt=""&gt;
+  </noscript> <!-- /Yandex.Metrika counter --> 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-6342695-5', {alwaysSendReferrer:true, allowLinker:true});
+  ga('require', 'linkid', 'linkid.js');
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview');
+</script>
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script> 
+  <script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/92401962/xa_mpu-0', [[240, 400], [300, 500]], 'div-gpt-ad-1662012940539-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+  <script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/xakep.ru\/wp-includes\/js\/wp-emoji-release.min.js"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script> 
+  <style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style> 
+  <link rel="stylesheet" id="wp-block-library-css" href="https://xakep.ru/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all"> 
+  <link rel="stylesheet" id="classic-theme-styles-css" href="https://xakep.ru/wp-includes/css/classic-themes.min.css" type="text/css" media="all"> 
+  <style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style> 
+  <link rel="stylesheet" id="foobox-free-min-css" href="https://xakep.ru/wp-content/plugins/foobox-image-lightbox/free/css/foobox.free.min.css" type="text/css" media="all"> 
+  <link rel="stylesheet" id="wp-polls-css" href="https://xakep.ru/wp-content/plugins/wp-polls/polls-css.css" type="text/css" media="all"> 
+  <style id="wp-polls-inline-css" type="text/css">
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 6px;
+	line-height: 8px;
+	height: 8px;
+	background: #dd2200;
+	border: 1px solid #dd2200;
+}
+
+</style> 
+  <link rel="stylesheet" id="Roboto-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic&amp;subset=latin%2Ccyrillic" type="text/css" media="all"> 
+  <link rel="stylesheet" id="woohoo-default-css" href="https://xakep.ru/wp-content/themes/woohoo/style.css" type="text/css" media="all"> 
+  <link rel="stylesheet" id="woohoo-main-css" href="https://xakep.ru/wp-content/themes/woohoo/css/main.css" type="text/css" media="all"> 
+  <link rel="stylesheet" id="prettify-css" href="https://xakep.ru/wp-content/plugins/prettify-code-syntax/stylesheets/default.css" type="text/css" media="all"> 
+  <link rel="stylesheet" id="xakep-css" href="https://xakep.ru/wp-content/plugins/xakep-core/style.css?1680323435" type="text/css" media="all"> 
+  <link rel="stylesheet" id="xakep-xmd-css" href="https://xakep.ru/wp-content/plugins/xakep-core/xmd.css?1680323435" type="text/css" media="all"> 
+  <link rel="stylesheet" id="xakep-banners-css" href="https://xakep.ru/wp-content/plugins/xakep-core/banners/style.css?1680323435" type="text/css" media="all"> 
+  <link rel="stylesheet" id="xakep-ads-css-css" href="https://xakep.ru/wp-content/plugins/xakep-core/ads/style.css" type="text/css" media="all"> 
+  <script type="text/javascript" id="jquery-core-js-extra">
+/* <![CDATA[ */
+var bd_w_blocks = {"bdaia_w_ajax_url":"https:\/\/xakep.ru\/wp-admin\/admin-ajax.php","bdaia_w_ajax_nonce":"6bfe6588fe"};
+var bd_blocks = {"bdaia_ajax_url":"https:\/\/xakep.ru\/wp-admin\/admin-ajax.php","bdaia_ajaxnonce":"6bfe6588fe"};
+/* ]]> */
+</script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/plugins/xakep-core/ads/script.js" id="xakep-ads-js-js"></script> 
+  <script type="text/javascript" id="foobox-free-min-js-before">
+/* Run FooBox FREE (v2.7.17) */
+var FOOBOX = window.FOOBOX = {
+	ready: true,
+	disableOthers: false,
+	o: {wordpress: { enabled: true }, excludes:'.fbx-link,.nofoobox,.nolightbox,a[href*="pinterest.com/pin/create/button/"]', affiliate : { enabled: false }, error: "Could not load the item"},
+	selectors: [
+		".gallery", ".wp-block-gallery", ".wp-caption", ".wp-block-image", "a:has(img[class*=wp-image-])", ".post a:has(img[class*=wp-image-])", ".foobox"
+	],
+	pre: function( $ ){
+		// Custom JavaScript (Pre)
+		
+	},
+	post: function( $ ){
+		// Custom JavaScript (Post)
+		
+		// Custom Captions Code
+		
+	},
+	custom: function( $ ){
+		// Custom Extra JS
+		
+	}
+};
+</script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/plugins/foobox-image-lightbox/free/js/foobox.free.min.js" id="foobox-free-min-js"></script> 
+  <link rel="https://api.w.org/" href="https://xakep.ru/wp-json/">
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://xakep.ru/xmlrpc.php?rsd"> 
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://xakep.ru/wp-includes/wlwmanifest.xml"> 
+  <meta name="generator" content="WordPress 6.1.1"> 
+  <style type="text/css">
+    #wpadminbar .quicklinks {margin: 0 4px;}
+    #wpadminbar .quicklinks a {color: #aaa !important;}
+    #wpadminbar .quicklinks a strong {color: #fff; font-weight: bold;}
+    #wpadminbar .quicklinks li:hover>a,
+    #wpadminbar .quicklinks li a:hover,
+    #wpadminbar .quicklinks li a:focus {color: #fff !important; background-color: transparent !important;}
+    #wpadminbar .quicklinks #wp-admin-bar-bp-login,
+    #wpadminbar .quicklinks #wp-admin-bar-bp-register {display: none;}
+    #wpadminbar .quicklinks #wp-admin-bar-login,
+    #wpadminbar .quicklinks #wp-admin-bar-register {float: right;}
+    @media screen and (max-width: 782px){
+      #wpadminbar .quicklinks #wp-admin-bar-login,
+      #wpadminbar .quicklinks #wp-admin-bar-register {display: block; padding: 0 12px;}
+    }
+    @media print{
+      @page{size:16in 200in;margin:0}
+    }
+  </style> 
+  <script type="text/javascript">
+            /* <![CDATA[ */
+            var sf_position = '0';
+            var sf_templates = "<a href=\"{search_url_escaped}\"><span class=\"sf_text\">\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0432\u0441\u0435 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u044b<\/span><\/a>";
+            var sf_input = '.search-live';
+            jQuery(document).ready(function(){if(typeof jQuery(sf_input).ajaxyLiveSearch === 'function'){
+                jQuery(sf_input).ajaxyLiveSearch({"expand":false,"searchUrl":"https:\/\/xakep.ru\/?s=%s","text":"Search","delay":500,"iwidth":180,"width":315,"ajaxUrl":"https:\/\/xakep.ru\/wp-admin\/admin-ajax.php","rtl":0});
+                jQuery(".live-search_ajaxy-selective-input").keyup(function() {
+                    var width = jQuery(this).val().length * 8;
+                    if(width < 50) {
+                        width = 50;
+                    }
+                    jQuery(this).width(width);
+                });
+                jQuery(".live-search_ajaxy-selective-search").click(function() {
+                    jQuery(this).find(".live-search_ajaxy-selective-input").focus();
+                });
+                jQuery(".live-search_ajaxy-selective-close").click(function() {
+                    jQuery(this).parent().remove();
+                });
+            }});
+            /* ]]> */
+        </script> 
+  <link rel="shortcut icon" href="https://xakep.ru/wp-content/uploads/2016/09/favicon.ico" type="image/x-icon"> 
+  <script type="text/javascript">
+		var bdaia_theme_uri = 'https://xakep.ru/wp-content/themes/woohoo';
+	</script> 
+  <style type="text/css">
+.bdaia-post-content, .bdaia-post-content p, .bdaia-post-content h1, .bdaia-post-content h2, .bdaia-post-content h3, .bdaia-post-content h4, .bdaia-post-content h5, .bdaia-post-content h6, .bdaia-post-content blockquote p, blockquote p {color: 333333;}.bdaia-post-content a{color: #2283B3;}.bdaia-post-content a:hover{color: #3AA0E8;}body {}
+a:hover{color:#dd2200}
+::selection{background:#dd2200}
+a.more-link, button, .btn-link, input[type="button"], input[type="reset"], input[type="submit"] { background-color:#dd2200}
+button:active, .btn-link:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active { background-color:#dd2200}
+.gotop:hover { background-color:#dd2200}
+.top-search { background-color:#dd2200}
+.primary-menu ul#menu-primary > li.current-menu-parent, .primary-menu ul#menu-primary > li.current-menu-ancestor, .primary-menu ul#menu-primary > li.current-menu-item, .primary-menu ul#menu-primary > li.current_page_item { color: #dd2200; }
+.primary-menu ul#menu-primary > li.current-menu-parent > a, .primary-menu ul#menu-primary > li.current-menu-ancestor > a, .primary-menu ul#menu-primary > li.current-menu-item > a, .primary-menu ul#menu-primary > li.current_page_item > a { color: #dd2200; }
+.primary-menu ul#menu-primary > li:hover > a { color: #dd2200; }
+.primary-menu ul#menu-primary li.bd_menu_item ul.sub-menu li:hover > ul.sub-menu, .primary-menu ul#menu-primary li.bd_mega_menu:hover > ul.bd_mega.sub-menu, .primary-menu ul#menu-primary li.bd_menu_item:hover > ul.sub-menu, .primary-menu ul#menu-primary .sub_cats_posts { border-top-color: #dd2200; }
+div.nav-menu.primary-menu-dark a.menu-trigger:hover i, div.nav-menu.primary-menu-light a.menu-trigger:hover i, div.nav-menu.primary-menu-light a.menu-trigger.active i, div.nav-menu.primary-menu-dark a.menu-trigger.active i { background: #dd2200; }
+span.bd-criteria-percentage { background: #dd2200; color: #dd2200; }
+.divider-colors { background: #dd2200; }
+.blog-v1 article .entry-meta a { color: #dd2200; }
+.blog-v1 article .article-formats { background-color: #dd2200; }
+.cat-links { background-color: #dd2200; }
+.new-box { border-top-color: #dd2200; }
+.widget a:hover { color: #dd2200; }
+.timeline-article a:hover i {
+    color: #dd2200;
+}
+h4.block-title:before {background: #dd2200;}
+#header.bdayh-header.a {background: #dd2200;}
+.bdaia-load-comments-btn a:hover,
+.bd-more-btn:hover{
+    border-color: #dd2200 ;
+    background-color: #dd2200 ;
+}
+#bdaia-cats-builder ul.slick-dots li.slick-active button{
+	background: #dd2200;
+}
+.bdaia-cats-more-btn,
+.bbd-post-cat-content, .bbd-post-cat-content a,
+.blog-v1 article a.more-link { color: #dd2200; }
+#big-grids .flex-next:hover,
+#big-grids .flex-prev:hover,
+.featured-title:hover .featured-cat a,
+.featured-title .featured-comment a,
+.big-grids-container .flex-control-paging li a.flex-active,
+.tagcloud a:hover { background: #dd2200; }
+.featured-title:hover .bd-cat-link:before {border-top-color: #dd2200;}
+.featured-title .featured-comment a:after {
+    border-color: #dd2200 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+}
+ul.tabs_nav li.active a { background: #dd2200; }
+.bd-tweets ul.tweet_list li.twitter-item a { color: #dd2200; }
+.widget.bd-login .login_user .bio-author-desc a { color: #dd2200; }
+.comment-reply-link, .comment-reply-link:link, .comment-reply-link:active { color: #dd2200; }
+.gallery-caption { background-color: #dd2200; }
+.slider-flex ol.flex-control-paging li a.flex-active { background: #dd2200; }
+#folio-main ul#filters li a.selected { background: #dd2200; }
+.search-mobile button.search-button { background: #dd2200; }
+.bdaia-pagination .current {
+background-color: #dd2200;
+border-color: #dd2200;
+}
+.gotop{background: #dd2200;}
+.ei-slider-thumbs li.ei-slider-element {background: #dd2200;}
+.ei-title h2,
+.ei-title h3 {border-right-color: #dd2200;}
+.sk-circle .sk-child:before,
+#reading-position-indicator{background: #dd2200;}
+#bdCheckAlso{border-top-color: #dd2200;}
+.woocommerce .product .onsale, .woocommerce .product a.button:hover, .woocommerce .product #respond input#submit:hover, .woocommerce .checkout input#place_order:hover, .woocommerce .woocommerce.widget .button:hover, .single-product .product .summary .cart .button:hover, .woocommerce-cart .woocommerce table.cart .button:hover, .woocommerce-cart .woocommerce .shipping-calculator-form .button:hover, .woocommerce .woocommerce-message .button:hover, .woocommerce .woocommerce-error .button:hover, .woocommerce .woocommerce-info .button:hover, .woocommerce-checkout .woocommerce input.button:hover, .woocommerce-page .woocommerce a.button:hover, .woocommerce-account div.woocommerce .button:hover, .woocommerce.widget .ui-slider .ui-slider-handle, .woocommerce.widget.widget_layered_nav_filters ul li a {background: none repeat scroll 0 0 #dd2200 !important}
+.bdaia-ns-wrap:after {background:#dd2200}
+.bdaia-header-default #navigation .primary-menu ul#menu-primary > li >.bd_mega.sub-menu,
+.bdaia-header-default #navigation .primary-menu ul#menu-primary > li > .sub-menu,
+.bdaia-header-default #navigation .primary-menu ul#menu-primary .sub_cats_posts {border-top-color: #dd2200}
+.bdaia-header-default #navigation .primary-menu ul#menu-primary > li:hover > a:after,
+.bdaia-header-default #navigation .primary-menu ul#menu-primary > li.current-menu-item > a:after,
+.bdaia-header-default #navigation .primary-menu ul#menu-primary > li.current-menu-ancestor > a:after,
+.bdaia-header-default #navigation .primary-menu ul#menu-primary > li.current-menu-parent > a:after {background:#dd2200}
+.bdaia-header-default #navigation .primary-menu #menu-primary > li:hover > a{color: #dd2200}
+.bdayh-click-open{background:#dd2200}
+div.bdaia-alert-new-posts-inner,
+.bdaia-header-default .header-wrapper{border-top-color: #dd2200}
+.bdaia-post-content blockquote{border-color: #dd2200}
+.bdaia-post-content a {color: #dd2200}
+div.widget.bdaia-widget.bdaia-widget-timeline .widget-inner a:hover,
+div.widget.bdaia-widget.bdaia-widget-timeline .widget-inner a:hover span.bdayh-date {
+    color: #dd2200;
+}
+div.widget.bdaia-widget.bdaia-widget-timeline .widget-inner a:hover span.bdayh-date:before {
+    background: #dd2200;
+    border-color: #dd2200;
+}
+#navigation .bdaia-alert-new-posts,
+#navigation .bdaia-cart span.shooping-count,
+div.bdaia-tabs.horizontal-tabs ul.nav-tabs li.current:before,
+div.bdaia-toggle h4.bdaia-toggle-head.toggle-head-open span.bdaia-sio {
+    background: #dd2200;
+}
+.woocommerce .product .onsale, .woocommerce .product a.button:hover, .woocommerce .product #respond input#submit:hover, .woocommerce .checkout input#place_order:hover, .woocommerce .woocommerce.widget .button:hover, .single-product .product .summary .cart .button:hover, .woocommerce-cart .woocommerce table.cart .button:hover, .woocommerce-cart .woocommerce .shipping-calculator-form .button:hover, .woocommerce .woocommerce-message .button:hover, .woocommerce .woocommerce-error .button:hover, .woocommerce .woocommerce-info .button:hover, .woocommerce-checkout .woocommerce input.button:hover, .woocommerce-page .woocommerce a.button:hover, .woocommerce-account div.woocommerce .button:hover, .woocommerce.widget .ui-slider .ui-slider-handle, .woocommerce.widget.widget_layered_nav_filters ul li a {
+    background: none repeat scroll 0 0 #dd2200 !important
+}
+div.bdaia-post-count {border-left-color :#dd2200}
+#bdaia-selector #bdaia-selector-toggle {background:#dd2200}
+div.bdaia-blocks.bdaia-block22 div.block-article hr{background:#dd2200}
+div.bdaia-blocks.bdaia-block22 div.block-article .post-more-btn a,
+div.bdaia-blocks.bdaia-block22 div.block-article .post-more-btn a:hover,
+div.bdaia-blocks.bdaia-block22 div.block-article .bdaia-post-cat-list a,
+div.bdaia-blocks.bdaia-block22 div.block-article .bdaia-post-cat-list a:hover{color:#dd2200}
+body{font-size : 15px; }
+.bdaia-header-default .topbar .top-nav > li > a{font-size : 13px; }
+.bdaia-header-default #navigation .primary-menu #menu-primary > li > a{font-size : 14px; font-weight: bold; }
+#bd-MobileSiderbar #mobile-menu a{font-weight: bolder; }
+.bdaia-crumb-container{font-family: 'Roboto'; }
+.bdaia-feature-posts.bdaia-fp-s1 .bdaia-post-title .entry-title{font-family: 'Roboto'; }
+.bdaia-feature-posts.bdaia-fp-s2 .big-grids .featured-title h2{font-family: 'Roboto'; }
+.bdaia-feature-posts.bdaia-fp-s2 .big-grids.big-grid1 .big-grid-1 .featured-title h2{font-size : 36px; line-height : 36px; }
+.bdaia-feature-posts.bdaia-fp-s3 .big-grids.big-grid2 .big-grid-1 .featured-title h2, .bdaia-feature-posts.bdaia-fp-s3 .big-grids.big-grid2 .big-grid-2 .featured-title h2{font-family: 'Roboto'; font-size : 36px; line-height : 36px; }
+.bd-post-carousel-item article .bd-meta-info-align h3{font-family: 'Roboto'; }
+.bd-cat-link{font-family: 'Roboto'; }
+.bd-more-btn, .bdaia-wb-wrap .bdaia-wb-more-btn .bdaia-wb-mb-inner, .bdaia-load-more-news-btn, button, input[type="button"], input[type="reset"], input[type="submit"]{font-family: 'Roboto'; text-transform: uppercase; }
+.bdaia-block-wrap h4.block-title, .bdaia-template-head h4.block-title{font-family: 'Roboto'; font-size : 26px; line-height : 32px; }
+.bdaia-block-wrap .bdaia-blocks p.block-exb, .bdaia-slider-block .ei-title h3{font-size : 15px; }
+.bdaia-blocks.bdaia-block1 h3{font-family: 'Roboto'; }
+.bdaia-blocks.bdaia-block2 h3{font-family: 'Roboto'; }
+.bdaia-blocks.bdaia-block3 h3{font-family: 'Roboto'; }
+.bdaia-blocks.bdaia-block4 h3{font-family: 'Roboto'; }
+.bdaia-blocks.bdaia-block5 h3{font-family: 'Roboto'; }
+.bdaia-blocks.bdaia-block6 h3{font-family: 'Roboto'; font-weight: bolder; }
+.bdaia-blocks.bdaia-block7 h3{font-family: 'Roboto'; }
+.bdaia-blocks.bdaia-block8 .block-article.block-first-article h3{font-family: 'Roboto'; }
+.bdaia-blocks.bdaia-block9 .block-article.block-first-article h3{font-family: 'Roboto'; }
+.bdaia-blocks.bdaia-block10 .block-article.block-first-article h3{font-family: 'Roboto'; }
+.bdaia-blocks.bdaia-block11 .block-article.block-first-article h3{font-family: 'Roboto'; }
+.bdaia-wb-wrap .bwb-article-content-wrapper footer{font-size : 13px; line-height : 16px; font-weight: normal; }
+.bdaia-wb-wrap .bdaia-wb-article p.block-exb, .check-also-post p{font-size : 14px; }
+div.widget.bdaia-widget .widget-inner li, div.widget.bdaia-widget .widget-inner h3, div.widget.bdaia-widget .widget-inner h4, div.widget.bdaia-widget.bd-tweets .widget-inner p.twitter-text, .check-also-post .post-title, .bdaia-posts-grid-post.post .entry-title, .bdaia-posts-grid-post h3{font-size : 15px; line-height : 18px; font-weight: 400; }
+.bdaia-wb-wrap .bdaia-wb-article.bdaia-wba-big .entry-title, .bdaia-wb-wrap .bdaia-wb-article.bdaia-wba-bigsh .entry-title{font-family: 'Roboto'; }
+.single .bdaia-meta-info, .page .bdaia-meta-info{font-family: 'Roboto'; }
+.bdaia-post-title .entry-title{font-family: 'Roboto'; }
+.single .bdaia-site-content h4.block-title, .page .bdaia-site-content h4.block-title, .bdaia-author-box .authorBlock-header-title{font-family: 'Roboto'; }
+.single .bdaia-site-content .bdaia-post-content, .single .bdaia-site-content .bdaia-post-content p, .page .bdaia-site-content .bdaia-post-content, .page .bdaia-site-content .bdaia-post-content p{font-size : 18px; line-height : 26px; }
+.single .bdaia-site-content .bdaia-post-content blockquote, .single .bdaia-site-content .bdaia-post-content blockquote p, .page .bdaia-site-content .bdaia-post-content blockquote, .page .bdaia-site-content .bdaia-post-content blockquote p{font-size : 16px; line-height : 22px; font-weight: 400; text-transform: none; }
+.bdaia-site-content .bdaia-post-content h1{font-family: 'Roboto'; }
+.bdaia-site-content .bdaia-post-content h2{font-family: 'Roboto'; }
+.bdaia-site-content .bdaia-post-content h3{font-family: 'Roboto'; }
+.bdaia-site-content .bdaia-post-content h4{font-family: 'Roboto'; }
+.bdaia-site-content .bdaia-post-content h5{font-family: 'Roboto'; }
+.bdaia-site-content .bdaia-post-content h6{font-family: 'Roboto'; }
+
+</style><!--[if IE]>
+<script type="text/javascript">jQuery(document).ready(function (){ jQuery(".menu-item").has("ul").children("a").attr("aria-haspopup", "true");});</script>
+<![endif]--> <!--[if lt IE 9]>
+<script src="https://xakep.ru/wp-content/themes/woohoo/js/html5.js"></script>
+<script src="https://xakep.ru/wp-content/themes/woohoo/js/selectivizr-min.js"></script>
+<![endif]--> <!--[if IE 9]>
+<link rel="stylesheet" type="text/css" media="all" href="https://xakep.ru/wp-content/themes/woohoo/css/ie9.css" />
+<![endif]--> <!--[if IE 8]>
+<link rel="stylesheet" type="text/css" media="all" href="https://xakep.ru/wp-content/themes/woohoo/css/ie8.css" />
+<![endif]--> <!--[if IE 7]>
+<link rel="stylesheet" type="text/css" media="all" href="https://xakep.ru/wp-content/themes/woohoo/css/ie7.css" />
+<![endif]--> 
+  <link rel="icon" href="https://xakep.ru/wp-content/uploads/2017/06/xakep-favicon-93x93.png" sizes="32x32"> 
+  <link rel="icon" href="https://xakep.ru/wp-content/uploads/2017/06/xakep-favicon.png" sizes="192x192"> 
+  <link rel="apple-touch-icon" href="https://xakep.ru/wp-content/uploads/2017/06/xakep-favicon.png"> 
+  <meta name="msapplication-TileImage" content="https://xakep.ru/wp-content/uploads/2017/06/xakep-favicon.png"> 
+ </head> 
+ <body class="home blog " itemscope itemtype="http://schema.org/WebPage"> 
+  <div class="page-outer bdaia-header-default bdaia-sidebar-right "> 
+   <div class="bg-cover"></div> 
+   <aside id="bd-MobileSiderbar"> 
+    <div class="search-mobile"> 
+     <form role="search" method="get" class="search-form" action="https://xakep.ru/"> <label> <span class="screen-reader-text">Найти:</span> <input type="search" class="search-field" placeholder="Поиск…" value="" name="s"> </label> 
+      <input type="submit" class="search-submit" value="Поиск"> 
+     </form> 
+    </div> 
+    <div id="mobile-menu"></div> 
+    <div class="widget-social-links bdaia-social-io-colored"> 
+     <div class="sl-widget-inner"> 
+     </div> 
+    </div> 
+   </aside> 
+   <div id="page"> 
+    <div class="inner-wrapper"> 
+     <div id="warp" class="clearfix  bdaia-sidebar-right "> 
+      <div class="header-wrapper bdaia-hibryd-menu"> 
+       <style scoped>.bdaia-header-default #navigation .primary-menu #menu-primary > li > a, .bdaia-header-default #navigation .primary-menu #menu-primary > li > a > *, #navigation .bdaia-cart, .bdaia-nav-search, #navigation .bdaia-random-post{color: #ededed !important;} .bdaia-header-default #navigation .primary-menu #menu-primary > li.bd_mega_menu > a:before, .bdaia-header-default #navigation .primary-menu #menu-primary > li.menu-item-object-category > a:before, .bdaia-header-default #navigation .primary-menu #menu-primary > li.menu-item-has-children > a:before{border-top-color:#ededed;}.bdaia-header-default #navigation .primary-menu #menu-primary > li > a:hover, .bdaia-header-default #navigation .primary-menu #menu-primary > li:hover > a {color: #ffffff;}.bdaia-header-default #navigation .primary-menu ul#menu-primary > li:hover > a, .bdaia-header-default #navigation .primary-menu ul#menu-primary > li.current-menu-item > a, .bdaia-header-default #navigation .primary-menu ul#menu-primary > li.current-menu-ancestor > a, .bdaia-header-default #navigation .primary-menu ul#menu-primary > li.current-menu-parent > a, #navigation .bdaia-cart, .bdaia-nav-search, #navigation .bdaia-random-post {background: #23282D; border : 0 none !important; color: #ffffff;}</style>
+       <div id="xpwdh">
+        Временная скидка 60% <a href="https://xakep.ru/about-magazine/">на&nbsp;годовую подписку</a>!
+       </div>
+       <div class="cfix"></div> 
+       <nav id="navigation" style="background: #32393D; border-top-color:transparent !important"> 
+        <div class="navigation-wrapper" style="background: #32393D; border-top-color:transparent !important"> 
+         <div class="bd-container"> 
+          <div class="bdayh-click-open">
+           <div class="bd-ClickOpen bd-ClickAOpen">
+            <span></span>
+           </div>
+          </div> 
+          <style type="text/css">
+        .bdaia-header-default div.header-wrapper.bdaia-hibryd-menu{z-index:111;}
+        #menu-profile{z-index:1;}
+
+        #menu-profile{position:absolute;top:0;right:0;min-width:120px;max-width:200px;height:60px;color:#fff;padding:10px 0 10px 50px;}
+        #menu-profile a{color:#fff;}
+        #menu-profile .username{display:block;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+        #menu-profile>img{border-radius:50%;border: solid 2px #fff;max-width: 42px;max-height: 42px;position: absolute;top:10px;left:0;}
+        #menu-profile>a{text-decoration:underline;}
+        #menu-profile .login-link{display:block;float:right;margin:10px 5px 0 0;}
+        #menu-profile .links{display:none;position:absolute;width:118px;left:0;top:55px;padding:10px 0;background-color: #32393D;border: solid 1px #fff;border-radius: 6px;color: #fff;box-shadow: 0 5px 15px #000;}
+        #menu-profile .links:before{content:'';display:block;position:absolute;width:16px;height:16px;border:solid 8px transparent;border-bottom-color: #fff;top:-16px;left:12px;}
+        #menu-profile .links a{display:block;padding:2px 15px;}
+        #menu-profile .links .logout{display:none;}
+        #menu-profile .links a:hover{background-color:#23282D;}
+        #menu-profile:hover .links, #menu-profile:focus .links, #menu-profile .links:hover, #menu-profile .links:focus{display:block;}
+
+        #navigation .primary-menu{position:relative !important;}
+        #navigation .secondary-menu{position:relative;height:34px;background-color:#23282D;}
+        #navigation .secondary-menu:before, #navigation .secondary-menu:after{content:'';display:block;position:absolute;top:0;width:100%;height:34px;background-color:#23282D;}
+        #navigation .secondary-menu:before{left:-100%;}
+        #navigation .secondary-menu:after{right:-100%;}
+        #navigation .mobile-subscribe{display:none;text-align:center;height:34px;line-height:34px;color:#fff;text-decoration:underline;}
+        #navigation .secondary-menu #menu-tags{float:left;height:34px;margin:0;}
+        #navigation .secondary-menu #menu-tags li{display:inline-block;}
+        #navigation .secondary-menu #menu-tags li a {display:inline-block;height:34px;line-height:34px;color: #fff;padding:0 10px;}
+        #navigation .secondary-menu #menu-tags li a:hover{background-color:#32393D;}
+        .bdaia-header-default div.header-wrapper.bdaia-hibryd-menu #navigation .bdaia-alert-new-posts, .bdaia-header-default div.header-wrapper.bdaia-hibryd-menu #navigation .bdaia-alert-new-posts span, .bdaia-header-default div.header-wrapper.bdaia-hibryd-menu #navigation .bdaia-random-post, .bdaia-header-default div.header-wrapper.bdaia-hibryd-menu #navigation .bdaia-random-post .bdaia-io, .bdaia-header-default div.header-wrapper.bdaia-hibryd-menu #navigation .bdaia-cart, .bdaia-header-default div.header-wrapper.bdaia-hibryd-menu #navigation .bdaia-cart .bdaia-io, .bdaia-header-default div.header-wrapper.bdaia-hibryd-menu .bdaia-nav-search, .bdaia-header-default div.header-wrapper.bdaia-hibryd-menu .bdaia-nav-search .bdaia-ns-btn.bdaia-io{height:34px;line-height:34px;}
+        .bdaia-header-default div.header-wrapper.bdaia-hibryd-menu .bdaia-nav-search, .bdaia-header-default div.header-wrapper.bdaia-hibryd-menu .bdaia-nav-search .bdaia-ns-btn.bdaia-io{font-size: 18px;}
+        #navigation .bdaia-alert-new-posts {padding: 0 30px; font-weight: 700;}
+        .bdaia-hibryd-menu .bdayh-click-open, .bdaia-hibryd-menu .bd-ClickOpen{width:60px;height:60px;line-height:60px;background-color:transparent;}
+        .bdaia-hibryd-menu .bd-ClickOpen{padding:0 0 0 12px;}
+        .bdaia-hibryd-menu .bd-ClickOpen span{margin:20px 0 0 0 !important;}
+        .bdaia-hibryd-menu .bd-ClickOpen span, .bdaia-hibryd-menu .bd-ClickOpen span:after, .bdaia-hibryd-menu .bd-ClickOpen span:before {height:3px;width:32px;}
+        .bdaia-hibryd-menu .bd-ClickOpen span {margin: 16px 0 0 0;}
+        #bd-MobileSiderbar #menu-tags{display:block;border-top: solid 8px #eee;}
+        #bd-MobileSiderbar #menu-tags li{display:block;}
+
+        @media (min-width: 768px) {
+          .bdaia-header-default .bdayh-click-open {display: none !important;}
+          .bdaia-header-default div.header-wrapper.bdaia-hibryd-menu #navigation div.bdaia-nav-search,
+          .bdaia-header-default div.header-wrapper.bdaia-hibryd-menu #navigation ul#menu-primary{display:block !important;}
+          #navigation .primary-menu {position:absolute;width: 100%;overflow: hidden;}
+          .bdaia-header-default div.header-wrapper.bdaia-hibryd-menu div.logo {
+            float: left;
+            padding-left: 0;
+            padding-right: 10px;
+            max-height: 60px;
+          }
+        }
+        @media (max-width:900px){
+          #menu-profile{width:60px !important;min-width:0;padding:0;right:-2%;}
+          #menu-profile>span, #menu-profile>.logout-link{display:none !important;}
+          #menu-profile .login-link{margin:20px 5px 0 0;}
+          #menu-profile .links{left:auto;right:18px;}
+          #menu-profile .links:before{left:auto;right:12px;}
+          #menu-profile .links .logout{display:block;}
+          #menu-profile>img{display:block !important;}
+        }
+        @media (max-width:767px){
+          #menu-profile{right:-5.5%;}
+          #menu-profile .links a{padding:7px 15px;}
+          #navigation .secondary-menu #menu-tags{display:none;}
+          #navigation .mobile-subscribe{display:block;}
+          body.subscriber #navigation .secondary-menu{display:none!important;}
+        }
+        @media (max-width:479px){
+          #menu-profile{right:0;}
+        }
+        .bdaia-blocks.bdaia-block6{z-index:0;}
+      </style> 
+          <div id="menu-profile" tabindex="0"> <a href="https://xakep.ru/wp-login.php?redirect_to=https%3A%2F%2Fxakep.ru%2F" class="login-link">Вход</a> 
+          </div> 
+          <div class="primary-menu"> 
+           <div class="logo"> 
+            <h1 class="site-title" title="Факультет компьютерной опасности"> <a href="https://xakep.ru/" rel="home"> <img src="https://xakep.ru/wp-content/uploads/2018/09/x-new_6.png" alt="Хакер"> </a> </h1> 
+           </div><!-- End Logo --> 
+           <ul id="menu-primary"> 
+            <li id="menu-item-154670" class=" menu-item menu-item-type-taxonomy menu-item-object-category bd_depth- bd_menu_item "><a href="https://xakep.ru/category/hack/"> <span class="menu-label" style="">Взлом</span></a> 
+             <div class="mega-menu-content"> 
+             </div></li>
+            <li id="menu-item-154675" class=" menu-item menu-item-type-taxonomy menu-item-object-category bd_depth- bd_menu_item "><a href="https://xakep.ru/category/privacy/"> <span class="menu-label" style="">Приватность</span></a> 
+             <div class="mega-menu-content"> 
+             </div></li>
+            <li id="menu-item-154678" class=" menu-item menu-item-type-taxonomy menu-item-object-category bd_depth- bd_menu_item "><a href="https://xakep.ru/category/tricks/"> <span class="menu-label" style="">Трюки</span></a> 
+             <div class="mega-menu-content"> 
+             </div></li>
+            <li id="menu-item-154671" class=" menu-item menu-item-type-taxonomy menu-item-object-category bd_depth- bd_menu_item "><a href="https://xakep.ru/category/coding/"> <span class="menu-label" style="">Кодинг</span></a> 
+             <div class="mega-menu-content"> 
+             </div></li>
+            <li id="menu-item-154669" class=" menu-item menu-item-type-taxonomy menu-item-object-category bd_depth- bd_menu_item "><a href="https://xakep.ru/category/admin/"> <span class="menu-label" style="">Админ</span></a> 
+             <div class="mega-menu-content"> 
+             </div></li>
+            <li id="menu-item-154702" class=" menu-item menu-item-type-taxonomy menu-item-object-category bd_depth- bd_menu_item "><a href="https://xakep.ru/category/geek/"> <span class="menu-label" style="">Geek</span></a> 
+             <div class="mega-menu-content"> 
+             </div></li>
+            <li id="menu-item-408372" class="red menu-item menu-item-type-post_type menu-item-object-page bd_depth- bd_menu_item "><a href="https://xakep.ru/pentest/"> <span class="menu-label" style="">Пентесты</span></a> 
+             <div class="mega-menu-content"> 
+             </div> </li>
+           </ul> 
+          </div> 
+          <div class="cfix"></div> 
+          <div class="secondary-menu"> <a class="mobile-subscribe" href="/wp-admin/users.php?page=paywall_subscribes&amp;from=paywall_subscribe&amp;subscribe=12_months">Подписаться на материалы</a> 
+           <div class="menu-tags-container">
+            <ul id="menu-tags" class="menu">
+             <li id="menu-item-159917" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-159917"><a href="https://xakep.ru/tag/windows/">Windows</a></li> 
+             <li id="menu-item-159918" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-159918"><a href="https://xakep.ru/tag/linux/">Linux</a></li> 
+             <li id="menu-item-159919" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-159919"><a href="https://xakep.ru/tag/android/">Android</a></li> 
+             <li id="menu-item-159921" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-159921"><a href="https://xakep.ru/tag/zhelezo/">Железо</a></li> 
+             <li id="menu-item-381088" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-381088"><a href="https://xakep.ru/tag/hackthebox/">Райтапы</a></li> 
+             <li id="menu-item-381089" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-381089"><a href="https://xakep.ru/tag/vpn/">VPN</a></li> 
+             <li id="menu-item-355822" class="hidden menu-item menu-item-type-custom menu-item-object-custom menu-item-355822"><a target="_blank" rel="noopener" href="https://xakep.ru/issues/xa/">Все выпуски «Хакера»</a></li> 
+            </ul>
+           </div> <span class="bdaia-alert-new-posts">Выпуски</span> 
+           <div class="bdaia-nav-search"> <span class="bdaia-ns-btn bdaia-io bdaia-io-search"></span> 
+            <div class="bdaia-ns-wrap"> 
+             <div class="bdaia-ns-content"> 
+              <div class="bdaia-ns-inner"> 
+               <form method="get" id="searchform" action="/"> 
+                <input type="text" class="bbd-search-field" id="s" name="s" placeholder="Поиск по сайту"> <button type="submit" class="bbd-search-btn"><span class="bdaia-io bdaia-io-search"></span></button> 
+               </form> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+          <div class="cfix"></div> 
+          <style type="text/css">
+                  </style> 
+          <div class="bdaia-alert-new-posts-content"> 
+           <div class="bdaia-alert-new-posts-inner"> 
+            <div class="bdaia-anp-inner"> <a href="/issues" title="Все выпуски «Хакера»" class="bdaia-io bdaia-io-angle-double-left">&nbsp;</a> 
+             <div class="bd-col-xs-4 bd-col-sm-3 bd-col-md-2 sub"> <a href="https://xakep.ru/about" target="_blank"> <p class="desc"> <img src="/wp-content/plugins/xakep-core/images/xakep_logo_w.png" alt="/"> Годовая<br>подписка<br>на<br><strong>Хакер</strong> </p> <img src="/wp-content/plugins/xakep-core/images/issue-stub.png" width="210" height="280" alt="/"> </a> <span class="starburst"><span><span><span>-60%</span></span></span></span> 
+             </div> 
+             <div class="bd-col-xs-4 bd-col-sm-3 bd-col-md-2 current_issue"> 
+              <div class="img-wrap"> <a href="/issues/xa/286"><img width="210" height="280" src="https://xakep.ru/wp-content/uploads/2023/01/412000/286-210x280.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://xakep.ru/wp-content/uploads/2023/01/412000/286-210x280.jpg 210w, https://xakep.ru/wp-content/uploads/2023/01/412000/286-70x93.jpg 70w, https://xakep.ru/wp-content/uploads/2023/01/412000/286-768x1024.jpg 768w, https://xakep.ru/wp-content/uploads/2023/01/412000/286-1152x1536.jpg 1152w, https://xakep.ru/wp-content/uploads/2023/01/412000/286.jpg 1536w" sizes="(max-width: 210px) 100vw, 210px"></a> 
+               <p class="title">Xakep #286. Sad Guard</p> 
+              </div> 
+             </div>
+             <div class="bd-col-xs-4 bd-col-sm-3 bd-col-md-2 "> 
+              <div class="img-wrap"> <a href="/issues/xa/285"><img width="210" height="280" src="https://xakep.ru/wp-content/uploads/2022/12/409114/285-210x280.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://xakep.ru/wp-content/uploads/2022/12/409114/285-210x280.jpg 210w, https://xakep.ru/wp-content/uploads/2022/12/409114/285-70x93.jpg 70w, https://xakep.ru/wp-content/uploads/2022/12/409114/285-768x1024.jpg 768w, https://xakep.ru/wp-content/uploads/2022/12/409114/285-1152x1536.jpg 1152w, https://xakep.ru/wp-content/uploads/2022/12/409114/285.jpg 1536w" sizes="(max-width: 210px) 100vw, 210px"></a> 
+               <p class="title">Xakep #285. Кунг-фу enumeration</p> 
+              </div> 
+             </div>
+             <div class="bd-col-xs-4 bd-col-sm-3 bd-col-md-2 "> 
+              <div class="img-wrap"> <a href="/issues/xa/284"><img width="210" height="280" src="https://xakep.ru/wp-content/uploads/2022/10/403431/284-210x280.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://xakep.ru/wp-content/uploads/2022/10/403431/284-210x280.jpg 210w, https://xakep.ru/wp-content/uploads/2022/10/403431/284-70x93.jpg 70w, https://xakep.ru/wp-content/uploads/2022/10/403431/284-768x1024.jpg 768w, https://xakep.ru/wp-content/uploads/2022/10/403431/284-1152x1536.jpg 1152w, https://xakep.ru/wp-content/uploads/2022/10/403431/284.jpg 1536w" sizes="(max-width: 210px) 100vw, 210px"></a> 
+               <p class="title">Xakep #284. Атаки на AWS</p> 
+              </div> 
+             </div>
+             <div class="bd-col-xs-4 bd-col-sm-3 bd-col-md-2 "> 
+              <div class="img-wrap"> <a href="/issues/xa/283"><img width="210" height="280" src="https://xakep.ru/wp-content/uploads/2022/10/403431/283-5-1-210x280.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://xakep.ru/wp-content/uploads/2022/10/403431/283-5-1-210x280.jpg 210w, https://xakep.ru/wp-content/uploads/2022/10/403431/283-5-1-70x93.jpg 70w, https://xakep.ru/wp-content/uploads/2022/10/403431/283-5-1-768x1024.jpg 768w, https://xakep.ru/wp-content/uploads/2022/10/403431/283-5-1-1152x1536.jpg 1152w, https://xakep.ru/wp-content/uploads/2022/10/403431/283-5-1.jpg 1536w" sizes="(max-width: 210px) 100vw, 210px"></a> 
+               <p class="title">Xakep #283. Змеиная пирамида</p> 
+              </div> 
+             </div>
+             <div class="bd-col-xs-4 bd-col-sm-3 bd-col-md-2 "> 
+              <div class="img-wrap"> <a href="/issues/xa/282"><img width="210" height="280" src="https://xakep.ru/wp-content/uploads/2022/09/400883/282-210x280.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://xakep.ru/wp-content/uploads/2022/09/400883/282-210x280.jpg 210w, https://xakep.ru/wp-content/uploads/2022/09/400883/282-70x93.jpg 70w, https://xakep.ru/wp-content/uploads/2022/09/400883/282-768x1024.jpg 768w, https://xakep.ru/wp-content/uploads/2022/09/400883/282-1152x1536.jpg 1152w, https://xakep.ru/wp-content/uploads/2022/09/400883/282.jpg 1536w" sizes="(max-width: 210px) 100vw, 210px"></a> 
+               <p class="title">Xakep #282. Атака Базарова</p> 
+              </div> 
+             </div> 
+            </div> 
+            <div class="cfix"></div> 
+           </div> 
+          </div> 
+          <div class="cfix"></div> 
+         </div> 
+        </div> 
+       </nav> 
+       <div class="cfix"></div> 
+      </div> 
+      <div class="cfix"></div> 
+      <div class="bdaia-hibryd-e3"> 
+      </div> 
+      <div class="cfix"></div> 
+      <div class="bdMain"> 
+       <div class="bdaia-home-container"> 
+        <div class="bd-container"> 
+         <div class="bd-main"> 
+          <div class="cfix"></div> 
+          <div class="bdaia-block-wrap bdaia-block-nt"> 
+           <div class="bdaia-blocks bdaia-block6"> 
+            <div class="bdaia-blocks-container"> 
+             <div class="bd-block-row">
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/31/gruppirovka-winter-vivern-ispolzuet-uyazvimost-v-zimbra-dlya-krazhi-pisem-nato/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/420252/Winter-Vivern-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/31/gruppirovka-winter-vivern-ispolzuet-uyazvimost-v-zimbra-dlya-krazhi-pisem-nato/"><span>Группировка Winter Vivern использует уязвимость в Zimbra для кражи писем НАТО</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Русскоязычная хак-группа Winter Vivern (она же TA473 в классификации Proofpoint) активно использует уязвимость в Zimbra и с …</p> 
+                </div> 
+               </article> 
+              </div>
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/31/alienfox/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/420241/AlienFox-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/31/alienfox/"><span>Малварь AlienFox ворует данные из 18 облачных сервисов</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Обнаружен новый тулкит AlienFox, который позволяет злоумышленникам искать неправильно настроенные серверы, похищая аутентифи…</p> 
+                </div> 
+               </article> 
+              </div>
+             </div> 
+             <div class="block-article bdaiaFadeIn"> 
+              <article> 
+               <div class="block-article-img-container">
+                <a class="xakep-paywall unpaid icon theme-icon-lock" href="https://xakep.ru/wp-admin/users.php?page=paywall_subscribes">Xakep #288</a><a href="https://xakep.ru/2023/03/31/meganews-288/"><img width="850" height="491" src="https://xakep.ru/wp-content/uploads/2023/03/420220/djimimi-850x491.jpg" class="attachment-bdaia-large size-bdaia-large wp-post-image" alt="" decoding="async" loading="lazy"></a>
+               </div> 
+               <div class="block-article-content-wrapper"> 
+                <header> 
+                 <div class="block-info-cat">
+                  <a class="bd-cat-link bd-cat-4933" href="https://xakep.ru/category/news/">Новости</a>
+                 </div> 
+                 <h3 class="entry-title"><a href="https://xakep.ru/2023/03/31/meganews-288/"><span>MEGANews. Самые важные события в мире инфосека за март</span></a></h3> 
+                </header> 
+                <p class="block-exb">В этом месяце: представлен дистрибутив Kali Purple, ученые и эксперты призывают приостановить обучение ИИ, правоохранители арестовали создателя BreachForums, дроны DJI раскрывают местоположение своих операторов, Twitter ищет человека, который слил исходные коды компании на GitHub, в TPM 2.0 выявлены опасные уязвимости, а также другие интересные события марта.</p> 
+               </div> 
+              </article> 
+             </div>
+             <div class="xakep-ads" id="leaderboard0-desktop">
+              <script>jQuery(function($){
+    if(XakepIsMobile() == /mobile/.test('leaderboard0-desktop')){
+      $('#leaderboard0-desktop').show().html("<!-- \/92401962\/xa_infinite-scroll-0 --><!-- <div id='div-gpt-ad-1536750214101-0' style='height:300px; width:900px;'><script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1536750214101-0'); });<\/script><\/div> --><!-- \/92401962\/xa_leaderboard0 --><!--<div id='div-gpt-ad-1537366071742-0' style='height:202px; width:728px;'><script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1537366071742-0'); });<\/script><\/div>-->");
+    }else{
+      $('#leaderboard0-desktop').remove();
+      console.log('leaderboard0-desktop removed');
+    }
+  });</script>
+             </div>
+             <div class="bd-block-row">
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/31/infraud-organization-sentenced/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/420204/cards-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://xakep.ru/wp-content/uploads/2023/03/420204/cards-384x220.jpg 384w, https://xakep.ru/wp-content/uploads/2023/03/420204/cards-130x73.jpg 130w" sizes="(max-width: 384px) 100vw, 384px"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/31/infraud-organization-sentenced/"><span>Администраторы кардерского форума UniCC получили условные сроки</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Суд приговорил участников хак-группы Infraud Organization, связанных с некогда известным кардерским форумом UniCC, к условны…</p> 
+                </div> 
+               </article> 
+              </div>
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/31/ipfs-phishing/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/420196/IPFS-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/31/ipfs-phishing/"><span>С начала года почти 800 000 фишинговых писем были отправлены с использованием IPFS</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Исследователи «Лаборатории Касперского» отмечают, что фишеры стали чаще использовать в почтовых атаках Web 3.0 технологию In…</p> 
+                </div> 
+               </article> 
+              </div>
+             </div> 
+             <div class="bd-block-row">
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/31/bingbang/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/420191/BingBang-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/31/bingbang/"><span>Исследователи подменили результаты поиска в Bing, используя уязвимость BingBang</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Специалисты компании Wiz обнаружили проблему, которой дали название BingBang. Они выяснили, что неправильная конфигурация Az…</p> 
+                </div> 
+               </article> 
+              </div>
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/30/tag-spyware-report/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/420173/spyware-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/30/tag-spyware-report/"><span>Поставщики коммерческого шпионского ПО используют 0-day для атак на устройства Android и iOS</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Аналитики команды Google Threat Analysis Group (TAG) рассказали об обнаружении сразу нескольких цепочек эксплоитов, использу…</p> 
+                </div> 
+               </article> 
+              </div>
+             </div> 
+             <div class="bd-block-row">
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/30/positive-technologies-2022-stats/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/420164/attack-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/30/positive-technologies-2022-stats/"><span>Positive Technologies: общее количество ИБ-инцидентов увеличилось на 21%</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Специалисты Positive Technologies опубликовали отчет, посвященный актуальным киберугрозам 2022 года. По словам экспертов, об…</p> 
+                </div> 
+               </article> 
+              </div>
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/30/3cx-compromised/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/420115/3cx-384x220.png" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/30/3cx-compromised/"><span>Приложение 3CX используется в атаке на цепочку поставок, затронувшей миллионы пользователей</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Аналитики CrowdStrike и SentinelOne обнаружили неожиданную вредоносную активность в подписанной версии десктопного приложени…</p> 
+                </div> 
+               </article> 
+              </div>
+             </div> 
+             <div class="block-article bdaiaFadeIn"> 
+              <article> 
+               <div class="block-article-img-container">
+                <a class="xakep-paywall unpaid icon theme-icon-lock" href="https://xakep.ru/wp-admin/users.php?page=paywall_subscribes">For subscribers</a><a href="https://xakep.ru/2023/03/30/malicious-traffic/"><img width="850" height="491" src="https://xakep.ru/wp-content/uploads/2023/03/420125/traffic_socials-850x491.jpg" class="attachment-bdaia-large size-bdaia-large wp-post-image" alt="" decoding="async" loading="lazy"></a>
+               </div> 
+               <div class="block-article-content-wrapper"> 
+                <header> 
+                 <div class="block-info-cat">
+                  <a class="bd-cat-link bd-cat-4927" href="https://xakep.ru/category/hack/">Взлом</a>
+                 </div> 
+                 <h3 class="entry-title"><a href="https://xakep.ru/2023/03/30/malicious-traffic/"><span>Уроки форензики. Ищем улики в сетевом трафике</span></a></h3> 
+                </header> 
+                <p class="block-exb">Иногда после хакерской атаки исследователям остается несколько скомпрометированных компьютеров и дамп сетевого трафика, исследуя который можно попытаться восстановить хронологию событий. Именно эту ситуацию эмулирует лабораторная работа BSidesJeddah-Part1 с сайта CyberDefenders, решение которой мы сегодня подробно разберем. Мы научимся анализировать сетевой трафик, извлекать артефакты и восстановим картину взлома.</p> 
+               </div> 
+              </article> 
+             </div>
+             <div class="bd-block-row">
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/30/scam-automatization/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/420103/scam-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://xakep.ru/wp-content/uploads/2023/03/420103/scam-384x220.jpg 384w, https://xakep.ru/wp-content/uploads/2023/03/420103/scam-130x73.jpg 130w" sizes="(max-width: 384px) 100vw, 384px"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/30/scam-automatization/"><span>Group-IB: автоматизация в мошеннических схемах достигла 80%</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Специалисты Group-IB проанализировали актуальные инструменты и сервисы онлайн-мошенников. В опубликованном исследовании гово…</p> 
+                </div> 
+               </article> 
+              </div>
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/30/safelinks-bug/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/420110/Microsoft-Defender-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://xakep.ru/wp-content/uploads/2023/03/420110/Microsoft-Defender-384x220.jpg 384w, https://xakep.ru/wp-content/uploads/2023/03/420110/Microsoft-Defender-130x73.jpg 130w" sizes="(max-width: 384px) 100vw, 384px"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/30/safelinks-bug/"><span>Microsoft Defender по ошибке помечает законные URL-адреса как вредоносные</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Microsoft Defender создал немало проблем ИТ-администраторам, помечая обычные URL-адреса как вредоносные. Пользователи жалуют…</p> 
+                </div> 
+               </article> 
+              </div>
+             </div> 
+             <div class="bd-block-row">
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/29/macstealer/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/420057/keys_large-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/29/macstealer/"><span>Малварь MacStealer атакует владельцев Mac и похищает информацию из iCloud KeyChain</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Исследователи из Uptycs обнаружили новую малварь для macOS, которая может работать как на macOS Catalina (10.15) так и на по…</p> 
+                </div> 
+               </article> 
+              </div>
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/29/stop-ai-letter/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/420048/Artificial-Intelligence-384x220.png" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://xakep.ru/wp-content/uploads/2023/03/420048/Artificial-Intelligence-384x220.png 384w, https://xakep.ru/wp-content/uploads/2023/03/420048/Artificial-Intelligence-130x73.png 130w" sizes="(max-width: 384px) 100vw, 384px"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/29/stop-ai-letter/"><span>Более тысячи экспертов, включая Возняка и Маска, призвали приостановить обучение ИИ мощнее GPT-4</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Более тысячи человек, в число которых вошли профессора и ИИ-разработчики, подписали открытое письмо, обращенное ко всем лаб…</p> 
+                </div> 
+               </article> 
+              </div>
+             </div> 
+             <div class="bd-block-row">
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/29/fake-tor/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/420043/Tor-Browser-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/29/fake-tor/"><span>Троянизированная версия браузера Tor нацелена на российских пользователей</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Исследователи «Лаборатории Касперского» обнаружили новую кампанию по краже криптовалюты: под видом браузера Tor злоумышленни…</p> 
+                </div> 
+               </article> 
+              </div>
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/29/ieee-802-11-flaw/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419979/Wi-Fi-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://xakep.ru/wp-content/uploads/2023/03/419979/Wi-Fi-384x220.jpg 384w, https://xakep.ru/wp-content/uploads/2023/03/419979/Wi-Fi-130x73.jpg 130w" sizes="(max-width: 384px) 100vw, 384px"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/29/ieee-802-11-flaw/"><span>Уязвимость в протоколе Wi-Fi IEEE 802.11 позволяет перехватывать сетевой трафик</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Ученые из Северо-Восточного университета и Левенского католического университета обнаружили фундаментальный недостаток в стр…</p> 
+                </div> 
+               </article> 
+              </div>
+             </div> 
+             <div class="block-article bdaiaFadeIn"> 
+              <article> 
+               <div class="block-article-img-container">
+                <a class="xakep-paywall unpaid icon theme-icon-lock" href="https://xakep.ru/wp-admin/users.php?page=paywall_subscribes">Xakep #288</a><a href="https://xakep.ru/2023/03/29/reversing-dnguard/"><img width="850" height="491" src="https://xakep.ru/wp-content/uploads/2023/03/420011/engarde_web-850x491.jpg" class="attachment-bdaia-large size-bdaia-large wp-post-image" alt="" decoding="async" loading="lazy"></a>
+               </div> 
+               <div class="block-article-content-wrapper"> 
+                <header> 
+                 <div class="block-info-cat">
+                  <a class="bd-cat-link bd-cat-4927" href="https://xakep.ru/category/hack/">Взлом</a>
+                 </div> 
+                 <h3 class="entry-title"><a href="https://xakep.ru/2023/03/29/reversing-dnguard/"><span>Ангард! Реверсим приложение, защищенное DNGuard</span></a></h3> 
+                </header> 
+                <p class="block-exb">Фантазия разработчиков, желающих защитить свою программу, порой не знает границ. Частенько им мало одного навешенного на софтину протектора, и они, как монашка из известного анекдота, натягивают их несколько штук последовательно. Порой тем же самым грешат и сами разработчики средств защиты. Случай подобного симбиоза IL-обфускатора с VMProtect мы и рассмотрим в сегодняшней статье.</p> 
+               </div> 
+              </article> 
+             </div>
+             <div class="bd-block-row">
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/29/dark-power/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419971/Dark-Power-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/29/dark-power/"><span>Операторы нового вымогателя Dark Power заявляют, что уже взломали 10 компаний</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Исследователи сообщают о появлении нового шифровальщика Dark Power, операторы которого уже опубликовали в даркнете данные 10…</p> 
+                </div> 
+               </article> 
+              </div>
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/28/pwn2own-vancouver-2023-results/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419919/TeamSynacktiv-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/28/pwn2own-vancouver-2023-results/"><span>В финале Pwn2Own эксперты взломали Windows, Ubuntu и VMWare Workstation</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">На конференции CanSecWest завершилось хакерское соревнование Pwn2Own, победителем которого в этом году стала французская ком…</p> 
+                </div> 
+               </article> 
+              </div>
+             </div> 
+             <div class="bd-block-row">
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/28/webkit-oday-patch/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419916/apple-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/28/webkit-oday-patch/"><span>Apple исправляет уязвимость 0-day в WebKit на старых iPhone и iPad</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Разработчики Apple подготовили патчи для уязвимости нулевого дня (CVE-2023-23529), которая уже используется хакерами в атака…</p> 
+                </div> 
+               </article> 
+              </div>
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/28/chatgtpmsdos/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419911/doschgpt-5155-front-using-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/28/chatgtpmsdos/"><span>Энтузиаст показал клиент ChatGPT для MS-DOS</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Любитель ретрокомпьютеров из Сингапура, известный тем, что несколько лет назад он создал Slack-клиент для Windows 3.1, предс…</p> 
+                </div> 
+               </article> 
+              </div>
+             </div> 
+             <div class="block-article bdaiaFadeIn"> 
+              <article> 
+               <div class="block-article-img-container">
+                <a class="xakep-paywall unpaid icon theme-icon-lock" href="https://xakep.ru/wp-admin/users.php?page=paywall_subscribes">Xakep #288</a><a href="https://xakep.ru/2023/03/28/aimbot-esp-cheat/"><img width="850" height="491" src="https://xakep.ru/wp-content/uploads/2023/03/419874/fortnite-socials-850x491.jpg" class="attachment-bdaia-large size-bdaia-large wp-post-image" alt="" decoding="async" loading="lazy"></a>
+               </div> 
+               <div class="block-article-content-wrapper"> 
+                <header> 
+                 <div class="block-info-cat">
+                  <a class="bd-cat-link bd-cat-4929" href="https://xakep.ru/category/coding/">Кодинг</a>
+                 </div> 
+                 <h3 class="entry-title"><a href="https://xakep.ru/2023/03/28/aimbot-esp-cheat/"><span>Чит своими руками. Смотрим сквозь стены и делаем автоприцеливание для 3D-шутера</span></a></h3> 
+                </header> 
+                <p class="block-exb">Сегодня мы с тобой напишем чит для сетевого шутера. Мы реализуем хаки типа extrasensory perception (ESP) и aimbot. ESP отображает информацию об игроках над их головами. Здесь может быть здоровье игрока, имя или текущее используемое оружие. Aimbot автоматически нацеливается на других игроков.</p> 
+               </div> 
+              </article> 
+             </div>
+             <div class="bd-block-row">
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/28/pompompurin-arrest-details/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419854/BreachForums-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://xakep.ru/wp-content/uploads/2023/03/419854/BreachForums-384x220.jpg 384w, https://xakep.ru/wp-content/uploads/2023/03/419854/BreachForums-130x73.jpg 130w" sizes="(max-width: 384px) 100vw, 384px"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/28/pompompurin-arrest-details/"><span>Основателю BreachForums предъявили обвинения. Власти подтвердили, что имеют доступ к БД сайта</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">ФБР подтвердило, что получило доступ к БД недавно закрывшегося хакерского форума BreachForums (он же Breached), а Министерст…</p> 
+                </div> 
+               </article> 
+              </div>
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/28/twitter-github-leak/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419833/twitter-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/28/twitter-github-leak/"><span>Исходники Twitter утекли в сеть. Компания ищет тех, кто их скачал</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Компания Twitter добилась удаления с GitHub внутренних исходных кодов своей платформы и инструментов, которые утекли в откры…</p> 
+                </div> 
+               </article> 
+              </div>
+             </div> 
+             <div class="bd-block-row">
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/27/chatgpt-redis/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419802/chatgpt-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://xakep.ru/wp-content/uploads/2023/03/419802/chatgpt-384x220.jpg 384w, https://xakep.ru/wp-content/uploads/2023/03/419802/chatgpt-130x73.jpg 130w" sizes="(max-width: 384px) 100vw, 384px"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/27/chatgpt-redis/"><span>OpenAI: утечка данных пользователей ChatGPT произошла из-за ошибки Redis</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Представители OpenAI рассказали, что недавний сбой в работе ChatGPT (пользователи видели личную информацию других людей и чу…</p> 
+                </div> 
+               </article> 
+              </div>
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/27/onyxproxy-unicode/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419789/letters-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/27/onyxproxy-unicode/"><span>Вредоносный пакет из PyPI использовал Unicode, чтобы избежать обнаружения</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">В репозитории Python Package Index (PyPI) обнаружен вредоносный пакет, который использует Unicode, чтобы избежать обнаружени…</p> 
+                </div> 
+               </article> 
+              </div>
+             </div> 
+             <div class="block-article bdaiaFadeIn"> 
+              <article> 
+               <div class="block-article-img-container">
+                <a class="xakep-paywall unpaid icon theme-icon-lock" href="https://xakep.ru/wp-admin/users.php?page=paywall_subscribes">Xakep #288</a><a href="https://xakep.ru/2023/03/27/htb-vessel/"><img width="850" height="491" src="https://xakep.ru/wp-content/uploads/2023/03/419770/title-1600-850x491.jpg" class="attachment-bdaia-large size-bdaia-large wp-post-image" alt="" decoding="async" loading="lazy"></a>
+               </div> 
+               <div class="block-article-content-wrapper"> 
+                <header> 
+                 <div class="block-info-cat">
+                  <a class="bd-cat-link bd-cat-4933" href="https://xakep.ru/category/news/">Новости</a>
+                 </div> 
+                 <h3 class="entry-title"><a href="https://xakep.ru/2023/03/27/htb-vessel/"><span>HTB Vessel. Эксплуатируем уязвимость в кластере Kubernetes</span></a></h3> 
+                </header> 
+                <p class="block-exb">В этом райтапе я покажу, как повышать привилегии через уязвимость CVE-2022-0811, которая позволяет с максимальными привилегиями выходить из контейнера в кластере Kubernetes. По дороге посмотрим, как собирать данные из репозитория Git, проэксплуатируем SQL-инъекцию и попентестим платформу Open Web Analytics, чтобы получить доступ к хосту. Еще разберемся с генератором паролей и расшифруем PDF-документ.</p> 
+               </div> 
+              </article> 
+             </div>
+             <div class="bd-block-row">
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/27/rsa-ssh-host-key-leak/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419731/key-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://xakep.ru/wp-content/uploads/2023/03/419731/key-384x220.jpg 384w, https://xakep.ru/wp-content/uploads/2023/03/419731/key-130x73.jpg 130w" sizes="(max-width: 384px) 100vw, 384px"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/27/rsa-ssh-host-key-leak/"><span>GitHub меняет ключ RSA SSH, так как он случайно попал в открытый доступ</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Разработчики GitHub сообщили, что заменили приватный ключ RSA SSH, используемый для защиты Git-операций. В компании уверяют,…</p> 
+                </div> 
+               </article> 
+              </div>
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/27/poweroff-fakes/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419716/outage_splash_page-384x220.png" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://xakep.ru/wp-content/uploads/2023/03/419716/outage_splash_page-384x220.png 384w, https://xakep.ru/wp-content/uploads/2023/03/419716/outage_splash_page-130x73.png 130w" sizes="(max-width: 384px) 100vw, 384px"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/27/poweroff-fakes/"><span>Правоохранители создают фейковые сайты для DDoS-атак по найму</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Британское Национальное агентство по борьбе с преступностью (NCA) рассказало, что ловит киберпрестпуников «на живца». Для эт…</p> 
+                </div> 
+               </article> 
+              </div>
+             </div> 
+             <div class="bd-block-row">
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/27/runet-anonymity/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419708/fake-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/27/runet-anonymity/"><span>Роскомнадзор предлагает использовать оборудование у провайдеров для блокировки средств анонимизации</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">СМИ сообщают, что Роскомнадзор предлагает использовать оборудование, установленное у провайдеров (технические средства проти…</p> 
+                </div> 
+               </article> 
+              </div>
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/24/linus-tech-tips-hacked/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419573/Linus-Tech-Tips-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/24/linus-tech-tips-hacked/"><span>Популярный YouTube-канал Linus Tech Tips взломали, чтобы рекламировать криптовалютный скам</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">YouTube-канал Linus Tech Tips, насчитывающий более 15,3 млн подписчиков и принадлежащий Линусу Себастьяну, был взломан (а та…</p> 
+                </div> 
+               </article> 
+              </div>
+             </div> 
+             <div class="bd-block-row">
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/24/woocommerce-payments-patch/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419566/WooCommerce-Payments-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/24/woocommerce-payments-patch/"><span>WordPress принудительно обновляет плагин WooCommerce Payments с 500 000 установок</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Компания Automattic, стоящая за разработкой CMS WordPress, принудительно устанавливает обновления на сотни тысяч сайтов, где…</p> 
+                </div> 
+               </article> 
+              </div>
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/24/nexus-banker/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419553/tojan-384x220.png" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://xakep.ru/wp-content/uploads/2023/03/419553/tojan-384x220.png 384w, https://xakep.ru/wp-content/uploads/2023/03/419553/tojan-130x73.png 130w" sizes="(max-width: 384px) 100vw, 384px"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/24/nexus-banker/"><span>Мобильный банкер Nexus нацелен на 450 приложений финансовых организаций</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Аналитики Cleafy рассказали о банковском трояне Nexus для Android. Вредонос уже используется несколькими группами злоумышлен…</p> 
+                </div> 
+               </article> 
+              </div>
+             </div> 
+             <div class="bd-block-row">
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/24/pwn2own-vancouver-2023/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419485/SynacktivTesla-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/24/pwn2own-vancouver-2023/"><span>На Pwn2Own успешно взломаны Tesla, Windows 11, Ubuntu и macOS</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">В рамках хакерского соревнования Pwn2Own Vancouver 2023 исследователям удалось продемонстрировать 0-day эксплоиты и скомпром…</p> 
+                </div> 
+               </article> 
+              </div>
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/24/acropalypse-patch/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419480/win11-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://xakep.ru/wp-content/uploads/2023/03/419480/win11-384x220.jpg 384w, https://xakep.ru/wp-content/uploads/2023/03/419480/win11-130x73.jpg 130w" sizes="(max-width: 384px) 100vw, 384px"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/24/acropalypse-patch/"><span>Уязвимость aCropalypse исправлена в Windows 11</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Разработчики Microsoft уже тестируют обновленную версию инструмента Snipping Tool («Ножницы») для Windows 11, в которой испр…</p> 
+                </div> 
+               </article> 
+              </div>
+             </div> 
+             <div class="bd-block-row">
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/24/fake-chatgpt/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419470/ChatGPT-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/24/fake-chatgpt/"><span>Троянизированная версия расширения ChatGPT для Chrome ворует аккаунты в соцсетях</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Google удалила из официального Chrome Web Store поддельное расширение для Chrome, которое маскировалось под официальный Chat…</p> 
+                </div> 
+               </article> 
+              </div>
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/23/authorize-net-malware/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419445/cards-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/23/authorize-net-malware/"><span>Кардеры внедрили малварь в модуль системы процессинга платежей</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Расследуя атаку на одного из своих клиентов, специалисты Sucuri обнаружили необычную кардерскую кампанию, в ходе которой хак…</p> 
+                </div> 
+               </article> 
+              </div>
+             </div> 
+             <div class="bd-block-row">
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/23/sberspasibo-second-leak/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419437/SberSpasibo-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://xakep.ru/wp-content/uploads/2023/03/419437/SberSpasibo-384x220.jpg 384w, https://xakep.ru/wp-content/uploads/2023/03/419437/SberSpasibo-130x74.jpg 130w" sizes="(max-width: 384px) 100vw, 384px"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/23/sberspasibo-second-leak/"><span>Специалисты сообщили о второй утечке данных пользователей «СберСпасибо»</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">ИБ-исследователи сообщили, что в открытом доступе появилась вторая часть дампа, предположительно полученного из мобильного п…</p> 
+                </div> 
+               </article> 
+              </div>
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/23/orbi-exploits/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419402/Netgear-Orbi-384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://xakep.ru/wp-content/uploads/2023/03/419402/Netgear-Orbi-384x220.jpg 384w, https://xakep.ru/wp-content/uploads/2023/03/419402/Netgear-Orbi-130x73.jpg 130w" sizes="(max-width: 384px) 100vw, 384px"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/23/orbi-exploits/"><span>Опубликованы эксплоиты для роутеров Netgear Orbi</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">Владельцам роутеров Netgear Orbi стоит убедиться, что их устройства работают с новейшей версией прошивки, так как в открытом…</p> 
+                </div> 
+               </article> 
+              </div>
+             </div> 
+             <div class="bd-block-row">
+              <div class="block-article bd-col-md-6 bdaiaFadeIn"> 
+               <article> 
+                <div class="block-article-img-container"> <a href="https://xakep.ru/2023/03/23/acropalypse-for-windows/"><img width="384" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419396/Snipping-Tool-aCropalypse--384x220.jpg" class="attachment-bdaia-block11 size-bdaia-block11 wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                </div> 
+                <div class="block-article-content-wrapper"> 
+                 <header> 
+                  <div class="block-info-cat"> <a href="https://xakep.ru/category/news/" class="bd-cat-link bd-cat-4933">Новости</a> 
+                  </div> 
+                  <h3 class="entry-title"><a href="https://xakep.ru/2023/03/23/acropalypse-for-windows/"><span>Уязвимость aCropalypse, обнаруженная в устройствах Pixel, представляет угрозу и для Windows</span></a></h3> 
+                 </header> 
+                 <p class="block-exb">ИБ-эксперты обнаружили, что уязвимость aCropalypse, позволяющая восстановить оригинал изображения отредактированного на устр…</p> 
+                </div> 
+               </article> 
+              </div>
+             </div> 
+            </div> 
+           </div> 
+           <div class="bdaia-pagination"> <span class="pages">Страница 1 из 1&nbsp;541</span><span class="current">1</span><a href="https://xakep.ru/page/2/" class="page" title="2">2</a><a href="https://xakep.ru/page/3/" class="page" title="3">3</a><a href="https://xakep.ru/page/4/" class="page" title="4">4</a><a href="https://xakep.ru/page/5/" class="page" title="5">5</a> <span id="bdaia-next-page"> <a href="https://xakep.ru/page/2/"><span class="bdaia-io bdaia-io-angle-right"></span></a> </span> <a href="https://xakep.ru/page/10/" class="page" title="10">10</a><a href="https://xakep.ru/page/20/" class="page" title="20">20</a><a href="https://xakep.ru/page/30/" class="page" title="30">30</a><span class="extend">...</span> 
+           </div> 
+          </div><!--/END Wrap/--> 
+         </div> 
+         <div class="bd-sidebar theia_sticky"> 
+          <div class="cfix"></div> 
+          <div class="theiaStickySidebar"> 
+           <div class="xakep-ads" id="mpu0-desktop">
+            <script>jQuery(function($){
+    if(XakepIsMobile() == /mobile/.test('mpu0-desktop')){
+      $('#mpu0-desktop').show().html("<!-- \/92401962\/xa_mpu-0<div id='div-gpt-ad-1662012940539-0' style='min-width: 240px; min-height: 400px;'>    <script>      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1662012940539-0'); });    <\/script> <\/div> --> <a href=\"https:\/\/cyber-ed.ru\/corporate-infrastructure-protection-specialist\/?utm_source=promo&utm_medium=web&utm_campaign=xaker\" target=\"_blank\">  <img src=\"https:\/\/static.xakep.ru\/advert\/2023\/glc-5-vt.png\" \/> <\/a>");
+    }else{
+      $('#mpu0-desktop').remove();
+      console.log('mpu0-desktop removed');
+    }
+  });</script>
+           </div>
+           <div id="custom_html-7" class="widget_text widget-even widget-2 widget bdaia-widget widget_custom_html"> 
+            <h4 class="block-title"><span>Еженедельный дайджест</span></h4> 
+            <div class="widget-inner"> 
+             <div class="textwidget custom-html-widget">
+              <style type="text/css">
+#unisub input[type='email']{width:100%}
+#unisub input[type='submit']{display: block;text-transform: none;font-weight: 700;margin:5px auto 0;}
+#unisub input[type='submit']:hover{background:#900;}
+</style> 
+              <form id="unisub" method="POST" action="https://cp.unisender.com/ru/subscribe?hash=6eihiy9y8pgtohfywpue3nge3sayfkrawcc59bdwsb6ftcxcf97ko" name="subscribtion_form" target="_blank"> 
+               <div class="subscribe-form-item subscribe-form-item--text">
+                Важные события и скидка на подписку:
+               </div> 
+               <div class="subscribe-form-item subscribe-form-item--input-email">
+                <input class="subscribe-form-item__control subscribe-form-item__control--input-email" type="email" name="email" value="" required="true" placeholder="Укажи свой Email">
+               </div> 
+               <div class="subscribe-form-item subscribe-form-item--btn-submit">
+                <input class="subscribe-form-item__btn subscribe-form-item__btn--btn-submit" type="submit" value="Подписаться">
+               </div> 
+               <input type="hidden" name="charset" value="UTF-8"> 
+               <input type="hidden" name="default_list_id" value="1"> 
+               <input type="hidden" name="overwrite" value="2"> 
+               <input type="hidden" name="is_v5" value="1"> 
+              </form>
+             </div>
+            </div> 
+           </div>
+           <div id="custom_html-4" class="widget_text widget-even widget-4 guest widget bdaia-widget widget_custom_html"> 
+            <h4 class="block-title"><span>Партнерам</span></h4> 
+            <div class="widget-inner"> 
+             <div class="textwidget custom-html-widget">
+              <a class="button" style="margin-bottom: 20px;" href="https://xakep.ru/advert/" target="_blank" rel="noopener">Заказать рекламу</a> <a class="button" style="margin-bottom: 20px;" href="https://xakep.ru/corporate/" target="_blank" rel="noopener">Подписка для юрлиц</a>
+             </div>
+            </div> 
+           </div>
+           <div id="custom_html-2" class="widget_text widget-odd widget-5 widget bdaia-widget widget_custom_html"> 
+            <h4 class="block-title"><span>«Хакер» в соцсетях</span></h4> 
+            <div class="widget-inner"> 
+             <div class="textwidget custom-html-widget">
+              <div id="xakep-socials"> <a href="https://telegram.me/xakep_ru" target="_blank" title="Telegram" rel="noopener"><img src="/wp-content/plugins/xakep-core/images/icons/tg.png" alt="Telegram"></a> <a href="https://vk.com/xakep_mag" target="_blank" title="ВКонтакте" rel="noopener"><img src="/wp-content/plugins/xakep-core/images/icons/vk.png" alt="ВКонтакте"></a> <a href="https://twitter.com/XakepRU" target="_blank" title="Twitter" rel="noopener"><img src="/wp-content/plugins/xakep-core/images/icons/tw.png" alt="Twitter"></a>
+              </div>
+             </div>
+            </div> 
+           </div>
+           <div class="xakep-ads" id="mpu0-desktop">
+            <script>jQuery(function($){
+    if(XakepIsMobile() == /mobile/.test('mpu0-desktop')){
+      $('#mpu0-desktop').show().html("<!-- \/92401962\/xa_mpu-0<div id='div-gpt-ad-1662012940539-0' style='min-width: 240px; min-height: 400px;'>    <script>      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1662012940539-0'); });    <\/script> <\/div> --> <a href=\"https:\/\/cyber-ed.ru\/corporate-infrastructure-protection-specialist\/?utm_source=promo&utm_medium=web&utm_campaign=xaker\" target=\"_blank\">  <img src=\"https:\/\/static.xakep.ru\/advert\/2023\/glc-5-vt.png\" \/> <\/a>");
+    }else{
+      $('#mpu0-desktop').remove();
+      console.log('mpu0-desktop removed');
+    }
+  });</script>
+           </div>
+           <div id="bdaia-widget-box6-2" class="widget bdaia-widget bdaia-box6">
+            <h4 class="block-title"><span>Материалы для подписчиков</span></h4>
+            <div class="widget-inner"> 
+             <div class="bdaia-wb-wrap bdaia-wb6 bdaia-wb-idVDIlv bdaia-ajax-pagination-" data-box_nu="wb6" data-box_id="bdaia-wb-idVDIlv" data-paged="1" data-sort_order="best_xakep_score" data-ajax_pagination="" data-num_posts="25" data-tag_slug="vybor-redaktora" data-cat_uid="" data-cat_uids="" data-max_nu="2" data-total_posts_num="46" data-posts="" data-com_meta="" data-thumbnail="" data-author_meta="true" data-date_meta="" data-review=""> 
+              <div class="bdaia-wb-content"> 
+               <div class="bdaia-wb-inner"> 
+                <div class="bdaia-wb-article bdaia-wba-bigsh bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/03/21/private-browsers/" class="bdaia-text-gradient"><img width="320" height="220" src="https://xakep.ru/wp-content/uploads/2023/03/419206/knights-1600-320x220.jpg" class="attachment-bdaia-widget size-bdaia-widget wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                   <div class="bwb-article-content-wrapper"> 
+                    <header> 
+                     <h3 class="entry-title"> <a href="https://xakep.ru/2023/03/21/private-browsers/"><span>Состязание в приватности. Сравниваем безопасные браузеры 2023 года</span></a> </h3> 
+                    </header> 
+                    <footer> 
+                     <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/valentin-holmogorov/" title="Записи Валентин Холмогоров" rel="author">Валентин Холмогоров</a> 
+                     </div> 
+                    </footer> 
+                   </div> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/02/10/chatgpt-jailbreak/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/02/415413/dan-32-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/02/10/chatgpt-jailbreak/"><span>«Дэн» может все. Как пользователи обманывают ChatGPT</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/mifril/" title="Записи Мария Нефёдова" rel="author">Мария Нефёдова</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/02/09/very-bad-usb/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/02/415284/flash-4-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/02/09/very-bad-usb/"><span>Очень плохая флешка. Разбираем атаку BadUSB в деталях</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/s0i37/" title="Записи s0i37" rel="author">s0i37</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/01/23/htb-updown/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/01/413376/title-1600-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/01/23/htb-updown/"><span>HTB UpDown. Эксплуатируем Race Condition при атаке на веб-сервер</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/ralfhacker/" title="Записи RalfHacker" rel="author">RalfHacker</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/03/09/malformed-elf/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/03/417935/elf_socials-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/03/09/malformed-elf/"><span>Неправильные эльфы. Учим исполняемые файлы Linux сопротивляться отладке</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/kclo3/" title="Записи kclo3" rel="author">kclo3</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/01/20/bioera/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/01/413076/dead-era-1600-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/01/20/bioera/"><span>Мертвая эра. Изучаем приложение, созданное в BioEra</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/mikhail_kondakov/" title="Записи МВК" rel="author">МВК</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/03/16/evil-modem/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/03/418722/device_socials-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/03/16/evil-modem/"><span>Опасный модем. Закрепляемся в атакованной системе при помощи USB-модема</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/s0i37/" title="Записи s0i37" rel="author">s0i37</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/01/13/talisman/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/01/412290/talisman-1600-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/01/13/talisman/"><span>Опасный талисман. Изучаем вредонос Talisman на практике</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/donnod/" title="Записи rayhunt454" rel="author">rayhunt454</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/02/17/hacker-tools-6/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/02/416082/penguin-1600-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/02/17/hacker-tools-6/"><span>Мастерская хакера. ИИ-помощники, работа с JSON и приятные мелочи, которые пригодятся в работе</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/polskikot/" title="Записи Польский Кот" rel="author">Польский Кот</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/01/10/htb-health/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/01/411983/title-1600-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/01/10/htb-health/"><span>HTB Health. Эксплуатируем SSRF от первоначального доступа до захвата хоста</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/ralfhacker/" title="Записи RalfHacker" rel="author">RalfHacker</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/03/23/invisible-device/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/03/419318/invi_socials-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/03/23/invisible-device/"><span>Девайс-невидимка. Встраиваемся в локальную сеть с помощью «невидимого» хакерского устройства</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/s0i37/" title="Записи s0i37" rel="author">s0i37</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/01/25/croc-in-the-middle/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/01/413603/croc-32-1-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/01/25/croc-in-the-middle/"><span>Крококряк. Снимаем трафик с витой пары обычными «крокодилами»</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/s0i37/" title="Записи s0i37" rel="author">s0i37</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/03/10/nezumi-hacking-guide-2-new/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/03/418185/gears_socials-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/03/10/nezumi-hacking-guide-2-new/"><span>Фундаментальные основы хакерства. Используем отладчик для анализа 64-разрядных программ в Windows</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/yurembo/" title="Записи Юрий Язев" rel="author">Юрий Язев</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/02/03/artists-vs-ai/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/02/414614/scream-socials-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/02/03/artists-vs-ai/"><span>Художники против ИИ. Разбираемся с юридическим статусом творчества нейросетей</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/afonin/" title="Записи Олег Афонин" rel="author">Олег Афонин</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/02/07/full-custom/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/02/415001/full-custom-1600-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/02/07/full-custom/"><span>Полный кастом. Что такое настоящая кастомная клавиатура и чем она отличается от ненастоящей</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/askent/" title="Записи Артём Лебовски" rel="author">Артём Лебовски</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/02/22/badusb-eth/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/02/416667/evil_socials-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/02/22/badusb-eth/"><span>Злая сетевуха. Разбираем в деталях атаку BadUSB-ETH</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/s0i37/" title="Записи s0i37" rel="author">s0i37</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/03/13/htb-mentor/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/03/418393/title-1600-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/03/13/htb-mentor/"><span>HTB Mentor. Извлекаем информацию из SNMP и пентестим API веб-сервиса</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/ralfhacker/" title="Записи RalfHacker" rel="author">RalfHacker</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/02/28/meganews-287/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/02/417178/tor-project-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/02/28/meganews-287/"><span>MEGANews. Самые важные события в мире инфосека за февраль</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/mifril/" title="Записи Мария Нефёдова" rel="author">Мария Нефёдова</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/01/17/cold-boot-attack/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/01/412686/cold-1600-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/01/17/cold-boot-attack/"><span>Cold boot attack. Дампим оперативную память с помощью флешки</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/s0i37/" title="Записи s0i37" rel="author">s0i37</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/03/01/effective-yara/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/03/417296/bugs-socials-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/03/01/effective-yara/"><span>YARA на максималках. Учимся составлять эффективные правила YARA на примерах</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/smokindodlez/" title="Записи Николай Потоленский" rel="author">Николай Потоленский</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/03/06/htb-forgot/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/03/417809/title-1600-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/03/06/htb-forgot/"><span>HTB Forgot. Отравляем Web Cache для получения админки сайта</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/ralfhacker/" title="Записи RalfHacker" rel="author">RalfHacker</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/01/16/htb-shoppy/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/01/412569/title-1600-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/01/16/htb-shoppy/"><span>HTB Shoppy. Повышаем привилегии через группу Docker</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/ralfhacker/" title="Записи RalfHacker" rel="author">RalfHacker</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/02/08/read-only-dc/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/02/415159/readonly-32-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/02/08/read-only-dc/"><span>Только для чтения. Пентестим Read-only Domain Controllers</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/michellevermishelle/" title="Записи MichelleVermishelle" rel="author">MichelleVermishelle</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/03/28/aimbot-esp-cheat/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/03/419874/fortnite-socials-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/03/28/aimbot-esp-cheat/"><span>Чит своими руками. Смотрим сквозь стены и делаем автоприцеливание для 3D-шутера</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/neeko/" title="Записи neeko" rel="author">neeko</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/01/31/meganews-286/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/01/414224/gta-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/01/31/meganews-286/"><span>MEGANews. Самые важные события в мире инфосека за январь</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-author-name"> <a href="https://xakep.ru/author/mifril/" title="Записи Мария Нефёдова" rel="author">Мария Нефёдова</a> 
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+               </div> 
+               <div class="bdayh-posts-load-wait"> 
+                <div class="sk-circle">
+                 <div class="sk-circle1 sk-child"></div>
+                 <div class="sk-circle2 sk-child"></div>
+                 <div class="sk-circle3 sk-child"></div>
+                 <div class="sk-circle4 sk-child"></div>
+                 <div class="sk-circle5 sk-child"></div>
+                 <div class="sk-circle6 sk-child"></div>
+                 <div class="sk-circle7 sk-child"></div>
+                 <div class="sk-circle8 sk-child"></div>
+                 <div class="sk-circle9 sk-child"></div>
+                 <div class="sk-circle10 sk-child"></div>
+                 <div class="sk-circle11 sk-child"></div>
+                 <div class="sk-circle12 sk-child"></div>
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+            </div>
+           </div>
+           <div class="xakep-ads" id="mpu1-desktop">
+            <script>jQuery(function($){
+    if(XakepIsMobile() == /mobile/.test('mpu1-desktop')){
+      $('#mpu1-desktop').show().html("<!-- \/92401962\/xa_mpu-1 --><div id='div-gpt-ad-1585167363824-0' style='width: 240px; height: 400px;'>  <script>    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1585167363824-0'); });  <\/script><\/div>");
+    }else{
+      $('#mpu1-desktop').remove();
+      console.log('mpu1-desktop removed');
+    }
+  });</script>
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div><!-- END Home Container. --> 
+      </div> 
+      <div class="bdaia-footer"> 
+       <div class="bdaia-footer-widgets" style="background-color:#32393D;"> 
+        <div class="bd-container"> 
+         <div class="bdaia-footer-widgets-area footer-col-three"> 
+          <div id="footer-first" class="footer-widget-inner"> 
+           <div id="bdaia-widget-box1-4" class="widget bdaia-widget bdaia-box1">
+            <h4 class="block-title"><span>Последние взломы</span></h4>
+            <div class="widget-inner"> 
+             <div class="bdaia-wb-wrap bdaia-wb1 bdaia-wb-idzqiWq bdaia-ajax-pagination-" data-box_nu="wb1" data-box_id="bdaia-wb-idzqiWq" data-paged="1" data-sort_order="" data-ajax_pagination="" data-num_posts="4" data-tag_slug="articles" data-cat_uid="4927" data-cat_uids="" data-max_nu="306" data-total_posts_num="1221" data-posts="" data-com_meta="" data-thumbnail="" data-author_meta="" data-date_meta="true" data-review=""> 
+              <div class="bdaia-wb-content"> 
+               <div class="bdaia-wb-inner"> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/03/30/malicious-traffic/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/03/420125/traffic_socials-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/03/30/malicious-traffic/"><span>Уроки форензики. Ищем улики в сетевом трафике</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-date">
+                     <span class="bdayh-date">2 дня назад</span>
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/03/29/reversing-dnguard/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/03/420011/engarde_web-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/03/29/reversing-dnguard/"><span>Ангард! Реверсим приложение, защищенное DNGuard</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-date">
+                     <span class="bdayh-date">3 дня назад</span>
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/03/23/invisible-device/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/03/419318/invi_socials-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/03/23/invisible-device/"><span>Девайс-невидимка. Встраиваемся в локальную сеть с помощью «невидимого» хакерского устройства</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-date">
+                     <span class="bdayh-date">1 неделя назад</span>
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/03/20/htb-extension/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/03/419074/title-1600-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/03/20/htb-extension/"><span>HTB Extension. Пентестим плагин для Gitea и сбегаем из Docker</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-date">
+                     <span class="bdayh-date">2 недели назад</span>
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+               </div> 
+               <div class="bdayh-posts-load-wait"> 
+                <div class="sk-circle">
+                 <div class="sk-circle1 sk-child"></div>
+                 <div class="sk-circle2 sk-child"></div>
+                 <div class="sk-circle3 sk-child"></div>
+                 <div class="sk-circle4 sk-child"></div>
+                 <div class="sk-circle5 sk-child"></div>
+                 <div class="sk-circle6 sk-child"></div>
+                 <div class="sk-circle7 sk-child"></div>
+                 <div class="sk-circle8 sk-child"></div>
+                 <div class="sk-circle9 sk-child"></div>
+                 <div class="sk-circle10 sk-child"></div>
+                 <div class="sk-circle11 sk-child"></div>
+                 <div class="sk-circle12 sk-child"></div>
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+            </div>
+           </div> 
+          </div> 
+          <div id="footer-second" class="footer-widget-inner"> 
+           <div id="bdaia-widget-box1-3" class="widget bdaia-widget bdaia-box1">
+            <h4 class="block-title"><span>Компьютерные трюки</span></h4>
+            <div class="widget-inner"> 
+             <div class="bdaia-wb-wrap bdaia-wb1 bdaia-wb-idXu3SM bdaia-ajax-pagination-" data-box_nu="wb1" data-box_id="bdaia-wb-idXu3SM" data-paged="1" data-sort_order="" data-ajax_pagination="" data-num_posts="4" data-tag_slug="articles" data-cat_uid="4926" data-cat_uids="" data-max_nu="151" data-total_posts_num="603" data-posts="" data-com_meta="" data-thumbnail="" data-author_meta="" data-date_meta="true" data-review=""> 
+              <div class="bdaia-wb-content"> 
+               <div class="bdaia-wb-inner"> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/02/17/hacker-tools-6/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/02/416082/penguin-1600-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/02/17/hacker-tools-6/"><span>Мастерская хакера. ИИ-помощники, работа с JSON и приятные мелочи, которые пригодятся в работе</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-date">
+                     <span class="bdayh-date">17.02.2023</span>
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2023/01/25/croc-in-the-middle/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2023/01/413603/croc-32-1-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2023/01/25/croc-in-the-middle/"><span>Крококряк. Снимаем трафик с витой пары обычными «крокодилами»</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-date">
+                     <span class="bdayh-date">25.01.2023</span>
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2022/12/16/linux-low-ram/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2022/12/409824/bodhi-1600-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2022/12/16/linux-low-ram/"><span>Linux на диете. Уменьшаем требования Bodhi Linux к оперативной памяти</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-date">
+                     <span class="bdayh-date">16.12.2022</span>
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+                <div class="bdaia-wb-article bdaia-wba-small bdaiaFadeIn"> 
+                 <article class="with-thumb"> 
+                  <div class="bwb-article-img-container"> <a href="https://xakep.ru/2022/09/23/how-to-write/"><img width="104" height="74" src="https://xakep.ru/wp-content/uploads/2022/09/402645/man-square-3-104x74.jpg" class="attachment-bdaia-small size-bdaia-small wp-post-image" alt="" decoding="async" loading="lazy"></a> 
+                  </div> 
+                  <div class="bwb-article-content-wrapper"> 
+                   <header> 
+                    <h3 class="entry-title"> <a href="https://xakep.ru/2022/09/23/how-to-write/"><span>Как писать статьи. Колонка главреда</span></a> </h3> 
+                   </header> 
+                   <footer> 
+                    <div class="bdaia-post-date">
+                     <span class="bdayh-date">23.09.2022</span>
+                    </div> 
+                   </footer> 
+                  </div> 
+                 </article> 
+                </div> 
+               </div> 
+               <div class="bdayh-posts-load-wait"> 
+                <div class="sk-circle">
+                 <div class="sk-circle1 sk-child"></div>
+                 <div class="sk-circle2 sk-child"></div>
+                 <div class="sk-circle3 sk-child"></div>
+                 <div class="sk-circle4 sk-child"></div>
+                 <div class="sk-circle5 sk-child"></div>
+                 <div class="sk-circle6 sk-child"></div>
+                 <div class="sk-circle7 sk-child"></div>
+                 <div class="sk-circle8 sk-child"></div>
+                 <div class="sk-circle9 sk-child"></div>
+                 <div class="sk-circle10 sk-child"></div>
+                 <div class="sk-circle11 sk-child"></div>
+                 <div class="sk-circle12 sk-child"></div>
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+            </div>
+           </div> 
+          </div> 
+          <div id="footer-third" class="footer-widget-inner"> 
+           <div id="bdaia-widget-timeline-2" class="widget-odd widget-last widget-first widget-1 widget bdaia-widget bdaia-widget-timeline"> 
+            <h4 class="block-title"><span>Свежие новости</span></h4> 
+            <div class="widget-inner"> 
+             <ul> 
+              <li><a href="https://xakep.ru/2023/03/31/gruppirovka-winter-vivern-ispolzuet-uyazvimost-v-zimbra-dlya-krazhi-pisem-nato/"> <span class="bdayh-date">10 часов назад</span> <h3>Группировка Winter Vivern использует уязвимость в Zimbra для кражи писем НАТО</h3> </a></li>
+              <li><a href="https://xakep.ru/2023/03/31/alienfox/"> <span class="bdayh-date">11 часов назад</span> <h3>Малварь AlienFox ворует данные из 18 облачных сервисов</h3> </a></li>
+              <li><a href="https://xakep.ru/2023/03/31/infraud-organization-sentenced/"> <span class="bdayh-date">17 часов назад</span> <h3>Администраторы кардерского форума UniCC получили условные сроки</h3> </a></li>
+              <li><a href="https://xakep.ru/2023/03/31/ipfs-phishing/"> <span class="bdayh-date">18 часов назад</span> <h3>С начала года почти 800 000 фишинговых писем были отправлены с использованием IPFS</h3> </a></li>
+              <li><a href="https://xakep.ru/2023/03/31/bingbang/"> <span class="bdayh-date">20 часов назад</span> <h3>Исследователи подменили результаты поиска в Bing, используя уязвимость BingBang</h3> </a></li> 
+             </ul> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div><!--Widgets/--> 
+       <div class="bdaia-footer-area" style="background-color:#23282D;"> 
+        <div class="bd-container" style="font-size:13px"> 
+         <div class="footer-col-two"> 
+          <div class="footer-widget-inner">
+            Вопросы по&nbsp;материалам и подписке: <a href="mailto:support@glc.ru">support@glc.ru</a> 
+           <br>Отдел рекламы и&nbsp;спецпроектов: <a href="mailto:yakovleva.a@glc.ru">yakovleva.a@glc.ru</a> 
+           <br>Контент&nbsp;<strong>18+</strong> 
+           <br>
+           <br> 
+           <div style="font-size:95%">
+            <a href="https://qrator.net/ru/" target="_blank" rel="nofollow"><img src="https://xakep.ru/wp-content/uploads/2017/10/300px-Qrator_LOGO.png" width="100" alt="Qrator" style="float:left;margin: 0 10px 0 0"></a> Сайт защищен Qrator&nbsp;—
+            <br>самой забойной защитой от&nbsp;DDoS в&nbsp;мире
+           </div> 
+          </div> 
+          <div class="footer-widget-inner" style="text-align:right"> <a href="/about/">Подписка для физлиц</a> 
+           <br><a href="/corporate/">Подписка для юрлиц</a> 
+           <br><a href="/advert/">Реклама на «Хакере»</a> <!-- <br/><a href="/offer/">Авторский договор</a> --> 
+           <br><a href="/contact/">Контакты</a> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div><!--.bdaia-footer/--> 
+     </div> 
+    </div> 
+   </div><!-- #page/--> 
+  </div><!-- .page-outer/--> 
+  <script>
+    </script>
+  <script type="text/javascript" src="https://xakep.ru/wp-content/themes/woohoo/js/widget-ajax.js" id="woohoo-wboxs-ajax-js-js"></script> 
+  <script type="text/javascript" id="woohoo-post-like-js-extra">
+/* <![CDATA[ */
+var ajax_var = {"url":"https:\/\/xakep.ru\/wp-admin\/admin-ajax.php","nonce":"6bfe6588fe"};
+/* ]]> */
+</script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/themes/woohoo/js/post-like.js" id="woohoo-post-like-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/themes/woohoo/framework/shorty/js/blocks.js" id="woohoo_blocks_ajax_js-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/plugins/prettify-code-syntax/javascripts/prettify.js" id="prettify-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/plugins/prettify-code-syntax/javascripts/lang-css.js" id="prettify-css-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/plugins/prettify-code-syntax/javascripts/lang-sql.js" id="prettify-sql-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/plugins/prettify-code-syntax/javascripts/lang-yaml.js" id="prettify-yaml-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/plugins/prettify-code-syntax/javascripts/lang-vb.js" id="prettify-vb-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/plugins/prettify-code-syntax/javascripts/lang-clj.js" id="prettify-clj-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/plugins/prettify-code-syntax/javascripts/lang-erlang.js" id="prettify-erlang-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/plugins/prettify-code-syntax/javascripts/lang-go.js" id="prettify-go-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/plugins/prettify-code-syntax/javascripts/lang-hs.js" id="prettify-hs-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/plugins/prettify-code-syntax/javascripts/lang-lua.js" id="prettify-lua-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/plugins/prettify-code-syntax/javascripts/lang-lisp.js" id="prettify-lisp-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/plugins/prettify-code-syntax/javascripts/lang-dart.js" id="prettify-dart-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/plugins/prettify-code-syntax/javascripts/lang-pascal.js" id="prettify-pascal-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/plugins/prettify-code-syntax/javascripts/lang-r.js" id="prettify-r-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/plugins/prettify-code-syntax/javascripts/load.js" id="prettify-load-js"></script> 
+  <script type="text/javascript" id="wp-polls-js-extra">
+/* <![CDATA[ */
+var pollsL10n = {"ajax_url":"https:\/\/xakep.ru\/wp-admin\/admin-ajax.php","text_wait":"\u0412\u0430\u0448 \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0439 \u0437\u0430\u043f\u0440\u043e\u0441 \u0435\u0449\u0435 \u043e\u0431\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u0435\u0442\u0441\u044f. \u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430 \u043f\u043e\u0434\u043e\u0436\u0434\u0438\u0442\u0435 ...","text_valid":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430 \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u043e \u0432\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043e\u0442\u0432\u0435\u0442.","text_multiple":"\u041c\u0430\u043a\u0441\u0438\u043c\u0430\u043b\u044c\u043d\u043e \u0434\u043e\u043f\u0443\u0441\u0442\u0438\u043c\u043e\u0435 \u0447\u0438\u0441\u043b\u043e \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u043e\u0432:","show_loading":"1","show_fading":"0"};
+/* ]]> */
+</script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/plugins/wp-polls/polls-js.js" id="wp-polls-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/themes/woohoo/js/matchMedia.js" id="woohoo-match-media-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/themes/woohoo/js/matchMedia.addListener.js" id="woohoo-match-media-add-listener-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/themes/woohoo/js/jquery.placeholder.js" id="woohoo-placeholder-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/themes/woohoo/js/theia-sticky.js" id="woohoo-theia-sticky-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/themes/woohoo/js/enquire.min.js" id="woohoo-enquire-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/themes/woohoo/js/min.js" id="woohoo-min-js"></script> 
+  <script type="text/javascript" id="woohoo-main-js-extra">
+/* <![CDATA[ */
+var bd = "{\"is_singular\":false,\"bd_lazyload\":false,\"mobile_topmenu\":false,\"sticky_sidebar\":false,\"post_reading_position_indicator\":\"1\"}";
+/* ]]> */
+</script> 
+  <script type="text/javascript" async src="https://xakep.ru/wp-content/themes/woohoo/js/main.js" id="woohoo-main-js"></script> 
+  <script type="text/javascript" src="https://xakep.ru/wp-content/themes/woohoo/js/search.js" id="bd-search-js"></script> 
+  <script type="text/javascript">(function($){
+  console.log("$$$$$$$$$$$$$ $$$$$$$$$$$$$\n          $$$ $$$\n          $$$ $$$  $$$$$$$$$$$$$ $$$     $$$  $$$$$$$$$$$$$ $$$$$$$$$$$$$\n                   $$$       $$$ $$$     $$$  $$$$$$$       $$$       $$$\n          $$$ $$$  $$$$$$$$$$$$$ $$$$$$$$$$$$ $$$           $$$$$$$$$$$$$\n          $$$ $$$  $$$       $$$ $$$      $$$ $$$$$$$$$$$$$ $$$\n$$$$$$$$$$$$$ $$$$$$$$$$$$$\n\nХочешь прославиться, заработать и иметь бесплатную подписку? Пиши в «Хакер»!\nПодробнее: https://xakep.ru/new-authors/");
+  $('article.xmd figure:not(.video)').each(function(){
+    if($(this).find('a').length == 0){
+      var img = $(this).find('img').attr('src');
+      $(this).wrapInner('<a href="'+img+'" target=_blank class="foobox"></a>');
+    }
+  });
+  $('.bdaia-post-content>pre').addClass('prettyprint');
+  $('.wp-polls-form .wp-polls-ul input').on('change', function(){$(this).parents('form').find('input[name=vote]').click();})
+  $.each($('#bookmark'), function(i, el){
+    var bookmark = $(el);
+    var pid = bookmark.data('pid');
+    $.get('/wp-admin/admin-ajax.php?action=xakep_bookmark&pid='+pid, function(res){
+      bookmark.html(res);
+    });
+    bookmark.on('click', function(){
+      $.get('/wp-admin/admin-ajax.php?action=xakep_bookmark&set=book&pid='+pid, function(res){
+        bookmark.html(res);
+      });
+    });
+  });
+}(jQuery));</script> 
+  <div style="position:fixed;left:-9999px;bottom:-9999px;opacity:0"> <!-- Код тега ремаркетинга Google --> 
+   <script type="text/javascript">
+      /* <![CDATA[ */
+      var google_conversion_id = 943782719;
+      var google_custom_params = window.google_tag_params;
+      var google_remarketing_only = true;
+      /* ]]> */
+  </script> 
+   <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+  </script> 
+   <noscript> 
+    <div style="display:inline;"> 
+     <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/943782719/?value=0&amp;guid=ON&amp;script=0"> 
+    </div> 
+   </noscript> 
+  </div> <!-- Enkod popup API --> 
+  <script type="text/javascript">
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = '//cdn.enkod.ru/script/enpop.min.js';
+		script.async = true;
+		var first = document.getElementsByTagName('script')[0];
+		first.parentNode.insertBefore(script, first);
+		var enKodBox = window.enKodBox = window.enKodBox || {};    
+		var ekEvents = window.ekEvents || [];
+		enKodBox['token'] = 'xakep';
+	</script> 
+  <script type="text/javascript">
+		ekEvents.push('pageOpen')
+	</script> <!-- Enkod popup API end -->  <!--
+Performance optimized by Redis Object Cache. Learn more: https://wprediscache.com
+
+Получено 7947 объектов (4 МБ) от Redis через Predis (v2.0.3).
+--><!-- Dynamic page generated in 1.823 seconds. --><!-- Cached page generated by WP-Super-Cache on 2023-04-01 07:30:36 --><!-- super cache -->
+ </body>
+</html>
