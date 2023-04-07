@@ -1,14 +1,10 @@
 package task2
 
 import Constants
-import org.apache.lucene.analysis.Analyzer
-import org.apache.lucene.analysis.tokenattributes.CharTermAttribute
-
+import Utils
+import org.jsoup.Jsoup
 import java.io.File
 import java.io.FileOutputStream
-import org.apache.lucene.analysis.en.EnglishAnalyzer
-import org.apache.lucene.analysis.ru.RussianAnalyzer
-import org.jsoup.Jsoup
 import java.io.FileReader
 import java.util.*
 
@@ -67,7 +63,6 @@ class Tokenization {
     }
 
 
-
     private fun writeTokens(
         page: PageWithTokens,
         tokensFile: File
@@ -99,7 +94,12 @@ class Tokenization {
     }
 
     private fun parseTextFromFileWithoutHtml(file: File): String {
-        return Jsoup.parse(file.bufferedReader().use { it.readText() }).body().text()
+        val textFromFiles = file
+            .bufferedReader()
+            .use { it.readText() }
+            .replace("<", " <")
+            .replace(">", "> ")
+        return Jsoup.parse(textFromFiles).body().text()
     }
 
 }

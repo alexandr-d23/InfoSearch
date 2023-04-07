@@ -1,345 +1,411 @@
-skip: skip
-content: content
-univers: universe hopkins
-todai: today
-space: space
-astronomi: astronomy
-new: news
-menu: menu
-video: videos crater
-newslett: newsletter
-podcast: podcast
-contact: contact
-support: support
-log: log cancel
-artist: artist
-s: s
-impress: impression
-show: shows explain
-ultra: ultra
-hot: hot
-exoplanet: exoplanet atmosphere
-transit: transit missed
-front: front
-host: host
-star: star close
-credit: credit upper
-eso: eso
-post: posted rarest
-march: march
-evan: evan
-gough: gough
-discoveri: discovery
-neptun: a handful
-shouldn: neptune
-t: shouldn
-exist: t efficiently telling
-light: exist
-year: light
-survivor: years
-orbit: survivor density completes
-ag: orbits factors
-rare: aged
-planet: rare size
-call: planet
-small: called
-hand: small
-astronom: neptunes
-close: astronomers al
-overpow: stars
-stellar: overpowering
-radiat: stellar
-ve: radiation
-strip: ve extremely hydrogen atmospheric
-atmospher: stripped held lifetime
-leav: atmospheres inflate
-planetari: leaving
-core: planetary
-held: core
-find: exoplanets untangled
-understand: find implications
-popul: understand
-confirm: population
-scientist: confirmed
-handl: scientists
-makeup: handle
-dashboard: makeup
-nasa: dashboard
-group: nasa
-categori: groups
-ga: categories
-giant: gas
-super: giant
-earth: super
-terrestri: earth
-classif: terrestrial
-scienc: classifications
-jupit: science strip
-tag: jupiter
-isn: tag
-aren: isn
-remov: aren
-ad: remove patreon
-join: ads
-patreon: join
-free: ad
-experi: free
-life: experience
-gaseou: life
-extrem: gaseous
-massiv: jupiters
-hang: massive radius
-success: hang
-size: success
-hold: planets
-face: hold
-defi: face
-odd: defy
-densiti: odds
-evolv: orbiting inflated
-demonstr: evolved
-resili: demonstrates clear
-previous: resilient
-thought: previously
-glies: thought
-b: gliese
-kepler: b
-mission: kepler
-chang: mission
-research: changed institute
-puzzl: researchers located
-long: puzzling
-paper: long
-conclud: paper desert
-lose: concluded
-mass: losing
-trail: mass
-hydrogen: trail
-jg: strips
-locat: jg
-courtesi: puzzle
-telescop: courtesy
-institut: telescope
-usa: research
-australia: usa
-present: australia
-red: presented
-lead: red
-author: lead billions
-samuel: author
-grunblatt: samuel
-depart: grunblatt
-physic: department
-john: physics
-hopkin: johns
-complet: university
-dai: orbit
-name: days
-tic: named
-dens: tic
-radiu: dense
-ancient: hanging
-billion: ancient irradiation
-time: billion evolution
-sun: times
-temperatur: sun
-kelvin: temperature
-c: kelvin
-f: c
-factor: f
-high: age
-equilibrium: high
-remark: equilibrium
-suggest: remarkably eccentricity history
-envelop: suggests
-energi: envelope
-irradi: energy certainty
-write: authors
-rarest: write
-main: post
-sequenc: main
-type: sequence
-outlier: type
-import: outliers
-defin: important
-natur: define
-limit: nature smaller
-build: limits
-model: build
-current: models
-explain: current
-left: show
-assum: left
-migrat: assuming formation
-inflat: migration loss existence
-system: inflation focused
-myr: system
-lifetim: myr
-phenomenon: stripping
-lack: phenomenon
-protect: lacks
-magnet: protective
-shield: magnetic
-power: shield proudly
-render: powerful
-solar: rendering
-storm: solar
-hit: storm
-mar: hitting
-ion: mars
-upper: ions
-gsfc: credits
-explan: gsfc
-lie: explanation
-incorrect: lie
-flux: incorrect
-xuv: flux
-significantli: xuv
-absorb: significantly
-effici: absorbed
-predict: existing symbol
-prevent: predict
-sever: preventing
-eros: severe
-format: erosion
-previou: migrated
-larger: previous
-avoid: larger
-highest: avoiding
-intens: highest
-problem: intensity
-interact: problems due
-caus: interactions
-indic: caused
-larg: indication
-trigger: large
-case: trigger specific
-highli: cases
-eccentr: highly eccentric
-due: suggesting
-histori: interaction
-possibl: suggest
-smaller: possibility
-instantan: limiting
-rate: instantaneous
-loss: rate
-increas: leave
-receiv: increase
-level: received
-detail: level
-potenti: detail
-simpli: potential
-clariti: simply
-attach: clarity
-certainti: attach
-powerfulli: irradiate
-illustr: powerfully
-panel: illustration
-expand: panel
-imag: expanded
-karen: image
-teramura: karen
-hawaii: teramura
-shy: hawaii
-late: shying
-stage: late
-observ: stage follow
-evid: observational
-weak: evidence
-photoevapor: weak
-stronger: photoevaporation
-weaker: stronger
-persist: weaker
-clear: persistence
-tell: resilience
-implic: evolve
-form: understanding
-interpret: form
-figur: interpret
-y: figure
-axi: y
-divid: axis
-x: divided
-denot: x
-symbol: denoted
-total: predicted
-expect: total
-lost: expected
-retain: lost
-al: retained
-intertwin: closely
-result: intertwined
-composit: results
-activ: composition
-untangl: activity
-obviou: finding
-path: obvious
-don: path
-gener: don
-search: general
-focus: searches
-miss: systems
-specif: transiting
-follow: case
-tightli: observations
-constrain: tightly shed
-characterist: constrain
-ground: characteristics
-base: ground
-spectroscop: based
-studi: spectroscopic
-reveal: studies
-outflow: reveal
-shed: outflows
-balanc: constraining
-evolut: balance
-clarifi: time
-demograph: clarifying
-featur: demographic
-desert: features
-older: conclude
-comet: older
-cloud: comet
-escap: cloud
-warm: escaping
-gj: warm
-discov: gj
-hotter: discovered
-mercuri: hotter
-share: mercury
-click: share
-facebook: click
-open: facebook
-window: opens
-twitter: window
-reddit: twitter
-load: reddit
-categoriesastronomi: loading
-tagsatmospher: categoriesastronomy
-repli: tagsatmospheric
-cancel: reply
-comment: logged
-site: comment
-akismet: site
-reduc: akismet
-spam: reduce
-learn: spam
-data: learn
-process: data
-navig: processed
-postprevi: navigation
-fly: postprevious
-jezero: fly
-crater: jezero
-postnext: video
-hyperveloc: postnext
-teach: hypervelocity
-black: teach
-hole: black
-supernova: holes
-privaci: supernovae
-polici: privacy
-proudli: policy
-wordpress: powered
-d: wordpress
-blogger: d
+хабр: хабр
+откр: открыть
+список: список
+стат: стать статья статьи
+автор: автором авторами авторы авторов
+поток: потоки
+разработк: разработка разработкой разработке разработки
+администрирован: администрирование
+дизайн: дизайн
+менеджмент: менеджмент
+маркетинг: маркетинг маркетингу
+научпоп: научпоп
+поиск: поиск
+профил: профиль
+обнов: обновить
+час: часов час часа
+смертн: смертных смертные
+грех: грехов грехи грех греха
+оценок: оценок
+задач: задач задачи
+уровен: уровень
+сложност: сложности
+средн: средний среднем средняя
+прочтен: прочтение
+мин: мин мини
+количеств: количество количеством
+просмотр: просмотров
+управлен: управление
+проект: проектами проекта проект проекты проекте проекту проектов
+мнен: мнение
+искусств: искусство искусства
+наук: наука науки
+оценк: оценки оценками оценку оценкам оценка оценках оценке
+развит: развита
+поддержива: поддерживается поддерживаются
+программн: программными программного программное программные
+инструмент: инструментами инструментов инструмент инструменты инструмента
+преимуществен: преимущественно
+основа: основано основана основаны
+эмпирическ: эмпирических эмпирические
+правил: правилах
+доработа: доработать
+материал: материалах материалов
+част: часть
+оста: остались
+картинк: картинками
+пута: путать
+цел: цели целей
+провод: проводите
+различ: различия
+установк: установка
+ключев: ключевая ключевых
+оцениван: оценивания оценивание
+попрос: попросят
+дат: дать дата
+определ: определите
+должн: должны
+оценива: оценивать оценивает
+выясн: выяснить
+достич: достичь
+рассматрива: рассматривать
+итеративн: итеративный
+процесс: процесс
+выравниван: выравнивание
+говор: говорить говорят
+имеет: имеете имеет
+вид: виду
+разработчик: разработчики разработчиков разработчиками
+трудн: трудно
+состав: составить
+энергичн: энергичную энергичной
+правдоподобн: правдоподобную
+рискова: рискованную
+защит: защиту защиты
+количествен: количественных
+метод: методах методу методов метод методы метода методом
+подтвержд: подтверждена
+небольш: небольшим
+дан: данных
+завер: заверена
+основн: основном
+догадк: догадками
+менеджер: менеджеров менеджера менеджер
+фред: фред
+брукс: брукс брукса
+особен: особенности
+коммуникац: коммуникаций
+компан: компании компаний
+обеспечен: обеспечения обеспечение
+прав: правило правила
+интроверт: интроверты
+относительн: относительно
+молод: молоды
+специалист: специалисты
+продаж: продажам продаж
+экстравертн: экстравертны
+организацион: организационно
+выш: выше
+котор: которыми которое
+договарива: договариваются
+легк: легко
+скат: скатиться
+продавливан: продавливание
+привержен: приверженность
+ран: ранним ранняя ранние
+конус: конусе
+неопределен: неопределенности
+брат: брать
+обязательств: обязательства обязательствами
+поздн: поздних поздние
+этап: этапах
+понима: понимаете
+работ: работы работа
+сам: самые самое самая
+точн: точные
+предположен: предположение
+недооценк: недооценка
+влия: влияет влияют
+результат: результаты результат
+ошибк: ошибки ошибками
+планирован: планирования планирование
+нелинейн: нелинейно
+течен: течением
+накаплива: накапливаются
+дефект: дефекты
+начина: начинают начинается
+выстрелива: выстреливать
+риск: риски рисков рисками риск
+невозможн: невозможной невозможная
+зон: зоне зона
+загадк: загадка загадки
+предполож: предположим
+едет: едете
+холм: холму
+мил: милю миль
+скорост: скоростью скорость
+быстр: быстро
+еха: ехать
+поездк: поездку
+составля: составляла составляет
+вариац: вариация
+тем: тему
+общепринятн: общепринятное
+определен: определение определения определенных
+глас: гласит
+оптимистичн: оптимистичное
+предсказан: предсказание
+ненулев: ненулевую
+вероятн: вероятность вероятности
+сбыт: сбыться
+принят: принятие
+неизбежн: неизбежно
+привод: приводит
+называ: называемому называемое
+может: можете
+доказа: доказать
+законч: закончите
+демарк: демарко
+вероятностн: вероятностные
+утвержден: утверждения
+происход: происходит происходят
+берет: берете
+номинальн: номинальную
+сжима: сжимаете
+существ: существует
+так: такого
+понят: понятия
+точк: точке
+правильн: правильной
+имел: имела
+смысл: смысл
+включа: включают
+крайн: крайней
+мер: мере
+неявн: неявные
+оценщик: оценщик
+знает: знает
+сжат: сжатие сжатием
+расписан: расписания
+компромисс: компромисс компромисса
+затрат: затратами
+график: графиком графика
+исследовател: исследователи
+наход: находят
+некотор: некоторый
+никт: никто
+счита: считает считать
+предполага: предполагается предполагать
+максимальн: максимально максимальная
+возможн: возможное возможны
+вспомина: вспоминается
+стар: старый старую
+пост: пост
+создава: создавайте
+верн: вернемся
+вопрос: вопросу
+как: какое
+решен: решение решения
+переоценк: переоценка
+полезн: полезности полезный
+нов: новых новые нового новый
+эффект: эффект
+проблем: проблемы проблеме
+необходим: необходимо
+заплат: заплатить
+цен: цену
+обучен: обучение
+перв: первом первое
+использован: использовании использование использования
+эффективн: эффективность эффективности
+достига: достигается
+сопряж: сопряжено
+заявлен: заявления
+экспертн: экспертном
+изобретш: изобретшими
+ожида: ожидаемого ожидаемое
+появля: появляется
+увеличива: увеличивают
+лучш: лучшее лучшая лучшие
+потер: потери
+производительн: производительности
+начальн: начального
+использ: используйте используют
+сложн: сложно
+уверен: уверенным
+созда: созданных созданные
+одн: одним
+способств: способствует
+ведущ: ведущие
+организац: организации
+техник: техник
+разн: разными
+способ: способами
+ищ: ищите
+сходим: сходимость
+разброс: разброс
+поддержк: поддержка поддержку
+помощ: помощью
+больш: большую большие больших
+достоверн: достоверность достоверные
+вручн: вручную
+хорош: хорошие
+включен: включение
+влиян: влияния
+учет: учет
+природ: природе
+нестабильн: нестабильны
+связа: связаны
+общ: общий
+значен: значение значения
+перерасход: перерасхода
+бюджет: бюджета
+буферн: буферное
+предоставлен: предоставление
+импровизирова: импровизированных
+обраща: обращайтесь
+стандартизирова: стандартизированную стандартизированной
+процедур: процедуру процедуры
+элемент: элементы
+четк: четкое
+описан: описание
+нескольк: нескольких
+подход: подходов
+план: план планы
+повторн: повторной
+заран: заранее
+момент: момента моменты
+станов: становятся
+разбива: разбивайте
+меньш: меньшие
+разделя: разделяйте
+систем: системы
+модул: модули
+маленьк: маленькие
+статистическ: статистическое
+свойств: свойство
+закон: законом
+чисел: чисел
+высок: высокие высокой
+низк: низкие низкой
+склон: склонны
+уравновешива: уравновешиваться
+друг: друг друга
+заключен: заключение
+плох: плохие
+норм: норма
+представлен: представленные
+верхушк: верхушка
+айсберг: айсберга
+несмертн: несмертные
+дава: давать давайте
+прежд: прежде
+либ: либо
+узна: узнает
+вер: верить
+люд: людей
+мощн: мощными
+голосов: голосовыми
+связк: связками
+дума: думать
+конвертир: конвертируются
+перевод: переводить
+деньг: деньги
+календарн: календарные
+срок: сроки сроков
+сторипойнт: сторипойнты
+дни: дни
+стро: строить
+опир: опираясь
+первоначальн: первоначальный
+прошл: прошлого прошлый
+игнорир: игнорируйте
+фактическ: фактические
+оп: опыт
+отдел: отдел
+игнориру: игнорируя
+рабоч: рабочие
+посещен: посещение
+встреч: встреч
+переключен: переключения
+клиент: клиентов
+отпуск: отпуска
+болезн: болезни
+чрезвычайн: чрезвычайные
+ситуац: ситуации
+представля: представлять
+степен: степенью
+точност: точности
+месяц: месяца
+монт: монте
+карл: карло
+сравн: сравниться
+вычислительн: вычислительной
+мощност: мощностью
+ручк: ручки
+салфетк: салфетки
+рассужда: рассуждать
+профакап: профакапим
+опережен: опережение
+утвержда: утверждать
+науч: научить
+вынос: выносить
+ретроспектив: ретроспективы
+тег: теги
+прогнозирован: прогнозирование
+проектн: проектное
+хаб: хабы
+голос: голосов
+добав: добавить
+закладк: закладки
+комментар: комментарии
+карм: карма
+рейтинг: рейтинг
+арт: артем
+летюш: летюшев
+публикац: публикации
+сутк: сутки
+похож: похожие
+истор: истории
+ваканс: вакансии
+руководител: руководитель
+аккаунт: аккаунт
+войт: войти
+регистрац: регистрация
+раздел: разделы
+новост: новости
+песочниц: песочница
+информац: информация
+устройств: устройство
+сайт: сайта
+документ: документы
+соглашен: соглашение
+конфиденциальн: конфиденциальность
+услуг: услуги
+корпоративн: корпоративный
+блог: блог
+медийн: медийная
+реклам: реклама
+нативн: нативные
+образовательн: образовательные
+программ: программы
+стартап: стартапам
+спецпроект: спецпроекты
+яндекс: яндекс
+дзен: дзен
+настройк: настройка
+язык: языка
+техническ: техническая
+вернут: вернуться
+верс: версию
+renew: renewal
+studio: studio
+agil: agile
+steve: steve
+mcconnel: mcconnell
+construx: construx
+http: https
+t: t
+junior: junior
+pm: pm
+github: github
+focusedobject: focusedobjective
+resourc: resources
+scrum: scrum
+master: master
+facebook: facebook
+twitter: twitter
+vk: vk
+telegram: telegram
+youtub: youtube
+habr: habr
